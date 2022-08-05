@@ -59,7 +59,7 @@ var buttonField; //document.getElementById("myButton");
 inputField.addEventListener("keypress", function(event) {
 
   // If the user presses the "Enter" key on the keyboard
-  if (event.key === "Enter" && inputField.value) { // && input !== "Write something...") {
+  if (event.key === "Enter") { // && inputField.value) { // && input !== "Write something...") {
     //buttonField =
      let input = inputField.value;
 
