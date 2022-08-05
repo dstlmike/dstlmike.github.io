@@ -14,6 +14,7 @@ var utterances = [
   ["how old are you"],					//3
   ["who are you", "are you human", "are you bot", "are you human or bot"],   //4
   ["how do you top up my bot", "how to top up marketbot", "top-up", "topup", "top up"],
+  ["withdrawals", "withdrawal"],
   ["help"],
 ];
 
@@ -37,6 +38,7 @@ var answers = [
   ["I am infinite"],					//3
   ["I am just a bot", "I am a bot. What are you?"],	//4
   ["Visit our /home page and check out the Fund MarketBot dropdown menu."],
+  ["Withdrawals have been paused as they update their website.", "Withdrawals have been paused, check back later for more info", "Please allow some time for withdrawals to open up again"],
   ["Have you checked your earnings today? Sign in to see how MarketBot is working for you.", "Try saying top up", "Say something like withdrawals", "say something like register", "Have questions, send us an e-mail at info@marketbotai.com", "Want to learn more? click sign in / sign up for more info", "Need help? Our support team is here to assist, e-mail us at info@marketbotai.com"],
 
 
