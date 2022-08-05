@@ -13,7 +13,7 @@ var utterances = [
   ["what are you doing", "what is going on", "what is up"],      //2
   ["how old are you"],					//3
   ["who are you", "are you human", "are you bot", "are you human or bot"],   //4
-  ["how do you top up my bot", "how to top up marketbot", "top-up", "topup"],
+  ["how do you top up my bot", "how to top up marketbot", "top-up", "topup", "top up"],
   ["help"],
 ];
 
