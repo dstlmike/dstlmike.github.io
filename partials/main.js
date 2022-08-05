@@ -13,9 +13,8 @@ var utterances = [
   ["what are you doing", "what is going on", "what is up"],      //2
   ["how old are you"],					//3
   ["who are you", "are you human", "are you bot", "are you human or bot"],   //4
-
-
-
+  ["how do you top up my bot", "how to top up marketbot", "top-up", "topup"],
+  ["help"],
 ];
 
 // Possible responses corresponding to triggers
@@ -37,6 +36,8 @@ var answers = [
   ],						//2
   ["I am infinite"],					//3
   ["I am just a bot", "I am a bot. What are you?"],	//4
+  ["Visit our /home page and check out the Fund MarketBot dropdown menu."],
+  ["Try top up", "Say something like withdrawals", "You can try saying register"],
 
 
 
@@ -45,9 +46,9 @@ var answers = [
 // For any other user input
 
 var alternatives = [
-  "Go on...",
-  "Try again",
-  "Have questions about the MarketBot project? Visit marketbotai.com/contact-us or send us an email at info@marketbotai.com"
+  "Have questions about the MarketBot project? Send us an email at info@marketbotai.com",
+  "Type help for more options",
+  "I don't understand, try again.."
 ];
 
 var inputField = document.getElementById("input");
