@@ -37,7 +37,7 @@ var answers = [
   ["I am infinite"],					//3
   ["I am just a bot", "I am a bot. What are you?"],	//4
   ["Visit our /home page and check out the Fund MarketBot dropdown menu."],
-  ["Try top up", "Say something like withdrawals", "You can try saying register"],
+  ["Try top up", "Say something like withdrawals", "How about register", "Have questions, send us an e-mail at info@marketbotai.com", "Want to learn more? click sign in / sign up for more info"],
 
 
 
