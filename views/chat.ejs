@@ -168,7 +168,7 @@ margin-top: 15px;
 <button class="open-button" onclick="openForm()">Chat</button>
 
 <div class="chat-popup" id="myForm">
-  <form class="form-container">
+  <form class="form-container" action="/main.js">
     <h1>Chat</h1>
 
     <label for="msg"><b>Message</b></label>
@@ -176,8 +176,7 @@ margin-top: 15px;
    <div id="chat" class="chat">
     <div id="messages" class="messages"></div>
 <input id="input" type="text" placeholder="Write something..." autocomplete="off" autofocus="true" required>
-  <input type="submit" value="Send Request">
-
+  <button type="submit" class="btn">Send</button>
      
 </div>
 
@@ -185,8 +184,7 @@ margin-top: 15px;
 
     <!--<textarea placeholder="Type message.." name="msg" required></textarea>-->
 
-    <!-- <button type="" class="btn">Send</button> -->
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+       <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
 </div>
 
