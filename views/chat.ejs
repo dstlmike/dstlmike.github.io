@@ -168,10 +168,10 @@ margin-top: 15px;
 <button class="open-button" onclick="openForm()">Chat</button>
 
 <div class="chat-popup" id="myForm">
-  <form class="form-container" action="/main.js">
+  <form class="form-container">
     <h1>Chat</h1>
 
-    <label for="msg"><b>Message</b></label>
+    <label for="msg"><b>Messages</b></label>
     <div id="container" class="container">
    <div id="chat" class="chat">
     <div id="messages" class="messages"></div>
@@ -179,7 +179,6 @@ margin-top: 15px;
   <button type="submit" class="btn">Send</button>
      
 </div>
-
 </div>
 
     <!--<textarea placeholder="Type message.." name="msg" required></textarea>-->
@@ -191,6 +190,9 @@ margin-top: 15px;
 <script>
 function openForm() {
   document.getElementById("myForm").style.display = "block";
+}
+function sendForm() {
+  document.getElementById("myForm").";
 }
 
 function closeForm() {
