@@ -12,6 +12,9 @@ app.set('views', 'views');
 app.get('/', function(req, res) {
 res.render('chat.ejs');
 });
+app.post('/', function(req, res) {
+res.render('chat.ejs');
+});
 
 app.listen(port, function(req, res) {
   console.log('Server started on port: ' + port);
