@@ -54,12 +54,12 @@ var alternatives = [
 ];
 
 var inputField = document.getElementById("input");
-var buttonField = document.getElementById("btn").submit;
+var buttonField = document.getElementById("submit");
 // Execute a function when the user presses a key on the keyboard
 inputField.addEventListener("keypress", function(event) {
 
   // If the user presses the "Enter" key on the keyboard
-  if ((event.key === "Enter" && inputField.value) || (buttonField && inputField.value)) { // && input !== "Write something...") {
+  if ((event.key === "Enter" && inputField.value) || (buttonField.value == "submit" && inputField.value)) { // && input !== "Write something...") {
     //buttonField =
      let input = inputField.value;
 
