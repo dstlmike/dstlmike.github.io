@@ -10,7 +10,8 @@ function submitBtn() {
 
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#submitBtn").addEventListener("click", function(event) {
-if (event.click) {
+if (event) {
+let input = inputField.value; inputField.value = "";buttonField.value = inputField.value; output(input); // Cancel the default action, if needed event.preventDefault();
     }
   });
 });
