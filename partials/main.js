@@ -59,11 +59,12 @@ var buttonField = document.getElementById("submit");
 inputField.addEventListener("keypress", function(event) {
 
   // If the user presses the "Enter" key on the keyboard
-  if ((event.key === "Enter" && inputField.value) || (buttonField.value == "submit" && inputField.value)) { // && input !== "Write something...") {
+  if (event.key === "Enter" || buttonField && (inputField.value) { // || (buttonField.value == "submit" && inputField.value)) { // && input !== "Write something...") {
     //buttonField =
      let input = inputField.value;
 
     inputField.value = "";
+//buttonField.value = inputField
     output(input);
     // Cancel the default action, if needed
     event.preventDefault();
