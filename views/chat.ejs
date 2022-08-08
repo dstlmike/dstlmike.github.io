@@ -182,7 +182,7 @@ form-container .submit {
    <div id="chat" class="chat">
     <div id="messages" class="messages"></div>
 <input id="input" type="text" placeholder="Write something..." autocomplete="off" autofocus="true" required>
-<button class="submit" type="button">Send</button>
+
 
  
 
@@ -190,7 +190,7 @@ form-container .submit {
 </div>
 
     <!--<textarea placeholder="Type message.." name="msg" required></textarea>-->
-<button class="submit" type="submit"></button>
+<button class="submit" type="button" onclick="sendForm()">Send</button>
        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
 </div>
@@ -200,7 +200,9 @@ function openForm() {
   document.getElementById("myForm").style.display = "block";
 }
 
-
+function sendForm() {
+  document.getElementById("input.value");
+}
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
