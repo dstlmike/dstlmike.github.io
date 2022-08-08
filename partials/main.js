@@ -6,6 +6,15 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+function submitBtn() {
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelector("#submitBtn").addEventListener("click", function(event) {
+
+    }
+  });
+});
+
 
 var utterances = [
   ["how are you", "how is life", "how are things"],        //0
@@ -54,12 +63,12 @@ var alternatives = [
 ];
 
 var inputField = document.getElementById("input");
-var buttonField = document.getElementById("submitBtn");
+
 // Execute a function when the user presses a key on the keyboard
 inputField.addEventListener("keypress", function(event) {
 
   // If the user presses the "Enter" key on the keyboard
-  if (event.key === "Enter" || buttonField.value && (inputField.value)) { // || (buttonField.value == "submit" && inputField.value)) { // && input !== "Write something...") {
+  if (event.key === "Enter" && inputField.value) { // || (buttonField.value == "submit" && inputField.value)) { // && input !== "Write something...") {
     //buttonField =
      let input = inputField.value;
 
@@ -69,7 +78,7 @@ buttonField.value = inputField.value;
     // Cancel the default action, if needed
     event.preventDefault();
    // Trigger the button element with a click
-   document.getElementById("submitBtn");
+  // document.getElementById("submitBtn");
 }
 
 });
