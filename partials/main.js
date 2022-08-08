@@ -10,11 +10,11 @@ function submitBtn() {
 
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#submitBtn").addEventListener("click", function(event) {
-
+if (event.click) {
     }
   });
 });
-
+});
 
 var utterances = [
   ["how are you", "how is life", "how are things"],        //0
