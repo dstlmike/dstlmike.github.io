@@ -54,7 +54,7 @@ var alternatives = [
 ];
 
 var inputField = document.getElementById("input");
-var buttonField = document.getElementById("submit").click();
+var buttonField = document.getElementById("inputField").value;
 // Execute a function when the user presses a key on the keyboard
 inputField.addEventListener("keypress", function(event) {
 
@@ -64,7 +64,7 @@ inputField.addEventListener("keypress", function(event) {
      let input = inputField.value;
 
     inputField.value = "";
-//buttonField.value = inputField
+buttonField = inputField.value
     output(input);
     // Cancel the default action, if needed
     event.preventDefault();
