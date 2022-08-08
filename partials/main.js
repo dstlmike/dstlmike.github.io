@@ -54,7 +54,7 @@ var alternatives = [
 ];
 
 var inputField = document.getElementById("input");
-var buttonField = document.getElementById("input");
+var buttonField = document.getElementById("submitBtn");
 // Execute a function when the user presses a key on the keyboard
 inputField.addEventListener("keypress", function(event) {
 
