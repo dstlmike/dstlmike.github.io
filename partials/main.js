@@ -55,13 +55,13 @@ var alternatives = [
 ];
 
 var inputField = document.getElementById("input");
-var buttonField = document.getElementById("input").submit;
+var buttonField = document.getElementById("submitBtn").submit;
 
 // Execute a function when the user presses a key on the keyboard
 inputField.addEventListener("keypress", function(event) {
 
   // If the user presses the "Enter" key on the keyboard
-  if (buttomField && inputField.value) || (event.key === "Enter" && inputField.value)) { // || (buttonField.value == "submit" && inputField.value)) { // && input !== "Write something...") {
+  if (buttonField && inputField.value) || (event.key === "Enter" && inputField.value)) { // || (buttonField.value == "submit" && inputField.value)) { // && input !== "Write something...") {
     //buttonField =
      let input = inputField.value;
 
