@@ -183,7 +183,7 @@ margin-top: 15px;
    <div id="chat" class="chat">
     <div id="messages" class="messages"></div>
 <input id="input" type="text" placeholder="Write something..." autocomplete="off" autofocus="true" required>
-<input id="submitBtn" type="submit" class="btn submit" onclick="output()">
+<input id="submitBtn" type="submit" class="btn submit" onclick="sendForm()">
 
 
 
@@ -201,6 +201,9 @@ margin-top: 15px;
 <script>
 function openForm() {
   document.getElementById("myForm").style.display = "block";
+}
+function sendForm() {
+  document.getElementById("input") = "";
 }
 
 function closeForm() {
