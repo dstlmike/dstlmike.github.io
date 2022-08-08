@@ -69,7 +69,7 @@ buttonField.value = "";
     // Cancel the default action, if needed
     event.preventDefault();
    // Trigger the button element with a click
-   document.getElementById("myForm").click();
+   document.getElementById("input").click();
 }
 
 });
