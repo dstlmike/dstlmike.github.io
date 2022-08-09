@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#input").addEventListener("keypress", function(event) {
-    if (event.code === "Enter" && inputField.value) {
+    if (event.code === "Enter") {
 
     }
   });
