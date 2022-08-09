@@ -78,7 +78,7 @@ var inputt = document.querySelector("#input");
 
 // Execute a function when the user presses a key on the keyboard
 inputField.addEventListener("keypress", function(event) {
-inputt.disabled = true; //setting button state to disabled
+inputt.disabled = false; //setting button state to disabled
 
 inputt.addEventListener("keypress", stateHandle);
 
