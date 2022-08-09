@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
+/*
     let inputt = document.querySelector("#input");
 let button = document.querySelector("#submitBtn");
 
@@ -20,7 +20,7 @@ function stateHandle() {
         button.disabled = false; //button is enabled
     }
 }
-
+*/
 var utterances = [
   ["how are you", "how is life", "how are things"],        //0
   ["hi", "hey", "hello", "good morning", "good afternoon"],      //1
