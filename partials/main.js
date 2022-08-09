@@ -88,7 +88,7 @@ inputField.addEventListener("keypress", function(event) {
        alert('field empty');
        button.removeAttr('disabled');
     }else{
-        $('#message').html('done');
+        $('#messages').html('done');
         $('#text').val('');
     }
 });
