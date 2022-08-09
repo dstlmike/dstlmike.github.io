@@ -128,11 +128,11 @@ function addChatEntry(input, product) {
 
   let botDiv = document.createElement("div");
   let botText = document.createElement("span");
-  
+  let botText2 = document.createElement("span");
   //let botText2 = document.createElement("span");
   botDiv.id = "bot";
   botDiv.className = "bot response";
- 
+  botText2.innerText = "";
   botText.innerText = "Typing...";
   botDiv.appendChild(botText);
   messagesContainer.appendChild(botDiv);
@@ -141,7 +141,7 @@ function addChatEntry(input, product) {
 
   messagesContainer.scrollTop =
     messagesContainer.scrollHeight - messagesContainer.clientHeight;
-  
+   botText2.innerText = `${product}`;
   setTimeout(() => {
     botText.innerText = `${product}`;
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
