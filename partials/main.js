@@ -66,14 +66,14 @@ inputField.addEventListener("keypress", function(event) {
      let input = inputField.value;
 
     inputField.value = "";
- setTimeout(() => {
+
      output(input);
     // Cancel the default action, if needed
     event.preventDefault();
    // Trigger the button element with a click
   
 
-  }, 2000);
+ 
   
 }
 
@@ -119,6 +119,10 @@ function compare(utterancesArray, answersArray, string) {
 }
 
 function addChatEntry(input, product) {
+   setTimeout(() => {
+   
+
+
   var messagesContainer = document.getElementById("messages");
   let userDiv = document.createElement("div");
   userDiv.id = "user";
@@ -151,4 +155,5 @@ function addChatEntry(input, product) {
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
   }, 5000);
+       }, 2000);
 }
