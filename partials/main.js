@@ -119,7 +119,7 @@ function compare(utterancesArray, answersArray, string) {
 }
 
 function addChatEntry(input, product) {
-   setTimeout(() => {
+   
    
 
 
@@ -130,7 +130,7 @@ function addChatEntry(input, product) {
   userDiv.innerHTML = `<span>${input}</span>`;
   
   messagesContainer.appendChild(userDiv);
- 
+ setTimeout(() => {
  
 
   let botDiv = document.createElement("div");
