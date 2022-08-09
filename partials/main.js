@@ -6,7 +6,20 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+    let inputt = document.querySelector("#input");
+let button = document.querySelector("#submitBtn");
 
+button.disabled = true; //setting button state to disabled
+
+inputt.addEventListener("change", stateHandle);
+
+function stateHandle() {
+    if (document.querySelector("#input").value === "") {
+        button.disabled = true; //button remains disabled
+    } else {
+        button.disabled = false; //button is enabled
+    }
+}
 
 var utterances = [
   ["how are you", "how is life", "how are things"],        //0
