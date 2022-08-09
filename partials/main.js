@@ -136,7 +136,7 @@ function addChatEntry(input, product) {
   
   messagesContainer.appendChild(userDiv);
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight; 
- setTimeout(() => {
+ 
  
 
   let botDiv = document.createElement("div");
@@ -145,7 +145,7 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
   //let botText2 = document.createElement("span");
   botDiv.id = "bot";
   botDiv.className = "bot response";
- 
+ setTimeout(() => {
   botText.innerText = "Typing...";
   
   botDiv.appendChild(botText);
