@@ -78,12 +78,13 @@ var inputField = document.getElementById("input");
 // Execute a function when the user presses a key on the keyboard
 inputField.addEventListener("keypress", function(event) {
 
-inputt.disabled = true; //setting button state to disabled
 
 
           // If the user presses the "Enter" key on the keyboard
   if (event.key === "Enter" && inputField.value) { // || (buttonField.value == "submit" && inputField.value)) { // && input !== "Write something...") {
   //buttonField =
+inputt.disabled = true; //setting button state to disabled
+
      let input = inputField.value;
 
     inputField.value = "";
