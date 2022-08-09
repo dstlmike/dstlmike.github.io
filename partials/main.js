@@ -132,8 +132,10 @@ function addChatEntry(input, product) {
   botDiv.className = "bot response";
    botText.innerText = "";
   botText2.innerText = "Typing...";
+  botDiv.appendChild(botText2);
+  messagesContainer.appendChild(botDiv);
   setTimeout(() => {
-  botDiv.appendChild(botText);
+  botDiv.appendChild(botText2);
   messagesContainer.appendChild(botDiv);
   }, 2000);
   
