@@ -89,7 +89,7 @@ inputField.addEventListener("keypress", function(event) {
     let inputt = document.querySelector("#input");
 
 
-inputt.disabled = false; //setting button state to disabled
+inputt.disabled = true; //setting button state to disabled
 
 inputt.addEventListener("change", stateHandle);
 
