@@ -146,13 +146,13 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
   botDiv.id = "bot";
   botDiv.className = "bot response";
 botText.innerText = " ";
- setTimeout(() => {
-  botText.innerText = "Typing...";
+ 
   
   botDiv.appendChild(botText);
   messagesContainer.appendChild(botDiv);
  
-  
+  setTimeout(() => {
+  botText.innerText = "Typing...";
 
   messagesContainer.scrollTop =
     messagesContainer.scrollHeight - messagesContainer.clientHeight;
