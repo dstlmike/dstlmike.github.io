@@ -91,7 +91,7 @@ inputField.addEventListener("keypress", function(event) {
 
         $('#messages').val;
         $('#input').val('');
-    }
+    
     }
 });
   
