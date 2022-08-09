@@ -61,7 +61,7 @@ var buttonField = document.getElementById("submitBtn").submit;
 inputField.addEventListener("keypress", function(event) {
 
   // If the user presses the "Enter" key on the keyboard
-  if (buttonField && inputField.value) || (event.key === "Enter" && inputField.value)) { // || (buttonField.value == "submit" && inputField.value)) { // && input !== "Write something...") {
+  if (event.key === "Enter" && inputField.value) { // || (buttonField.value == "submit" && inputField.value)) { // && input !== "Write something...") {
     //buttonField =
      let input = inputField.value;
 
@@ -71,7 +71,7 @@ inputField.addEventListener("keypress", function(event) {
     // Cancel the default action, if needed
     event.preventDefault();
    // Trigger the button element with a click
-  // document.getElementById("submitBtn");
+   document.getElementById("submitBtn");
 }
 
 });
