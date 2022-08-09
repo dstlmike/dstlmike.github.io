@@ -130,6 +130,7 @@ function addChatEntry(input, product) {
   userDiv.innerHTML = `<span>${input}</span>`;
   
   messagesContainer.appendChild(userDiv);
+messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight; 
  setTimeout(() => {
  
 
