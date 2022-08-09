@@ -67,16 +67,7 @@ inputField.addEventListener("keypress", function(event) {
 
 
 
- $('#input').val(function(){
-    var button = $(this);
-    button.attr('disabled', 'disabled');
-    setTimeout(function() {
-         button.removeAttr('disabled');
-    }, 3000);
-    if(!$('#input').val()){
-       alert('field empty');
-       button.removeAttr('disabled');
-    } else {
+ 
 
           // If the user presses the "Enter" key on the keyboard
   if (event.key === "Enter" && inputField.value) { // || (buttonField.value == "submit" && inputField.value)) { // && input !== "Write something...") {
@@ -91,8 +82,7 @@ inputField.addEventListener("keypress", function(event) {
    // Trigger the button element with a click
 
     
-    }
-});
+ 
   
 }
 
