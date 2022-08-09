@@ -71,14 +71,14 @@ inputField.addEventListener("keypress", function(event) {
      let input = inputField.value;
 
     inputField.value = "";
-/*
+
      output(input);
     // Cancel the default action, if needed
     event.preventDefault();
    // Trigger the button element with a click
-*/  
 
- $('#submitBtn').click(function(){
+
+ $('#input').event(function(){
     var button = $(this);
     button.attr('disabled', 'disabled');
     setTimeout(function() {
@@ -87,17 +87,11 @@ inputField.addEventListener("keypress", function(event) {
     if(!$('#input').val()){
        alert('field empty');
        button.removeAttr('disabled');
-    }else{
-/*
-        let input = inputField.value;
+    } else {
 
-    inputField.value = "";
-*/
-     output(input);
-    // Cancel the default action, if needed
-    event.preventDefault();
-   // Trigger the button element with a click
-  
+        $('#messages').val;
+        $('#input').val('');
+    }
     }
 });
   
