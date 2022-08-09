@@ -72,7 +72,7 @@ inputField.addEventListener("keypress", function(event) {
     event.preventDefault();
    // Trigger the button element with a click
    buttonField.addEventListener("click", function(event) {
-     if (click && inputField.value) { // || (buttonField.value == "submit" && inputField.value)) { // && input !== "Write something...") {
+     if (event && inputField.value) { // || (buttonField.value == "submit" && inputField.value)) { // && input !== "Write something...") {
     //buttonField =
      let input = inputField.value;
 
