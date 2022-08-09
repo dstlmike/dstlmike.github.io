@@ -55,7 +55,7 @@ var alternatives = [
 ];
 
 var inputField = document.getElementById("input");
-var buttonField = document.getElementById("submitBtn");
+var buttonField = document.getElementById("submitBtn"); //.addEventListener("click", function(event) { output(input); };
 
 // Execute a function when the user presses a key on the keyboard
 inputField.addEventListener("keypress", function(event) {
@@ -66,12 +66,12 @@ inputField.addEventListener("keypress", function(event) {
      let input = inputField.value;
 
     inputField.value = "";
-
+buttonField.value = "";
     output(input);
     // Cancel the default action, if needed
     event.preventDefault();
    // Trigger the button element with a click
-   
+  
 }
 
 });
