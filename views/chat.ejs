@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="/main.js"></script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
@@ -183,7 +183,7 @@ margin-top: 15px;
    <div id="chat" class="chat">
     <div id="messages" class="messages"></div>
 <input id="input" type="text" placeholder="Write something..." autocomplete="off" autofocus="true" required>
-<input id="submitBtn" type="submit" class="btn submitBtn" onclick="submit()">
+<input id="submitBtn" type="submit" class="btn submitBtn">
 
 
 
@@ -193,7 +193,7 @@ margin-top: 15px;
 </div>
 
     <!--<textarea placeholder="Type message.." name="msg" required></textarea>-->
-<button class="btn submit" id="submit" type="button">Sub</button>
+<input id="submitBtn" "class="btn submitBtn" type="submit" onclick="sendForm()">
        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
 </div>
@@ -203,6 +203,9 @@ function openForm() {
   document.getElementById("myForm").style.display = "block";
 }
 
+function sendForm() {
+  document.getElementById("input").value = "";
+}
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
