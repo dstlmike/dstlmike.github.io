@@ -79,22 +79,27 @@ var inputField = document.getElementById("input");
 inputField.addEventListener("keypress", function(event) {
 
 
-
+/*
           // If the user presses the "Enter" key on the keyboard
   if (event.key === "Enter" && inputField.value) { // || (buttonField.value == "submit" && inputField.value)) { // && input !== "Write something...") {
   //buttonField =
      let input = inputField.value;
 
     inputField.value = "";
+*/
     let inputt = document.querySelector("#input");
 
 
-//inputt.disabled = true; //setting button state to disabled
+inputt.disabled = false; //setting button state to disabled
 
 inputt.addEventListener("keypress", stateHandle);
 
-function stateHandle() {
-   
+function stateHandle(event) {
+   if (event.key === "Enter" && inputField.value) { // || (buttonField.value == "submit" && inputField.value)) { // && input !== "Write something...") {
+  //buttonField =
+     let input = inputField.value;
+
+    inputField.value = "";
         inputt.disabled = true; //button remains disabled
      setTimeout(() => {
         inputt.disabled = false; //button is enabled
@@ -110,7 +115,7 @@ function stateHandle() {
     
  
   
-}
+//}
 
 });
 function output(input) {
