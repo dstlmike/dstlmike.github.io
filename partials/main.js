@@ -80,8 +80,6 @@ inputField.addEventListener("keypress", function(event) {
 
 
 
- 
-
           // If the user presses the "Enter" key on the keyboard
   if (event.key === "Enter" && inputField.value) { // || (buttonField.value == "submit" && inputField.value)) { // && input !== "Write something...") {
   //buttonField =
@@ -90,8 +88,15 @@ inputField.addEventListener("keypress", function(event) {
     inputField.value = "";
 
      output(input);
+    
+    let timerId = setInterval(() =>  event.preventDefault(), 1000);
+
+// after 5 seconds stop
+setTimeout(() => { clearInterval(timerId); alert('stop'); }, 5000);
+
+ 
     // Cancel the default action, if needed
-    event.preventDefault();
+    //event.preventDefault();
    // Trigger the button element with a click
 
     
