@@ -193,7 +193,7 @@ margin-top: 15px;
 </div>
 
     <!--<textarea placeholder="Type message.." name="msg" required></textarea>-->
-<input id="submitBtn" class="btn submitBtn" type="submit" onclick="sendForm()">
+<input id="submitBtn" class="btn submitBtn" type="submit">
        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
 </div>
@@ -203,9 +203,6 @@ function openForm() {
   document.getElementById("myForm").style.display = "block";
 }
 
-function sendForm() {
-document.getElementById("input").innerHTML = "";
-}
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
