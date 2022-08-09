@@ -134,6 +134,7 @@ function addChatEntry(input, product) {
   botDiv.className = "bot response";
   botText2.innerText = "";
   botText.innerText = "Typing...";
+  botDiv.appendChild(botText2);
   botDiv.appendChild(botText);
   messagesContainer.appendChild(botDiv);
  
@@ -141,7 +142,7 @@ function addChatEntry(input, product) {
 
   messagesContainer.scrollTop =
     messagesContainer.scrollHeight - messagesContainer.clientHeight;
-   botText2.innerText;
+  
   setTimeout(() => {
     botText.innerText = `${product}`;
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
