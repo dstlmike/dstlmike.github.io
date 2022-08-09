@@ -71,16 +71,6 @@ inputField.addEventListener("keypress", function(event) {
     // Cancel the default action, if needed
     event.preventDefault();
    // Trigger the button element with a click
-   buttonField.addEventListener("click", function(event) {
-     if (event && inputField.value) { // || (buttonField.value == "submit" && inputField.value)) { // && input !== "Write something...") {
-    //buttonField =
-     let input = inputField.value;
-
-    inputField.value = "";
-
-    output(input);
-     });
-   }
 }
 
 });
