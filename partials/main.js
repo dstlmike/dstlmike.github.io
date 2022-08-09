@@ -160,6 +160,6 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
     botText.innerText = `${product}`;
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
-  }, 5000);
+  }, 10000);
        }, 5000);
 }
