@@ -83,7 +83,6 @@ inputField.addEventListener("keypress", function(event) {
           // If the user presses the "Enter" key on the keyboard
   if (event.key === "Enter" && inputField.value) { // || (buttonField.value == "submit" && inputField.value)) { // && input !== "Write something...") {
   //buttonField =
-inputt.disabled = true; //setting button state to disabled
 
      let input = inputField.value;
 
@@ -95,6 +94,7 @@ inputt.disabled = true; //setting button state to disabled
 //inputt.disabled = true; //setting button state to disabled
 
 inputt.addEventListener("keypress", stateHandle);
+inputt.disabled = true; //setting button state to disabled
 
 function stateHandle() {
    
