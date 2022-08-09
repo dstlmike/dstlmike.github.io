@@ -86,14 +86,22 @@ inputField.addEventListener("keypress", function(event) {
      let input = inputField.value;
 
     inputField.value = "";
+    let inputt = document.querySelector("#input");
 
+
+inputt.disabled = false; //setting button state to disabled
+
+inputt.addEventListener("change", stateHandle);
+
+function stateHandle() {
+   
+        inputt.disabled = true; //button remains disabled
+     setTimeout(() => {
+        inputt.disabled = false; //button is enabled
+      }, 10000);
+}
      output(input);
     
-    let timerId = setInterval(() =>  event.preventDefault(), 1000);
-
-// after 5 seconds stop
-setTimeout(() => { clearInterval(timerId); alert('stop'); }, 5000);
-
  
     // Cancel the default action, if needed
     //event.preventDefault();
