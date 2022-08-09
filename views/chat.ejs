@@ -204,7 +204,8 @@ function openForm() {
 }
 
 function sendForm() {
-  document.getElementById("input").value = "";
+var el = document.getElementById("input").value;
+  return el;
 }
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
