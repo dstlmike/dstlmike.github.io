@@ -76,7 +76,7 @@ inputField.addEventListener("keypress", function(event) {
 });
 
 function myFunction() {
-  document.getElementById("input").innerHTML = inputField.value;
+  inputField.value;
 }
 }
 
