@@ -100,11 +100,11 @@ function stateHandle() {
         inputt.disabled = false; //button is enabled
       }, 10000);
 }
-     output(input);
-    
+     
+    output(input);
  
     // Cancel the default action, if needed
-    //event.preventDefault();
+    event.preventDefault();
    // Trigger the button element with a click
 
     
