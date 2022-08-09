@@ -74,9 +74,11 @@ var alternatives = [
 
 var inputField = document.getElementById("input");
 //var buttonField = document.getElementById("submitBtn"); //.addEventListener("click", function(event) { output(input); };
+var inputt = document.querySelector("#input");
 
 // Execute a function when the user presses a key on the keyboard
 inputField.addEventListener("keypress", function(event) {
+inputt.disabled = true; //setting button state to disabled
 
 
 
@@ -88,13 +90,13 @@ inputField.addEventListener("keypress", function(event) {
 
     inputField.value = "";
 
-    let inputt = document.querySelector("#input");
+ //   let inputt = document.querySelector("#input");
 
 
 //inputt.disabled = true; //setting button state to disabled
 
 inputt.addEventListener("keypress", stateHandle);
-inputt.disabled = false; //setting button state to disabled
+//inputt.disabled = false; //setting button state to disabled
 
 function stateHandle() {
    
