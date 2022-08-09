@@ -66,11 +66,14 @@ inputField.addEventListener("keypress", function(event) {
      let input = inputField.value;
 
     inputField.value = "";
-
-    output(input);
+ setTimeout(() => {
+     output(input);
     // Cancel the default action, if needed
     event.preventDefault();
    // Trigger the button element with a click
+  
+
+  }, 2000);
   
 }
 
@@ -128,13 +131,13 @@ function addChatEntry(input, product) {
 
   let botDiv = document.createElement("div");
   let botText = document.createElement("span");
-  let botText2 = document.createElement("span");
+  
   //let botText2 = document.createElement("span");
   botDiv.id = "bot";
   botDiv.className = "bot response";
-  botText2.innerText = "";
+ 
   botText.innerText = "Typing...";
-  botDiv.appendChild(botText2);
+  
   botDiv.appendChild(botText);
   messagesContainer.appendChild(botDiv);
  
