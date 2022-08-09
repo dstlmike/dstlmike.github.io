@@ -71,7 +71,13 @@ inputField.addEventListener("keypress", function(event) {
     // Cancel the default action, if needed
     event.preventDefault();
    // Trigger the button element with a click
-   //document.getElementById("submitBtn").click;
+   document.getElementById("submitBtn").addEventListener("click", function() {
+  myFunction();
+});
+
+function myFunction() {
+  document.getElementById("input").innerHTML = inputField.value;
+}
 }
 
 });
