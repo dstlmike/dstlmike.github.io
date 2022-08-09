@@ -73,46 +73,24 @@ var alternatives = [
 ];
 
 var inputField = document.getElementById("input");
-//var buttonField = document.getElementById("submitBtn"); //.addEventListener("click", function(event) { output(input); };
 var inputt = document.querySelector("#input");
 
-// Execute a function when the user presses a key on the keyboard
 inputField.addEventListener("keypress", function(event) {
 inputt.disabled = false; //setting button state to disabled
 
 inputt.addEventListener("keypress", stateHandle);
 
 
-          // If the user presses the "Enter" key on the keyboard
-  if (event.key === "Enter" && inputField.value) { // || (buttonField.value == "submit" && inputField.value)) { // && input !== "Write something...") {
-  //buttonField =
+     if (event.key === "Enter" && inputField.value) { // || (buttonField.value == "submit" && inputField.value)) { // && input !== "Write something...") {
 
      let input = inputField.value;
 
     inputField.value = "";
 
- //   let inputt = document.querySelector("#input");
-
-
-//inputt.disabled = true; //setting button state to disabled
-
-//inputt.addEventListener("keypress", stateHandle);
-//inputt.disabled = false; //setting button state to disabled
-/*
-function stateHandle() {
-   
-        inputt.disabled = true; //button remains disabled
-     setTimeout(() => {
-        inputt.disabled = false; //button is enabled
-      }, 10000);
-}
-     */
     output(input);
  
-    // Cancel the default action, if needed
     event.preventDefault();
-   // Trigger the button element with a click
-
+ 
     
  
   
@@ -139,7 +117,6 @@ function output(input) {
     .replace(/r u/g, "are you");
 
   if (compare(utterances, answers, text)) {
-    // Search for exact match in triggers
     product = compare(utterances, answers, text);
   }
   else {
@@ -187,7 +164,6 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
   let botDiv = document.createElement("div");
   let botText = document.createElement("span");
   
-  //let botText2 = document.createElement("span");
   botDiv.id = "bot";
   botDiv.className = "bot response";
 botText.innerText = " ";
