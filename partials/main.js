@@ -122,27 +122,27 @@ function addChatEntry(input, product) {
   userDiv.className = "user response";
   userDiv.innerHTML = `<span>${input}</span>`;
   
-  setTimeout(() => {
-     messagesContainer.appendChild(userDiv);
-
-  }, 2000);
-  //messagesContainer.appendChild(userDiv);
+  messagesContainer.appendChild(userDiv);
 
   let botDiv = document.createElement("div");
   let botText = document.createElement("span");
+  let botText2 = document.createElement("span");
   //let botText2 = document.createElement("span");
   botDiv.id = "bot";
   botDiv.className = "bot response";
-   
-  botText.innerText = "Typing...";
+   botText.innerText = "";
+  botText2.innerText = "Typing...";
+  setTimeout(() => {
   botDiv.appendChild(botText);
   messagesContainer.appendChild(botDiv);
+  }, 2000);
+  
 
   messagesContainer.scrollTop =
     messagesContainer.scrollHeight - messagesContainer.clientHeight;
   
   setTimeout(() => {
-    botText.innerText = `${product}`;
+    botText2.innerText = `${product}`;
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
   }, 5000);
