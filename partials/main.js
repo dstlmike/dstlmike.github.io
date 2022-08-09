@@ -145,6 +145,7 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
   //let botText2 = document.createElement("span");
   botDiv.id = "bot";
   botDiv.className = "bot response";
+botText.innerText = " ";
  setTimeout(() => {
   botText.innerText = "Typing...";
   
