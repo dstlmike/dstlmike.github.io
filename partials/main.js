@@ -80,6 +80,7 @@ var inputt = document.querySelector("#input");
 inputField.addEventListener("keypress", function(event) {
 inputt.disabled = true; //setting button state to disabled
 
+inputt.addEventListener("keypress", stateHandle);
 
 
           // If the user presses the "Enter" key on the keyboard
@@ -95,9 +96,9 @@ inputt.disabled = true; //setting button state to disabled
 
 //inputt.disabled = true; //setting button state to disabled
 
-inputt.addEventListener("keypress", stateHandle);
+//inputt.addEventListener("keypress", stateHandle);
 //inputt.disabled = false; //setting button state to disabled
-
+/*
 function stateHandle() {
    
         inputt.disabled = true; //button remains disabled
@@ -105,7 +106,7 @@ function stateHandle() {
         inputt.disabled = false; //button is enabled
       }, 10000);
 }
-     
+     */
     output(input);
  
     // Cancel the default action, if needed
@@ -118,6 +119,15 @@ function stateHandle() {
 }
 
 });
+
+function stateHandle() {
+   
+        inputt.disabled = true; //button remains disabled
+     setTimeout(() => {
+        inputt.disabled = false; //button is enabled
+      }, 10000);
+}
+
 function output(input) {
   let product;
   let text = input.toLowerCase().replace(/[^\w\s\d]/gi, "");
