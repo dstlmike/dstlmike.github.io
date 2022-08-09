@@ -155,5 +155,5 @@ function addChatEntry(input, product) {
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
   }, 5000);
-       }, 2000);
+       }, 5000);
 }
