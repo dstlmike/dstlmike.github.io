@@ -94,7 +94,7 @@ inputt.disabled = true; //setting button state to disabled
 
 inputt.addEventListener("keypress", stateHandle);
 
-function stateHandle(event) {
+function stateHandle() {
    
       //  inputt.disabled = true; //button remains disabled
      setTimeout(() => {
