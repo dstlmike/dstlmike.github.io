@@ -154,7 +154,7 @@ function addChatEntry(input, product) {
   let userDiv = document.createElement("div");
   userDiv.id = "user";
   userDiv.className = "user response";
-  userDiv.innerHTML = '<span>' + usr + '\n' + '${input}</span>';
+  userDiv.innerHTML = usr + '\n' + '<span>${input}</span>';
   
   messagesContainer.appendChild(userDiv);
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight; 
