@@ -146,8 +146,6 @@ function compare(utterancesArray, answersArray, string) {
 }
 
 function addChatEntry(input, product) {
-   
-   var usr = userDiv.id;
 
 
   var messagesContainer = document.getElementById("messages");
