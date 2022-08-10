@@ -147,14 +147,14 @@ function compare(utterancesArray, answersArray, string) {
 
 function addChatEntry(input, product) {
    
-   
+   var usr = userDiv.id;
 
 
   var messagesContainer = document.getElementById("messages");
   let userDiv = document.createElement("div");
   userDiv.id = "user";
   userDiv.className = "user response";
-  userDiv.innerHTML = '<span>User \n ${input}</span>';
+  userDiv.innerHTML = '<span>' + usr + '\n' + '${input}</span>';
   
   messagesContainer.appendChild(userDiv);
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight; 
