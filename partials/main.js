@@ -76,13 +76,13 @@ var inputField = document.getElementById("input");
 var inputt = document.querySelector("#input");
 
 inputField.addEventListener("keypress", function(event) {
-inputt.disabled = false; //setting button state to disabled
+//inputt.disabled = false; //setting button state to disabled
 
 inputt.addEventListener("keypress", stateHandle);
 
 
      if (event.key === "Enter" && inputField.value) { // || (buttonField.value == "submit" && inputField.value)) { // && input !== "Write something...") {
-
+inputt.disabled = false; //setting button state to disabled
      let input = inputField.value;
 
     inputField.value = "";
