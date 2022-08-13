@@ -171,7 +171,7 @@ botText.innerText = " ";
   messagesContainer.appendChild(botDiv);
  
   setTimeout(() => {
-  botText.innerText = "\u0042\u006F\u0074\u000A Typing...";
+  botText.innerText = "\u0042\u006F\u0074 \nTyping...";
 
   messagesContainer.scrollTop =
     messagesContainer.scrollHeight - messagesContainer.clientHeight;
