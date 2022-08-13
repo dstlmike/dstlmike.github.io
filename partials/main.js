@@ -184,3 +184,29 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
        }, 5000);
 }
 
+
+
+function addChat() {
+
+
+  var messagesContainer = document.getElementById("messages");
+
+  let bottDiv = document.createElement("div");
+  let bottText = document.createElement("span");
+  
+  bottDiv.id = "bot";
+  bottDiv.className = "bot response";
+bottText.innerText = "\u0042\u006F\u0074\u000DTyping...\u000D\u000D";
+ 
+  
+  bottDiv.appendChild(bottText);
+  messagesContainer.appendChild(bottDiv);
+ 
+  setTimeout(() => {
+    botText.innerText = `\u0042\u006F\u0074\u000DMy name is...\u000D\u000D`;
+messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
+
+  }, 5000);
+       
+}
+
