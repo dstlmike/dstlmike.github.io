@@ -75,7 +75,7 @@ var alternatives = [
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#input");
 inputt.disabled = false; //setting button state to disabled
-addChatEntryBot(botProduct);
+output(input);
 inputField.addEventListener("keypress", function(event) {
 //inputt.disabled = false; //setting button state to disabled
 
