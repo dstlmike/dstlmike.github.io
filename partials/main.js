@@ -184,8 +184,8 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
        }, 5000);
 }
 
-function addChatEntryBot(botProduct) {
-let botProduct = botText;
+function addChatEntryBot() {
+var botProduct = botText.innerText;
 
   var messagesContainer = document.getElementById("messages");
   
