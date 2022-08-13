@@ -86,7 +86,7 @@ let input = inputField.value;
 //inputt.disabled = false; //setting button state to disabled
      
 
-    inputField.value = "";
+    inputField.value = "\u000D" + "";
 
     output(input);
  stateHandle();
@@ -153,7 +153,7 @@ function addChatEntry(input, product) {
   let userDiv = document.createElement("div");
   userDiv.id = "user";
   userDiv.className = "user response";
-  userDiv.innerHTML = `\u0055\u0073\u0065\u0072<span><br>${input}</span>`;
+  userDiv.innerHTML = `<span>\u0055\u0073\u0065\u0072${input}</span>`;
   messagesContainer.appendChild(userDiv);
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight; 
  
