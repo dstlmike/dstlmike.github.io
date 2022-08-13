@@ -185,7 +185,7 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
 }
 
 function addChatEntryBot(botProduct) {
-let botProduct = botText.innerText;
+let botProduct = botText;
 
   var messagesContainer = document.getElementById("messages");
   
