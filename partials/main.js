@@ -74,21 +74,22 @@ var alternatives = [
 
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#input");
+inputt.disabled = false; //setting button state to disabled
 
 inputField.addEventListener("keypress", function(event) {
 //inputt.disabled = false; //setting button state to disabled
 
-inputt.addEventListener("keypress", stateHandle);
-
+//inputt.addEventListener("keypress", stateHandle);
+let input = inputField.value;
 
      if (event.key === "Enter" && inputField.value) { // || (buttonField.value == "submit" && inputField.value)) { // && input !== "Write something...") {
-inputt.disabled = false; //setting button state to disabled
-     let input = inputField.value;
+//inputt.disabled = false; //setting button state to disabled
+     
 
     inputField.value = "";
 
     output(input);
- 
+ stateHandle();
     event.preventDefault();
  
     
