@@ -210,15 +210,25 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
        
 }
 
-function addChatEntryBot() {var botProduct = botText.innerText;
+function addChatEntryBot() {
+//var botProduct = botText.innerText;
 var messagesContainer = document.getElementById("messages");
 
 
-let botDiv = document.createElement("div"); let botText = document.createElement("span");
-botDiv.id = "bot"; botDiv.className = "bot response";botText.innerText = " ";
+let botDiv = document.createElement("div"); 
+let botText = document.createElement("span");
+botDiv.id = "bot"; 
+botDiv.className = "bot response";
+botText.innerText = " ";
 
-botDiv.appendChild(botText); messagesContainer.appendChild(botDiv);
-setTimeout(() => { botText.innerText = "\u0042\u006F\u0074\u000DTyping...\u000D\u000D";
+botDiv.appendChild(botText); 
+messagesContainer.appendChild(botDiv);
+setTimeout(() => { 
+botText.innerText = "\u0042\u006F\u0074\u000DTyping...\u000D\u000D";
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
-setTimeout(() => { botText.innerText = `\u0042\u006F\u0074\u000D${botProduct}\u000D\u000D`;messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
-}, 2000); }, 2000);}
+setTimeout(() => { 
+botText.innerText = `\u0042\u006F\u0074\u000DHi therer...\u000D\u000D`;
+messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
+}, 2000); 
+}, 2000);
+}
