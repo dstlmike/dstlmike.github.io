@@ -75,7 +75,7 @@ var alternatives = [
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#input");
 inputt.disabled = false; //setting button state to disabled
-
+addChatEntryBot(botProduct);
 inputField.addEventListener("keypress", function(event) {
 //inputt.disabled = false; //setting button state to disabled
 
@@ -182,4 +182,36 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
 
   }, 5000);
        }, 5000);
+}
+
+function addChatEntryBot(botProduct) {
+let botProduct = botText.innerText;
+
+  var messagesContainer = document.getElementById("messages");
+  
+ 
+
+  let botDiv = document.createElement("div");
+  let botText = document.createElement("span");
+  
+  botDiv.id = "bot";
+  botDiv.className = "bot response";
+botText.innerText = " ";
+ 
+  
+  botDiv.appendChild(botText);
+  messagesContainer.appendChild(botDiv);
+ 
+  setTimeout(() => {
+  botText.innerText = "\u0042\u006F\u0074\u000DTyping...\u000D\u000D";
+
+  messagesContainer.scrollTop =
+    messagesContainer.scrollHeight - messagesContainer.clientHeight;
+  
+  setTimeout(() => {
+    botText.innerText = `\u0042\u006F\u0074\u000D${botProduct}\u000D\u000D`;
+messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
+
+  }, 2000);
+       }, 2000);
 }
