@@ -153,7 +153,7 @@ function addChatEntry(input, product) {
   let userDiv = document.createElement("div");
   userDiv.id = "user";
   userDiv.className = "user response";
-  userDiv.innerHTML = `<span>\u0055\u0073\u0065\u0072\u000D ${input}</span>`;
+  userDiv.innerHTML = `<span>\u0055\u0073\u0065\u0072\u000A ${input}</span>`;
   messagesContainer.appendChild(userDiv);
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight; 
  
@@ -171,7 +171,7 @@ botText.innerText = " ";
   messagesContainer.appendChild(botDiv);
  
   setTimeout(() => {
-  botText.innerText = "\u0042\u006F\u0074 \nTyping...";
+  botText.innerText = "\u0042\u006F\u0074\u000D Typing...";
 
   messagesContainer.scrollTop =
     messagesContainer.scrollHeight - messagesContainer.clientHeight;
