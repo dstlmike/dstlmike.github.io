@@ -75,7 +75,7 @@ var alternatives = [
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#input");
 inputt.disabled = false; //setting button state to disabled
-addChatEntryBot();
+////addChatEntryBot();
 inputField.addEventListener("keypress", function(event) {
 //inputt.disabled = false; //setting button state to disabled
 
@@ -234,7 +234,11 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
 }
 
 function openForm() {
+  var messagesContainer = document.getElementById("messages");
   document.getElementById("myForm").style.display = "block";
+  if (!messagesContainer) { 
+    addChatEntryBot();
+  }
 }
 
 function closeForm() {
