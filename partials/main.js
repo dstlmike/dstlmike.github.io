@@ -116,9 +116,9 @@ function output(input) {
     .replace(/please /g, "")
     .replace(/ please/g, "")
     .replace(/r u/g, "are you");
-.replace(/[^r]/g, "are");
-.replace(/[^u]/g, "you");
-.replace(/[^b]/g, "bot");
+.replace(/r/g, "are ");
+.replace(/u/g, "you ");
+.replace(/b/g, "bot");
 
   if (compare(utterances, answers, text)) {
     product = compare(utterances, answers, text);
