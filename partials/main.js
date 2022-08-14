@@ -130,21 +130,7 @@ function output(input) {
 
   text = text
 
-    .replace(/ a /g, " ")
-
-    .replace(/whats/g, "what is")
-
-    .replace(/please /g, "")
-
-    .replace(/ please/g, "")
-
-    .replace(/r u/g, "are you")
-.replace(/a/g, "\u0041")
-.replace(/g/g, "\u0067")
-.replace(/e/g, "\u0065")
-.replace(/n/g, "\u006E")
-.replace(/t/g, "\u0074")
-.replace(/rub/g, "are you bot");
+    .replace(/ a /g, " ") .replace(/whats/g, "what is") .replace(/please /g, "") .replace(/ please/g, "") .replace(/r u/g, "are you") .replace(/a/g, "\u0041") .replace(/g/g, "\u0067") .replace(/e/g, "\u0065") .replace(/n/g, "\u006E") .replace(/t/g, "\u0074") .replace(/rub/g, "are you bot");
 
   if (compare(utterances, answers, text)) {
 
