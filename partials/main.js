@@ -139,7 +139,11 @@ function output(input) {
     .replace(/ please/g, "")
 
     .replace(/r u/g, "are you")
-.replace(/agent/g, "\u0041\u0067\u0065\u006E\u0074")
+.replace(/a/g, "\u0041")
+.replace(/g/g, "\u0067")
+.replace(/e/g, "\u0065")
+.replace(/n/g, "\u006E")
+.replace(/t/g, "\u0074")
 .replace(/rub/g, "are you bot");
 
   if (compare(utterances, answers, text)) {
