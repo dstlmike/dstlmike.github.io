@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 var utterances = [
+["\u0041\u0067\u0065\u006E\u0074\u003A"],
 
   ["how are you", "how is life", "how are things"],
 
@@ -33,6 +34,7 @@ var utterances = [
 ];
 
 var answers = [
+["\u0041\u0067\u0065\u006E\u0074\u003A"],
 
    [
 
@@ -137,6 +139,7 @@ function output(input) {
     .replace(/ please/g, "")
 
     .replace(/r u/g, "are you")
+.replace(/agent/g, "\u0041\u0067\u0065\u006E\u0074\u003A");
 .replace(/rub/g, "are you bot");
 
   if (compare(utterances, answers, text)) {
