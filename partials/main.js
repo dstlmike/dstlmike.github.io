@@ -232,3 +232,11 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
 }, 2000); 
 }, 2000);
 }
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
