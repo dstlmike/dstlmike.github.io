@@ -136,7 +136,7 @@ function output(input) {
 
     .replace(/ please/g, "")
 
-    .replace(/r u/g, "are you");
+    .replace(/r u/g, "are you")
 .replace(/rub/g, "are you bot");
 
   if (compare(utterances, answers, text)) {
