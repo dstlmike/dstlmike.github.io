@@ -234,9 +234,11 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
 }
 
 function openForm() {
-  document.getElementById("myForm").style.display = "block";
-    addChatEntryBot();
-  
+   document.getElementById("myForm").style.display = "block";
+  var box = document.getElementById('messages'); 
+if (box.childNodes.length === 0) {
+  addChatEntryBot();  
+}
 }
 
 function closeForm() {
