@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 var utterances = [
-["\u0041\u0067\u0065\u006E\u0074"],
+["\u0041\u0067\u0065\u006Et"],
 
   ["how are you", "how is life", "how are things"],
 
@@ -34,7 +34,7 @@ var utterances = [
 ];
 
 var answers = [
-["\u0041\u0067\u0065\u006E\u0074"],
+["\u0041\u0067\u0065\u006Et"],
 
    [
 
@@ -130,7 +130,7 @@ function output(input) {
 
   text = text
 
-    .replace(/ a /g, " ") .replace(/whats/g, "what is") .replace(/please /g, "") .replace(/ please/g, "") .replace(/r u/g, "are you") .replace(/a/g, "\u0041") .replace(/g/g, "\u0067") .replace(/e/g, "\u0065") .replace(/n/g, "\u006E") .replace(/t/, "\u0074") .replace(/rub/g, "are you bot");
+    .replace(/ a /g, " ") .replace(/whats/g, "what is") .replace(/please /g, "") .replace(/ please/g, "") .replace(/r u/g, "are you") .replace(/a/g, "\u0041") .replace(/g/g, "\u0067") .replace(/e/g, "\u0065") .replace(/n/g, "\u006E");
 
   if (compare(utterances, answers, text)) {
 
