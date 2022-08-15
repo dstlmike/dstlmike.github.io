@@ -68,11 +68,11 @@ let input = inputField.value;
 
 }*/
     //  });
-      inputField.addEventListener("keypress", function(event) {
+    //  inputField.addEventListener("keypress", function(event) {
 let input = inputField.value;
      if (event.key === "Enter" && inputField.value) {
 
- //  let input = inputField.value;
+  let input = inputField.value;
 inputField.value = "";
     output(input);
 
@@ -81,7 +81,7 @@ inputField.value = "";
     
 
    event.preventDefault();
-       //document.getElementById("submitInput");
+       document.getElementById("submitInput").click();
        }
 });
       //});
