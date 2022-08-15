@@ -50,7 +50,7 @@ function clickedInput() {
   
 function submitIn() {
 var inputField = document.getElementById("input");
-  var inputPress = document.querySelector("#input").addEventListener("keypress", stateHandle());
+  var inputPress = document.querySelector("#input").addEventListener("keypress", stateHandle(event));
 var inputt = document.querySelector("#submitInput").addEventListener("click", stateHandle());
 var subInput = document.getElementById("submitInput");
  var clicked = false;
@@ -88,8 +88,8 @@ let input = inputField.value;
 }
 });
 */
-function stateHandle() {
-   if (inputt.disabled == false && inputPress == false && inputField.value) {
+function stateHandle(event) {
+   if (event.key === "Enter" && inputt.disabled == false && inputPress == false && inputField.value) {
   inputPress.disabled = true;
         inputt.disabled = true;
      let input = inputField.value;
