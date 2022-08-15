@@ -92,6 +92,12 @@ function stateHandle() {
    if (inputt.disabled == false && inputPress == false && inputField.value) {
   inputPress.disabled = true;
         inputt.disabled = true;
+     let input = inputField.value;
+ 
+   inputField.value = "";
+    output(input);
+ 
+      event.preventDefault();
      setTimeout(() => {
         inputt.disabled = false;
        inputPress = false;
