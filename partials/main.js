@@ -80,7 +80,7 @@ inputField.value = "";
 
     
 
-  //  event.preventDefault();
+   event.preventDefault();
        }
 });
 }
