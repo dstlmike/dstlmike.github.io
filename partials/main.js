@@ -56,14 +56,14 @@ inputt.disabled = false;
 //addChatEntryBot();
 //subInput.addEventListener("click", function() {
 let input = inputField.value;
-    inputField.addEventListener("keypress", function(event) {
+    inputField.addEventListener("click", function(event) {
 
      if (event.key === "Enter" && inputField.value && inputt.disabled == false) {
    
     output(input);
  stateHandle();
     
-    //event.preventDefault();
+    event.preventDefault();
 
 }
 });
