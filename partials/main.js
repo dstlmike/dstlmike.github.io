@@ -49,7 +49,7 @@ var inputt = document.querySelector("#input");
 var subInput = document
 .querySelector("#submitInput")
   .addEventListener("click", () => {
-    this.submitIn();
+   // this.submitIn();
 
 
  // });
