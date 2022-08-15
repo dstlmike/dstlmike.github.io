@@ -52,7 +52,7 @@ var subInput = document.getElementById("submitInput");
 //subInput.onclick = function(){
 
  // });
-subInput.disabled = false;
+inputt.disabled = false;
 //addChatEntryBot();
 //subInput.addEventListener("click", function() {
 /*
@@ -105,9 +105,9 @@ let input = inputField.value;
 });
 */
 function stateHandle() {
-        subInput.disabled = true;
+        inputt.disabled = true;
      setTimeout(() => {
-        subInput.disabled = false;
+        inputt.disabled = false;
       }, 10000);
 }
 
