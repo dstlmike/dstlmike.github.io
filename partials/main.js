@@ -67,6 +67,7 @@ let input = inputField.value;
    // event.preventDefault();
 
 }
+      });
       inputField.addEventListener("keypress", function(event) {
 let input = inputField.value;
      if (event.code === "Enter" && inputField.value && inputt.disabled == false) {
