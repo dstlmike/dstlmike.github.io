@@ -49,7 +49,7 @@ var inputt = document.querySelector("#input");
 var subInput = document.getElementById("submitInput");
  // .addEventListener("click", () => {
    // this.submitIn();
-subInput.onclick = function(){
+//subInput.onclick = function(){
 
  // });
 inputt.disabled = false;
@@ -63,7 +63,7 @@ let input = inputField.value;
       //event.preventDefault();
 //}
 }
-}
+//}
 
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#input");
