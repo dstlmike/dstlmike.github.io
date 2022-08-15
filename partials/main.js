@@ -46,20 +46,26 @@ var alternatives = [
 function submitIn() {
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#input");
-var subInput = document.getElementById("submitInput");
+var subInput = document.getElementById("submitInput")
+.querySelector("#submitInput")
+  .addEventListener("click", () => {
+    this.submitIn();
+
+
+  });
 inputt.disabled = false;
 //addChatEntryBot();
-subInput.addEventListener("click", function() {
+//subInput.addEventListener("click", function() {
 let input = inputField.value;
-     if (subInput.clicked == true && inputField.value) {
+     //if (subInput.clicked == true && inputField.value) {
     inputField.value = "";
     output(input);
  stateHandle();
-       event.preventDefault();
-}
+     //  event.preventDefault();
+//}
 });
 }
-
+});
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#input");
 inputt.disabled = false;
