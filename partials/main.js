@@ -70,7 +70,7 @@ let input = inputField.value;
     //  });
       inputField.addEventListener("keypress", function(event) {
 let input = inputField.value;
-     if (event.key === "Enter" && inputField.value && inputt.disabled == false) {
+     if (event.key === "Enter" && inputField.value) {
 
  //  let input = inputField.value;
 inputField.value = "";
