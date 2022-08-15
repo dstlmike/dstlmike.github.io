@@ -55,17 +55,31 @@ var subInput = document.getElementById("submitInput");
 inputt.disabled = false;
 //addChatEntryBot();
 //subInput.addEventListener("click", function() {
-let input = inputField.value;
+
     inputt.addEventListener("click", function() {
 
      if (inputField.value && inputt.disabled == false) {
-   
+   let input = inputField.value;
     output(input);
  stateHandle();
     
     event.preventDefault();
 
 }
+      inputt.addEventListener("keypress", function(event) {
+
+     if (event.key === "Enter" && inputField.value && inputt.disabled == false) {
+
+   let input = inputField.value;
+
+    output(input);
+
+ stateHandle();
+
+    
+
+    event.preventDefault();
+       }
 });
 }
 /*
