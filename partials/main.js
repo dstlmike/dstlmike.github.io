@@ -48,9 +48,9 @@ var inputField = document.getElementById("input");
 var inputt = document.querySelector("#input");
 inputt.disabled = false;
 //addChatEntryBot();
-inputField.addEventListener("keypress", function(event) {
+inputField.addEventListener("click", function() {
 let input = inputField.value;
-     if (event.key === "Enter" && inputField.value) {
+     if (inputField.value) {
     inputField.value = "";
     output(input);
  stateHandle();
