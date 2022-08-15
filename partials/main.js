@@ -66,8 +66,8 @@ let input = inputField.value;
     //event.preventDefault();
 
 }
+});
 }
-//}
 
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
