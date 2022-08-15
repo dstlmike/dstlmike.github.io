@@ -75,6 +75,7 @@ let input = inputField.value;
     inputField.value = "";
     output(input);
  stateHandle();
+     } else {
     event.preventDefault();
 }
 });
