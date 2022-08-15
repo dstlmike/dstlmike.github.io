@@ -62,9 +62,9 @@ let input = inputField.value;
  stateHandle();
       //event.preventDefault();
 //}
-});
 }
-});
+}
+
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#input");
 inputt.disabled = false;
