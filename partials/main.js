@@ -51,7 +51,7 @@ inputt.disabled = false;
 //addChatEntryBot();
 subInput.addEventListener("click", function() {
 let input = inputField.value;
-     if (inputField.value) {
+     if (subInput && inputField.value) {
     inputField.value = "";
     output(input);
  stateHandle();
