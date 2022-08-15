@@ -52,7 +52,7 @@ var subInput = document.getElementById("submitInput");
 //subInput.onclick = function(){
 
  // });
-inputt.disabled = false;
+subInput.disabled = false;
 //addChatEntryBot();
 //subInput.addEventListener("click", function() {
 /*
@@ -70,7 +70,7 @@ let input = inputField.value;
     //  });
       inputField.addEventListener("keypress", function(event) {
 let input = inputField.value;
-     if (event.key === "Enter" && inputField.value && inputt.disabled = false) {
+     if (event.key === "Enter" && inputField.value && subInput.disabled = false) {
 
  //  let input = inputField.value;
 inputField.value = "";
@@ -105,9 +105,9 @@ let input = inputField.value;
 });
 */
 function stateHandle() {
-        inputt.disabled = true;
+        subInput.disabled = true;
      setTimeout(() => {
-        inputt.disabled = false;
+        subInput.disabled = false;
       }, 10000);
 }
 
