@@ -82,14 +82,7 @@ let input = inputField.value;
     
     event.preventDefault();
 
-     } else {
-       
-        setTimeout(() => {
-        inputField.value = "";
-    output(input);
-    
-    event.preventDefault();
-}, 5000);
+     
 }
 });
 
