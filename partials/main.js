@@ -46,15 +46,15 @@ var alternatives = [
 function submitInput() {
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#input");
+var subInput = document.querySelector("#submitInput");
 inputt.disabled = false;
 //addChatEntryBot();
-inputField.addEventListener("click", function() {
+subInput.addEventListener("click", function() {
 let input = inputField.value;
      if (inputField.value) {
     inputField.value = "";
     output(input);
  stateHandle();
-    event.preventDefault();
 }
 });
 }
