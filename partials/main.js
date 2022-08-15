@@ -46,11 +46,10 @@ var alternatives = [
 function submitIn() {
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#input");
-var subInput = document
-.querySelector("#submitInput")
-  .addEventListener("click", () => {
+var subInput = document.getElementById("submitInput");
+ // .addEventListener("click", () => {
    // this.submitIn();
-
+subInput.onclick = function(){
 
  // });
 inputt.disabled = false;
@@ -61,7 +60,7 @@ let input = inputField.value;
     inputField.value = "";
     output(input);
  stateHandle();
-     //  event.preventDefault();
+      event.preventDefault();
 //}
 });
 }
