@@ -55,6 +55,7 @@ let input = inputField.value;
     inputField.value = "";
     output(input);
  stateHandle();
+       event.preventDefault();
 }
 });
 }
