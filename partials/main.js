@@ -76,7 +76,7 @@ let input = inputField.value;
     output(input);
  stateHandle();
     
-    event.preventDefault();
+    //event.preventDefault();
 }
 });
 
