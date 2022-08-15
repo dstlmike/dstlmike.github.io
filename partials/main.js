@@ -68,7 +68,7 @@ inputt.disabled = false;
 }
       inputField.addEventListener("keypress", function(event) {
 
-     if (event.key === "Enter" && inputField.value && inputt.disabled == false) {
+     if (event.code === "Enter" && inputField.value && inputt.disabled == false) {
 
    let input = inputField.value;
 
