@@ -68,7 +68,7 @@ let input = inputField.value;
 }
 });
 }
-
+/*
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
 inputt.disabled = false;
@@ -85,7 +85,7 @@ let input = inputField.value;
      
 }
 });
-
+*/
 function stateHandle() {
         inputt.disabled = true;
      setTimeout(() => {
