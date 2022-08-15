@@ -55,7 +55,7 @@ var subInput = document.getElementById("submitInput");
 inputt.disabled = false;
 //addChatEntryBot();
 //subInput.addEventListener("click", function() {
-
+/*
     inputt.addEventListener("click", function() {
 let input = inputField.value;
      if (inputField.value && inputt.disabled == false) {
@@ -66,11 +66,11 @@ let input = inputField.value;
     
    // event.preventDefault();
 
-}
+}*/
     //  });
       inputField.addEventListener("keypress", function(event) {
 let input = inputField.value;
-     if (event.code === "Enter" && inputField.value && !inputt.disabled) {
+     if (event.key === "Enter" && inputField.value && inputt.disabled false) {
 
  //  let input = inputField.value;
 inputField.value = "";
@@ -81,9 +81,10 @@ inputField.value = "";
     
 
    event.preventDefault();
+       document.getElementById("submitInput").click();
        }
 });
-      });
+      //});
 }
 /*
 var inputField = document.getElementById("input");
