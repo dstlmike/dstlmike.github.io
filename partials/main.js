@@ -78,7 +78,7 @@ inputt.disabled = false;
 
     
 
-    event.preventDefault();
+  //  event.preventDefault();
        }
 });
 }
