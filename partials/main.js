@@ -46,7 +46,7 @@ var alternatives = [
 function submitInput() {
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#input");
-var subInput = document.querySelector("#submitInput");
+var subInput = document.getElementById("submitInput");
 inputt.disabled = false;
 //addChatEntryBot();
 subInput.addEventListener("click", function() {
