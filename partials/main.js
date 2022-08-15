@@ -81,7 +81,7 @@ inputField.value = "";
     
 
    event.preventDefault();
-       document.getElementById("submitInput");
+       //document.getElementById("submitInput");
        }
 });
       //});
