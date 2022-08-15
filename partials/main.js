@@ -43,28 +43,36 @@ var answers = [
 var alternatives = [
 "Have you checked your earnings today? Sign in to see how MarketBot is working for you.", "Try saying 'top up'.", "Say something like 'withdrawal'.", "You can say things like 'register'.", "Have questions, click on 'Contact Us.'", "Want to learn more? Click 'GET USD50 ADS BUDGET' for more info.", "Need help? Our support team is here to assist, click on 'Contact Us'.", "Did you know that AI chat bots can improve customer service. Type help for more options.", "Ask me a question like 'register', 'top up', or 'speak to an agent'."
 ];
+
+function clickedInput() {
+  var clicked = true;
+}
+  
 function submitIn() {
 var inputField = document.getElementById("input");
-var inputt = document.querySelector("#submitInput");
+  var inputPress = document.querySelector("#input").addEventListener("keypress", stateHandle());
+var inputt = document.querySelector("#submitInput").addEventListener("click", stateHandle());
 var subInput = document.getElementById("submitInput");
- // .addEventListener("click", () => {
+ var clicked = false;
+  // .addEventListener("click", () => {
    // this.submitIn();
 //subInput.onclick = function(){
 
  // });
 inputt.disabled = false;
+  inputPress.disabled = false
 //addChatEntryBot();
-//subInput.addEventListener("click", function() {
-let input = inputField.value;
-     if (inputt.disabled == false && inputField.value) {
-    inputField.value = "";
-    output(input);
- stateHandle();
-      event.preventDefault();
+
+//let input = inputField.value;
+ 
+   // inputField.value = "";
+    //output(input);
+ //stateHandle();
+      //event.preventDefault();
 }
 }
 //}
-
+/*
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
 inputt.disabled = false;
@@ -77,23 +85,18 @@ let input = inputField.value;
  stateHandle();
     
     event.preventDefault();
-
-     } else {
-       
-        setTimeout(() => {
-        inputField.value = "";
-    output(input);
-    
-    event.preventDefault();
-}, 5000);
 }
 });
-
+*/
 function stateHandle() {
+   if (inputt.disabled == false && inputPress == false && inputField.value) {
+  inputPress.disabled = true;
         inputt.disabled = true;
      setTimeout(() => {
         inputt.disabled = false;
+       inputPress = false;
       }, 10000);
+   }
 }
 
 function output(input) {
