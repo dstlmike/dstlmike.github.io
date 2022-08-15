@@ -63,7 +63,7 @@ inputt.disabled = false;
     output(input);
  stateHandle();
     
-    event.preventDefault();
+   // event.preventDefault();
 
 }
       inputt.addEventListener("keypress", function(event) {
