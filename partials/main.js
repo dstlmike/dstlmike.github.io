@@ -66,7 +66,7 @@ inputt.disabled = false;
    // event.preventDefault();
 
 }
-      inputt.addEventListener("keypress", function(event) {
+      inputField.addEventListener("keypress", function(event) {
 
      if (event.key === "Enter" && inputField.value && inputt.disabled == false) {
 
