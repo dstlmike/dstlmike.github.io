@@ -52,7 +52,7 @@ var subInput = document
     this.submitIn();
 
 
-  });
+ // });
 inputt.disabled = false;
 //addChatEntryBot();
 //subInput.addEventListener("click", function() {
