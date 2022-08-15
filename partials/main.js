@@ -66,7 +66,7 @@ let input = inputField.value;
 //}
 
 var inputField = document.getElementById("input");
-var inputt = document.querySelector("#input");
+var inputt = document.querySelector("#submitInput");
 inputt.disabled = false;
 //addChatEntryBot();
 inputField.addEventListener("keypress", function(event) {
