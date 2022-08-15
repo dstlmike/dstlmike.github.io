@@ -57,9 +57,10 @@ inputt.disabled = false;
 //subInput.addEventListener("click", function() {
 
     inputt.addEventListener("click", function() {
-
+let input = inputField.value;
      if (inputField.value && inputt.disabled == false) {
-   let input = inputField.value;
+   
+       inputField.value = "";
     output(input);
  stateHandle();
     
@@ -67,11 +68,11 @@ inputt.disabled = false;
 
 }
       inputField.addEventListener("keypress", function(event) {
-
+let input = inputField.value;
      if (event.code === "Enter" && inputField.value && inputt.disabled == false) {
 
-   let input = inputField.value;
-
+ //  let input = inputField.value;
+inputField.value = "";
     output(input);
 
  stateHandle();
