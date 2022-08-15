@@ -43,7 +43,7 @@ var answers = [
 var alternatives = [
 "Have you checked your earnings today? Sign in to see how MarketBot is working for you.", "Try saying 'top up'.", "Say something like 'withdrawal'.", "You can say things like 'register'.", "Have questions, click on 'Contact Us.'", "Want to learn more? Click 'GET USD50 ADS BUDGET' for more info.", "Need help? Our support team is here to assist, click on 'Contact Us'.", "Did you know that AI chat bots can improve customer service. Type help for more options.", "Ask me a question like 'register', 'top up', or 'speak to an agent'."
 ];
-function submitInput() {
+function submitIn() {
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#input");
 var subInput = document.getElementById("submitInput");
@@ -51,7 +51,7 @@ inputt.disabled = false;
 //addChatEntryBot();
 subInput.addEventListener("click", function() {
 let input = inputField.value;
-     if (subInput && inputField.value) {
+     if (subInput.clicked == true && inputField.value) {
     inputField.value = "";
     output(input);
  stateHandle();
