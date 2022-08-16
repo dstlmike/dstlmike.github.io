@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
+var clickIt = "false";
+var inputIt = "false";
 var utterances = [
   ["\u0068\u006F\u0077\u0020\u0061\u0072\u0065\u0020\u0079\u006F\u0075", "\u0068\u006F\u0077\u0020\u0069\u0073\u0020\u006C\u0069\u0066\u0065", "\u0068\u006F\u0077\u0020\u0061\u0072\u0065\u0020\u0074\u0068\u0069\u006E\u0067\u0073"],
   ["\u0068\u0069", "\u0068\u0065\u0079", "\u0068\u0065\u006C\u006C\u006F", "\u0067\u006F\u006F\u0064\u0020\u006D\u006F\u0072\u006E\u0069\u006E\u0067", "\u0067\u006F\u006F\u0064\u0020\u0061\u0066\u0074\u0065\u0072\u006E\u006F\u006F\u006E", "\u0067\u006F\u006F\u0064\u0020\u0065\u0076\u0065\u006E\u0069\u006E\u0067", "\u0068\u0069\u0020\u0074\u0068\u0065\u0072\u0065"],
@@ -48,7 +49,7 @@ var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
 var subInput = document.getElementById("submitInput"); //.addEventListener("click", () => {
 
-subInput.disabled = false;
+//subInput.disabled = false;
 
 subInput.addEventListener("click", function() {
 /*
@@ -66,7 +67,7 @@ let input = inputField.value;
     //  });
   //   inputField.addEventListener("keypress", function(event) {
 let input = inputField.value;
-    if (subInput.disabled == false && inputField.value) {
+    if (clickIt == "false" && inputIt == "false" && inputField.value) {
 
 //  let input = inputField.value;
 inputField.value = "";
@@ -86,12 +87,12 @@ inputField.value = "";
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
 var subInput = document.getElementById("submitInput"); //.addEventListener("click", () => {
-subInput.disabled = false;
-inputt.disabled = false;
+//clickIt = false;
+//inputt.disabled = false;
 //addChatEntryBot();
 inputField.addEventListener("keypress", function(event) {
 let input = inputField.value;
-     if (event.key === "Enter" && subInput.disabled == false && inputField.value && inputt.disabled == false) {
+     if (event.key === "Enter" && inputField.value && clickIt == "false" && inputIt == "false") {
     inputField.value = "";
     output(input);
  stateHandle();
@@ -103,11 +104,11 @@ let input = inputField.value;
 });
 
 function stateHandle() {
-subInput.disabled = true;
-        inputt.disabled = true;
+clickIt = "true";
+        inputIt = "true";
      setTimeout(() => {
-        inputt.disabled = false;
-subInput.disabled = false;
+        inputIt = "false";
+clickIt = "false";
       }, 10000);
 }
 
