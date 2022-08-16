@@ -102,7 +102,7 @@ let input = inputField.value;
 
      
 } else {
-return;
+openForm();
 }
 });
 
