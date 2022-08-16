@@ -43,6 +43,7 @@ var answers = [
 var alternatives = [
 "Have you checked your earnings today? Sign in to see how MarketBot is working for you.", "Try saying 'top up'.", "Say something like 'withdrawal'.", "You can say things like 'register'.", "Have questions, click on 'Contact Us.'", "Want to learn more? Click 'GET USD50 ADS BUDGET' for more info.", "Need help? Our support team is here to assist, click on 'Contact Us'.", "Did you know that AI chat bots can improve customer service. Type help for more options.", "Ask me a question like 'register', 'top up', or 'speak to an agent'."
 ];
+
 function submitIn() {
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
@@ -51,7 +52,7 @@ inputt.disabled = false;
 
 //subInput.disabled = false;
 
-inputt.addEventListener("click", function() {
+//inputt.addEventListener("click", function() {
 /*
     inputt.addEventListener("click", function() {
 let input = inputField.value;
@@ -65,7 +66,7 @@ let input = inputField.value;
 
 }*/
     //  });
-  //   inputField.addEventListener("keypress", function(event) {
+     inputField.addEventListener("keypress", function(event) {
 let input = inputField.value;
     if (inputField.value && inputt.disabled == false) {
 
@@ -77,8 +78,8 @@ inputField.value = "";
 
     
 
- //  event.preventDefault();
-     //  document.getElementById("submitInput").click();
+  event.preventDefault();
+      document.getElementById("input");
       }
 });
       //});
