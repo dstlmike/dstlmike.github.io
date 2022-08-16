@@ -45,14 +45,15 @@ var alternatives = [
 ];
 
 function submitIn() {
+document.getElementById("submitInput").disabled = false;
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
 var subInput = document.getElementById("submitInput"); //.addEventListener("click", () => {
-subInput.disabled = false;
+//subInput.disabled = false;
 
 //subInput.disabled = false;
 
-inputt.addEventListener("click", function() {
+inputt.addEventListener("click", function(event) {
 /*
     inputt.addEventListener("click", function() {
 let input = inputField.value;
@@ -70,7 +71,7 @@ let input = inputField.value;
     // inputField.addEventListener("keypress", function(event) {
 let input = inputField.value;
     if (inputField.value && subInput.disabled == false) {
-subInput.disabled = false;
+//subInput.disabled = false;
 
 //  let input = inputField.value;
 inputField.value = "";
@@ -80,9 +81,12 @@ inputField.value = "";
 
     
 
- // event.preventDefault();
+  event.preventDefault();
      // document.getElementById("input").value;
-      }
+      } else {
+event.preventDefault();
+}
+
 });
       //});
 }
