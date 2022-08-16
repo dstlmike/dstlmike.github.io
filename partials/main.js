@@ -46,15 +46,11 @@ var alternatives = [
 function submitIn() {
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
-//var subInput = 
-//document.getElementById("submitInput").addEventListener("click", () => {
-   // this.submitIn();
-//subInput.onclick = function(){
+var subInput = document.getElementById("submitInput"); //.addEventListener("click", () => {
 
- // });
-inputt.disabled = false;
-//addChatEntryBot();
-//subInput.addEventListener("click", function() {
+subInput.disabled = false;
+
+subInput.addEventListener("click", function() {
 /*
     inputt.addEventListener("click", function() {
 let input = inputField.value;
@@ -70,7 +66,7 @@ let input = inputField.value;
     //  });
   //   inputField.addEventListener("keypress", function(event) {
 let input = inputField.value;
-   //  if (event.key === "Enter" && inputField.value) {
+    if (subInput && inputField.value) {
 
 //  let input = inputField.value;
 inputField.value = "";
@@ -82,11 +78,11 @@ inputField.value = "";
 
    event.preventDefault();
      //  document.getElementById("submitInput").click();
-     //  }
+      }
 });
       //});
 }
-/*
+
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
 inputt.disabled = false;
@@ -98,12 +94,12 @@ let input = inputField.value;
     output(input);
  stateHandle();
     
-  //  event.preventDefault();
+  event.preventDefault();
 
      
 }
 });
-*/
+
 function stateHandle() {
         inputt.disabled = true;
      setTimeout(() => {
