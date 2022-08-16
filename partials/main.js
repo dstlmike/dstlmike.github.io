@@ -46,7 +46,7 @@ var alternatives = [
 
 function submitIn() {
 var inputField = document.getElementById("input");
-var inputt = document.querySelector("#submitInput");
+var inputt = document.querySelector("submitInput");
 var subInput = document.getElementById("submitInput"); //.addEventListener("click", () => {
 inputt.disabled = false;
 
@@ -79,7 +79,7 @@ inputField.value = "";
     
 
  // event.preventDefault();
-      document.getElementById("input").value;
+     // document.getElementById("input").value;
       }
 });
       //});
