@@ -86,24 +86,27 @@ inputField.value = "";
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
 inputt.disabled = false;
+event.disabled = false;
 //addChatEntryBot();
 inputField.addEventListener("keypress", function(event) {
 let input = inputField.value;
-     if (event.key === "Enter" && inputField.value && inputt.disabled == false) {
+     if (event.key === "Enter" && event.disabled == false && inputField.value && inputt.disabled == false) {
     inputField.value = "";
     output(input);
  stateHandle();
     
-  event.preventDefault();
+  //event.preventDefault();
 
      
 }
 });
 
 function stateHandle() {
+event.disabled = true;
         inputt.disabled = true;
      setTimeout(() => {
         inputt.disabled = false;
+event.disabled = false;
       }, 10000);
 }
 
