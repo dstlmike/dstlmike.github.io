@@ -67,7 +67,7 @@ let input = inputField.value;
     //  });
   //   inputField.addEventListener("keypress", function(event) {
 let input = inputField.value;
-    if (inputt.disabled == false && inputField.value) {
+    if (inputField.value && inputt.disabled == false) {
 
 //  let input = inputField.value;
 inputField.value = "";
