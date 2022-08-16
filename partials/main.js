@@ -79,7 +79,7 @@ inputField.value = "";
     
 
  // event.preventDefault();
-      document.getElementById("input");
+      document.getElementById("input").value;
       }
 });
       //});
@@ -98,7 +98,7 @@ let input = inputField.value;
     output(input);
  stateHandle();
     
-  event.preventDefault();
+//  event.preventDefault();
 
      
 }
