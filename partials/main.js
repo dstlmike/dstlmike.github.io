@@ -51,7 +51,7 @@ inputt.disabled = false;
 
 //subInput.disabled = false;
 
-subInput.addEventListener("click", function() {
+inputt.addEventListener("click", function() {
 /*
     inputt.addEventListener("click", function() {
 let input = inputField.value;
@@ -87,7 +87,7 @@ inputField.value = "";
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
 var subInput = document.getElementById("submitInput"); //.addEventListener("click", () => {
-clickIt = "false";
+
 inputt.disabled = false;
 //addChatEntryBot();
 inputField.addEventListener("keypress", function(event) {
@@ -108,7 +108,6 @@ function stateHandle() {
         inputt.disabled = true;
      setTimeout(() => {
         inputt.disabled = false;
-clickIt = "false";
       }, 10000);
 }
 
