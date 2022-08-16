@@ -48,7 +48,7 @@ function submitIn() {
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("submitInput");
 var subInput = document.getElementById("submitInput"); //.addEventListener("click", () => {
-inputt.disabled = false;
+subInput.disabled = false;
 
 //subInput.disabled = false;
 
@@ -56,7 +56,7 @@ inputt.addEventListener("click", function() {
 /*
     inputt.addEventListener("click", function() {
 let input = inputField.value;
-     if (inputField.value && inputt.disabled == false) {
+     if (inputField.value && subInput.disabled == false) {
    
        inputField.value = "";
     output(input);
@@ -68,7 +68,7 @@ let input = inputField.value;
     //  });
     // inputField.addEventListener("keypress", function(event) {
 let input = inputField.value;
-    if (inputField.value && inputt.disabled == false) {
+    if (inputField.value && subInput.disabled == false) {
 
 //  let input = inputField.value;
 inputField.value = "";
@@ -89,11 +89,11 @@ var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
 var subInput = document.getElementById("submitInput"); //.addEventListener("click", () => {
 
-inputt.disabled = false;
+subInput.disabled = false;
 //addChatEntryBot();
 inputField.addEventListener("keypress", function(event) {
 let input = inputField.value;
-     if (event.key === "Enter" && inputField.value && inputt.disabled == false) {
+     if (event.key === "Enter" && inputField.value && subInput.disabled == false) {
     inputField.value = "";
     output(input);
  stateHandle();
@@ -106,9 +106,9 @@ let input = inputField.value;
 
 function stateHandle() {
 
-        inputt.disabled = true;
+        subInput.disabled = true;
      setTimeout(() => {
-        inputt.disabled = false;
+        subInput.disabled = false;
       }, 10000);
 }
 
