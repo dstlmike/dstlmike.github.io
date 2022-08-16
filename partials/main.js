@@ -70,6 +70,7 @@ let input = inputField.value;
     // inputField.addEventListener("keypress", function(event) {
 let input = inputField.value;
     if (inputField.value && subInput.disabled == false) {
+subInput.disabled = false;
 
 //  let input = inputField.value;
 inputField.value = "";
