@@ -48,7 +48,7 @@ var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
 var subInput = document.getElementById("submitInput"); //.addEventListener("click", () => {
 
-subInput.disabled = true;
+subInput.disabled = false;
 
 subInput.addEventListener("click", function() {
 /*
