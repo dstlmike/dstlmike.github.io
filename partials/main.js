@@ -48,7 +48,8 @@ function submitIn() {
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
 var subInput = document.getElementById("submitInput"); //.addEventListener("click", () => {
-
+var clickIt == "false";
+var inputIt == "false";
 //subInput.disabled = false;
 
 subInput.addEventListener("click", function() {
@@ -87,8 +88,8 @@ inputField.value = "";
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
 var subInput = document.getElementById("submitInput"); //.addEventListener("click", () => {
-//clickIt = false;
-//inputt.disabled = false;
+clickIt = "false";
+inputIt.disabled = "false";
 //addChatEntryBot();
 inputField.addEventListener("keypress", function(event) {
 let input = inputField.value;
