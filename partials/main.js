@@ -57,7 +57,8 @@ inputt.addEventListener("click", function() {
     inputt.addEventListener("click", function() {
 let input = inputField.value;
      if (inputField.value && subInput.disabled == false) {
-   
+   subInput.disabled = false;
+
        inputField.value = "";
     output(input);
  stateHandle();
