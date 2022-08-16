@@ -46,8 +46,8 @@ var alternatives = [
 function submitIn() {
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
-var subInput = document.getElementById("submitInput");
- // .addEventListener("click", () => {
+//var subInput = 
+document.getElementById("submitInput").addEventListener("click", () => {
    // this.submitIn();
 //subInput.onclick = function(){
 
@@ -68,9 +68,9 @@ let input = inputField.value;
 
 }*/
     //  });
-     inputField.addEventListener("keypress", function(event) {
+  //   inputField.addEventListener("keypress", function(event) {
 let input = inputField.value;
-     if (event.key === "Enter" && inputField.value) {
+   //  if (event.key === "Enter" && inputField.value) {
 
 //  let input = inputField.value;
 inputField.value = "";
@@ -82,7 +82,7 @@ inputField.value = "";
 
    event.preventDefault();
      //  document.getElementById("submitInput").click();
-       }
+     //  }
 });
       //});
 }
