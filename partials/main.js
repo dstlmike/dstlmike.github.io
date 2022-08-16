@@ -57,7 +57,7 @@ inputt.addEventListener("click", function(event) {
 /*
     inputt.addEventListener("click", function() {
 let input = inputField.value;
-     if (inputField.value && subInput.disabled == false) {
+     if (inputField.value && !subInput.disabled) {
    subInput.disabled = false;
 
        inputField.value = "";
@@ -70,7 +70,7 @@ let input = inputField.value;
     //  });
     // inputField.addEventListener("keypress", function(event) {
 let input = inputField.value;
-    if (inputField.value && subInput.disabled == false) {
+    if (inputField.value && !subInput.disabled) {
 //subInput.disabled = false;
 
 //  let input = inputField.value;
