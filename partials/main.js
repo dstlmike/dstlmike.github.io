@@ -1,9 +1,10 @@
-document.addEventListener("DOMContentLoaded", () => {
+/*document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#input").addEventListener("keypress", function(event) {
     if (event.code === "Enter") {
     }
   });
 });
+*/
 var clickIt = "false";
 var inputIt = "false";
 var utterances = [
