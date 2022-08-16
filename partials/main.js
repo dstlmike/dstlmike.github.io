@@ -101,6 +101,8 @@ let input = inputField.value;
  event.preventDefault();
 
      
+} else {
+return;
 }
 });
 
