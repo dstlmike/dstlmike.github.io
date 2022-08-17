@@ -112,8 +112,9 @@ event.preventDefault();
      
 } else {
   inputField.disabled = true;
+  inputField.value = "";
   setTimeout(() => {
-    inputField.value = "";
+    
     output(input);
  stateHandle();
 
