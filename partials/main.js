@@ -85,8 +85,8 @@ inputField.value = "";
 
   //event.preventDefault();
      // document.getElementById("input").value;
-     } else {
-event.preventDefault();
+    // } else {
+//event.preventDefault();
 }
 
 });
@@ -106,7 +106,7 @@ let input = inputField.value;
     output(input);
  stateHandle();
     
-//event.preventDefault();
+event.preventDefault();
 
      
 //} else {
