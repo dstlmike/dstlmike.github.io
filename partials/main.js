@@ -36,6 +36,7 @@ function submitIn(event) {
 event.preventDefault();
   } else {
     return false;
+    }
     //button.innerText = 'Something clicked this?';
   }
 
