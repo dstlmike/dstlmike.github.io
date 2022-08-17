@@ -1,15 +1,39 @@
 document.addEventListener("DOMContentLoaded", () => {
-  var form = document.getElementById("myInputForm");
   document.querySelector("#input").addEventListener("keypress", function(event) {
     if (event.code === "Enter") {
     }
   });
-  
+});
 
-document.getElementById("submitInput").addEventListener("click", function () {
-  form.submit();
-});
-});
+var submitInput = document.querySelector('#submitInput');
+var inputField = document.getElementById("input");
+var inputt = document.querySelector("#submitInput");
+var subInput = document.getElementById("submitInput"); //.addEventListener("click", () => {
+var inputF = inputField.value;
+var inputtt = "false";
+
+function submitIn(e) {
+  let input = inputField.value;
+  if (e.type === 'click' && e.detail > 0) {
+    return false;
+  } else if (e.pointerType) {
+    inputField.value = "";
+     output(input);
+ stateHandle();
+    
+event.preventDefault();
+  } else if (e.key === "Enter" && inputField.value && inputtt == "false") {
+    inputField.value = "";
+    output(input);
+ stateHandle();
+    
+event.preventDefault();
+  } //else {
+    //button.innerText = 'Something clicked this?';
+  }
+
+inputt.addEventListener('pointerup', submitIn);
+inputt.addEventListener('click', submitIn);
 
 var utterances = [
   ["\u0068\u006F\u0077\u0020\u0061\u0072\u0065\u0020\u0079\u006F\u0075", "\u0068\u006F\u0077\u0020\u0069\u0073\u0020\u006C\u0069\u0066\u0065", "\u0068\u006F\u0077\u0020\u0061\u0072\u0065\u0020\u0074\u0068\u0069\u006E\u0067\u0073"],
@@ -49,7 +73,7 @@ var answers = [
 var alternatives = [
 "Have you checked your earnings today? Sign in to see how MarketBot is working for you.", "Try saying 'top up'.", "Say something like 'withdrawal'.", "You can say things like 'register'.", "Have questions, click on 'Contact Us.'", "Want to learn more? Click 'GET USD50 ADS BUDGET' for more info.", "Need help? Our support team is here to assist, click on 'Contact Us'.", "Did you know that AI chat bots can improve customer service. Type help for more options.", "Ask me a question like 'register', 'top up', or 'speak to an agent'."
 ];
-
+/*
 function submitIn() {
   //document.querySelector("#submitInput");
 //document.getElementById("submitInput").disabled = false;
@@ -77,7 +101,7 @@ let input = inputField.value;
 }*/
     //  });
     // inputField.addEventListener("keypress", function(event) {
-
+/*
 let input = inputField.value;
     if (inputField.value) {
 //subInput.disabled = false;
@@ -99,7 +123,8 @@ inputField.value = "";
 });
       //});
 }
-
+*/
+/*
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
 var subInput = document.getElementById("submitInput"); //.addEventListener("click", () => {
@@ -130,7 +155,7 @@ event.preventDefault();
 event.preventDefault();
 }
 });
-
+*/
 function stateHandle() {
 inputtt = "true";
         inputt.disabled = true;
