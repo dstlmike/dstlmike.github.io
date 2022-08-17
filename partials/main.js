@@ -10,25 +10,25 @@ var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
 var subInput = document.getElementById("submitInput"); //.addEventListener("click", () => {
 var inputF = inputField.value;
- var inputtt;
+ var inputtt = "false";
 
 function submitIn(event) {
   inputtt = "false";
    inputt.disabled = false;
   let input = inputField.value;
-  if (event.type === 'click' && inputField.value) {
+  if (event.type === 'click' && inputField.value && inputtt == "false") {
     inputField.value = "";
      output(input);
  stateHandle();
     
 //event.preventDefault();
-  } else if (event.pointerType && inputField.value) {
+  } else if (event.pointerType && inputField.value && inputtt == "false") {
     inputField.value = "";
      output(input);
  stateHandle();
     
 //event.preventDefault();
-  } else if (event.key === "Enter" && inputField.value) {
+  } else if (event.key === "Enter" && inputField.value && inputtt == "false") {
     inputField.value = "";
     output(input);
  stateHandle();
