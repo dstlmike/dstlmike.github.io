@@ -118,6 +118,7 @@ event.preventDefault();
      inputField.value = "";
     output(input);
  stateHandle();
+    inputField.autofocus = true;
 event.preventDefault();
       }, 4000);
 event.preventDefault();
