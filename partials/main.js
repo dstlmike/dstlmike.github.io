@@ -171,7 +171,7 @@ inputtt = "true";
        inputtt = "false";
         inputt.disabled = false;
       inputField.autofocus = true;
-      }, 7000);
+      }, 6000);
 }
 
 function output(input) {
@@ -235,7 +235,7 @@ function addChatEntry(input, product) {
     botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D\u000D`;
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
-  }, 5000);
+  }, 4000);
        }, 2000);
 }
 
@@ -254,7 +254,7 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
 setTimeout(() => {
 botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D\u0048\u0069\u0020\u0074\u0068\u0065\u0072\u0065\u002C\u0020\u0049\u0027\u006D\u0020\u0079\u006F\u0075\u0072\u0020\u0041\u0049\u0020\u0061\u0073\u0073\u0069\u0073\u0074\u0061\u006E\u0074\u002E\u0020\u0048\u006F\u0077\u0020\u0063\u0061\u006E\u0020\u0049\u0020\u0068\u0065\u006C\u0070\u0020\u0079\u006F\u0075\u003F\u000D\u000D`;
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
-}, 5000);
+}, 4000);
 }, 2000);
 }
 
