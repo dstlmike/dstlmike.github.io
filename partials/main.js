@@ -97,7 +97,7 @@ inputField.value = "";
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
 var subInput = document.getElementById("submitInput"); //.addEventListener("click", () => {
-
+var inputF = inputField.value;
 var inputtt = "false";
 //addChatEntryBot();
 inputField.addEventListener("keypress", function(event) {
@@ -114,7 +114,7 @@ event.preventDefault();
   inputField.value = null;
   inputField.placeholder = "Please wait for a response";
   setTimeout(() => {
-       inputField.value = inputField.value;
+       inputField.value = inputF;
 
       }, 4000);
 //event.preventDefault();
