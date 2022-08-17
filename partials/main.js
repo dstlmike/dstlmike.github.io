@@ -45,6 +45,7 @@ var alternatives = [
 ];
 
 function submitIn() {
+  document.querySelector("#submitInput");
 //document.getElementById("submitInput").disabled = false;
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
@@ -101,7 +102,7 @@ var inputtt = "false";
 //addChatEntryBot();
 inputField.addEventListener("keypress", function(event) {
 let input = inputField.value;
-     if (event.key === "Enter" && inputField.value) {
+     if (event.key === "Enter" && inputField.value && inputtt != "false") {
     inputField.value = "";
     output(input);
  stateHandle();
