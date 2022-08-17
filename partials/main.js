@@ -112,11 +112,12 @@ event.preventDefault();
      
 } else {
   inputField.disabled = true;
-  inputField.placeholder = "Please wait for a response";
   setTimeout(() => {
-    inputField.placeholder = "Message";
-       inputField.disabled = false;
-   inputField.value = "";
+    inputField.value = "";
+    output(input);
+ stateHandle();
+    
+event.preventDefault();
 
       }, 4000);
 //event.preventDefault();
