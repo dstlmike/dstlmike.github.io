@@ -27,7 +27,7 @@ event.preventDefault();
     output(input);
  stateHandle();
     
-event.preventDefault();
+//event.preventDefault();
   } //else {
     //button.innerText = 'Something clicked this?';
   }
