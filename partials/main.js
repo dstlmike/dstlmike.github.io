@@ -101,7 +101,7 @@ inputt.disabled = false;
 //addChatEntryBot();
 inputField.addEventListener("keypress", function(event) {
 let input = inputField.value;
-     if (event.key === "Enter" && inputField.value && inputt.disabled == false) {
+     if (event.key === "Enter" && inputField.value) {
     inputField.value = "";
     output(input);
  stateHandle();
@@ -109,8 +109,8 @@ let input = inputField.value;
 event.preventDefault();
 
      
-} else {
-  inputt.disabled = true;
+//} else {
+  //inputt.disabled = true;
 //event.preventDefault();
 }
 });
