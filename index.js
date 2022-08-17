@@ -13,6 +13,12 @@ app.get('/', function(req, res) {
 res.render('chat.ejs');
 });
 
+app.get('/support', function(req, res) {
+
+res.render('contact-us.ejs.ejs');
+
+});
+
 app.listen(port, function(req, res) {
   console.log('Server started on port: ' + port);
 });
