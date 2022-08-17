@@ -101,7 +101,7 @@ var inputtt = "false";
 //addChatEntryBot();
 inputField.addEventListener("keypress", function(event) {
 let input = inputField.value;
-     if (event.key === "Enter" && inputField.value && inputtt == "false") {
+     if (event.key === "Enter" && inputField.value) {
     inputField.value = "";
     output(input);
  stateHandle();
@@ -109,8 +109,8 @@ let input = inputField.value;
 event.preventDefault();
 
      
-//} else {
-  //inputt.disabled = true;
+} else {
+  inputField.value = null;
 //event.preventDefault();
 }
 });
@@ -119,7 +119,7 @@ function stateHandle() {
 inputtt = "true";
         inputt.disabled = true;
      setTimeout(() => {
-       inputtt = "true";
+       inputtt = "false";
         inputt.disabled = false;
       }, 10000);
 }
