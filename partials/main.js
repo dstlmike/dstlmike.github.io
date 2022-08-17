@@ -171,7 +171,7 @@ inputtt = "true";
        inputtt = "false";
         inputt.disabled = false;
       inputField.autofocus = true;
-      }, 5000);
+      }, 7000);
 }
 
 function output(input) {
@@ -263,6 +263,7 @@ function openForm() {
   var box = document.getElementById('messages');
 if (box.childNodes.length === 0) {
   addChatEntryBot();
+  stateHandle();
 }
 }
 
