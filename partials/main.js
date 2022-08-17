@@ -119,7 +119,7 @@ event.preventDefault();
  stateHandle();
 event.preventDefault();
       }, 4000);
-
+event.preventDefault();
 }
 });
 
