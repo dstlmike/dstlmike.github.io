@@ -117,9 +117,9 @@ event.preventDefault();
      inputField.value = "";
     output(input);
  stateHandle();
-
-      }, 4000);
 event.preventDefault();
+      }, 4000);
+
 }
 });
 
