@@ -21,13 +21,13 @@ function submitIn(event) {
      output(input);
  stateHandle();
     
-//event.preventDefault();
+event.preventDefault();
   } else if (event.pointerType && inputField.value && inputtt == "false") {
     inputField.value = "";
      output(input);
  stateHandle();
     
-//event.preventDefault();
+event.preventDefault();
   } else if (event.key === "Enter" && inputField.value && inputtt == "false") {
     inputField.value = "";
     output(input);
