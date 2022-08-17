@@ -111,7 +111,7 @@ event.preventDefault();
 
      
 } else {
-  inputField.value = null;
+  inputField.value = "";
 //event.preventDefault();
 }
 });
