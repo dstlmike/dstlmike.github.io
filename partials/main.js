@@ -1,8 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
+  var form = document.getElementById("myInputForm");
   document.querySelector("#input").addEventListener("keypress", function(event) {
     if (event.code === "Enter") {
     }
   });
+  
+
+document.getElementById("submitInput").addEventListener("click", function () {
+  form.submit();
+});
 });
 
 var utterances = [
@@ -45,7 +51,6 @@ var alternatives = [
 ];
 
 function submitIn() {
-  document.getElementById("input").value;
   //document.querySelector("#submitInput");
 //document.getElementById("submitInput").disabled = false;
 var inputField = document.getElementById("input");
@@ -119,7 +124,7 @@ event.preventDefault();
     output(input);
  stateHandle();
    
-event.preventDefault();
+//event.preventDefault();
       }, 4000);
    
 event.preventDefault();
