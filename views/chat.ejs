@@ -185,7 +185,7 @@ margin-top: 15px;
 <button class="open-button" onclick="openForm()">Chat</button>
 
 <div class="chat-popup" id="myForm">
-  <form class="form-container" id="myInputForm">
+  <form class="form-container" id="form-container">
     <h1>Chat</h1>
 
     <label for="msg"><b>Messages</b></label>
@@ -193,7 +193,7 @@ margin-top: 15px;
    <div id="chat" class="chat">
     <div id="messages" class="messages"></div>
 <input id="input" type="text" placeholder="Write something..." autocomplete="off" autofocus="true" required>
- <input id="submitInput" type="submit" class="btn submitBtn" onclick="submitIn()" value="Submit">
+ <button id="submitInput" type="submit" class="btn submitBtn" onclick="submitIn()">Submit</button>
 
 
  
