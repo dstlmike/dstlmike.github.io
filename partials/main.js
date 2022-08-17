@@ -45,7 +45,8 @@ var alternatives = [
 ];
 
 function submitIn() {
-  document.querySelector("#submitInput");
+  document.getElementById("input").value;
+  //document.querySelector("#submitInput");
 //document.getElementById("submitInput").disabled = false;
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
