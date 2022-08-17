@@ -261,6 +261,7 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
 function openForm() {
    document.getElementById("myForm").style.display = "block";
   var box = document.getElementById('messages');
+   inputField.autofocus = true;
 if (box.childNodes.length === 0) {
   addChatEntryBot();
   stateHandle();
