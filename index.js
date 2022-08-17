@@ -15,7 +15,7 @@ res.render('chat.ejs');
 
 app.get('/support', function(req, res) {
 
-res.render('contact.ejs.ejs');
+res.render('contact.ejs');
 
 });
 
