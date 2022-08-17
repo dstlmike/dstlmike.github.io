@@ -118,9 +118,10 @@ event.preventDefault();
      inputField.value = "";
     output(input);
  stateHandle();
-    inputField.autofocus = true;
+   
 event.preventDefault();
       }, 4000);
+   
 event.preventDefault();
 }
 });
@@ -131,8 +132,8 @@ inputtt = "true";
      setTimeout(() => {
        inputtt = "false";
         inputt.disabled = false;
-      
-      }, 10000);
+      inputField.autofocus = true;
+      }, 5000);
 }
 
 function output(input) {
