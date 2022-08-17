@@ -47,13 +47,13 @@ var alternatives = [
 function submitIn() {
 //document.getElementById("submitInput").disabled = false;
 var inputField = document.getElementById("input");
-var inputt = document.querySelector("#submitInput");
+var inputt = document.querySelector("#submitInput").addEventListener("click", function(event) {;
 var subInput = document.getElementById("submitInput"); //.addEventListener("click", () => {
 inputt.disabled = false;
 
 //subInput.disabled = false;
 
-inputt.addEventListener("click", function(event) {
+inputField.addEventListener("keydown", function(event) {
 /*
     inputt.addEventListener("click", function() {
 let input = inputField.value;
@@ -70,7 +70,7 @@ let input = inputField.value;
     //  });
     // inputField.addEventListener("keypress", function(event) {
 let input = inputField.value;
-    if (inputField.value && inputt.disabled == false) {
+    if (event.key === "Enter" && inputField.value && inputt.disabled == false) {
 //subInput.disabled = false;
 
 //  let input = inputField.value;
