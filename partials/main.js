@@ -97,7 +97,7 @@ inputField.value = "";
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
 var subInput = document.getElementById("submitInput"); //.addEventListener("click", () => {
-var inputF.valie = inputField.value;
+var inputF.value = inputField.value;
 var inputtt = "false";
 //addChatEntryBot();
 inputField.addEventListener("keypress", function(event) {
