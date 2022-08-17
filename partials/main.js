@@ -110,16 +110,16 @@ let input = inputField.value;
 event.preventDefault();
 
      
-} else {
+} else if (event.key === "Enter" && inputField.value && inputtt == "true") {
   inputField.disabled = true;
-  inputField.value = "";
   setTimeout(() => {
-    
+    inputField.disabled = false;
+     inputField.value = "";
     output(input);
  stateHandle();
 
       }, 4000);
-//event.preventDefault();
+event.preventDefault();
 }
 });
 
