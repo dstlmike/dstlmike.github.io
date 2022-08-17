@@ -5,24 +5,29 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-var submitInput = document.querySelector('#submitInput');
+var button = document.querySelector('#submitInput');
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
 var subInput = document.getElementById("submitInput"); //.addEventListener("click", () => {
 var inputF = inputField.value;
-var inputtt = "false";
 
-function submitIn(e) {
+
+function submitIn(event) {
+  var inputtt = "false";
   let input = inputField.value;
-  if (e.type === 'click' && e.detail > 0) {
-    return false;
-  } else if (e.pointerType) {
+  if (event.type === 'click' && event.detail > 0) {
     inputField.value = "";
      output(input);
  stateHandle();
     
 event.preventDefault();
-  } else if (e.key === "Enter" && inputField.value && inputtt == "false") {
+  } else if (event.pointerType) {
+    inputField.value = "";
+     output(input);
+ stateHandle();
+    
+event.preventDefault();
+  } else if (event.key === "Enter" && inputField.value && inputtt == "false") {
     inputField.value = "";
     output(input);
  stateHandle();
