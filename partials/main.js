@@ -109,8 +109,8 @@ let input = inputField.value;
 event.preventDefault();
 
      
-//} else {
-//event.preventDefault();
+} else {
+event.preventDefault();
 }
 });
 
