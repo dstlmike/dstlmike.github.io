@@ -3,6 +3,8 @@ var app = express();
 var ejs = require('ejs');
 var nodemailer = require('nodemailer');
 var moment = require('moment');
+var GMAIL_USER = process.env.GMAIL_USER;
+var GMAIL_PASSWORD = process.env.GMAIL_PASSWORD;
 var port = 8080;
 
 app.use(express.static('partials'));
