@@ -21,7 +21,7 @@ res.render('contact.ejs');
 
 });
 
-app.post('/', function(req, res) {
+app.post('/support', function(req, res) {
 
 var date = moment().utcOffset(-240).format('LL');
 
