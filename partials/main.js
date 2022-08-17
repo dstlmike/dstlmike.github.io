@@ -97,7 +97,7 @@ inputField.value = "";
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
 var subInput = document.getElementById("submitInput"); //.addEventListener("click", () => {
-var inputF.value = inputField.value;
+var inputF = inputField.value;
 var inputtt = "false";
 //addChatEntryBot();
 inputField.addEventListener("keypress", function(event) {
@@ -111,11 +111,12 @@ event.preventDefault();
 
      
 } else {
-  inputField.value = null;
+  inputField.disabled = true;
   inputField.placeholder = "Please wait for a response";
   setTimeout(() => {
     inputField.placeholder = "Message";
-       inputField.value = inputF.value;
+       inputField.disabled = false;
+   inputField.value = "";
 
       }, 4000);
 //event.preventDefault();
