@@ -13,7 +13,7 @@ var inputF = inputField.value;
  var inputtt = "false";
 
 function submitIn(event) {
-  inputtt = "false";
+ // inputtt = "false";
    inputt.disabled = false;
   let input = inputField.value;
   if (event.type === 'click' && inputField.value && inputtt == "false") {
