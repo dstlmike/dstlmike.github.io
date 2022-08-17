@@ -111,7 +111,8 @@ event.preventDefault();
 
      
 } else {
-  inputField.value = "";
+  inputField.value = null;
+  inputField.placeholder = "Please wait for a response";
 //event.preventDefault();
 }
 });
@@ -122,6 +123,7 @@ inputtt = "true";
      setTimeout(() => {
        inputtt = "false";
         inputt.disabled = false;
+       inputField.placeholder = "Message";
       }, 10000);
 }
 
