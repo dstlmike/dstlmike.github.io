@@ -14,7 +14,7 @@ var inputF = inputField.value;
 
 function submitIn(event) {
  // inputtt = "false";
-   inputt.disabled = false;
+  // inputt.disabled = false;
   let input = inputField.value;
   if (event.type === 'click' && inputField.value && inputtt == "false") {
     inputField.value = "";
@@ -34,7 +34,8 @@ function submitIn(event) {
  stateHandle();
     
 event.preventDefault();
-  } //else {
+  } else {
+    return false;
     //button.innerText = 'Something clicked this?';
   }
 
