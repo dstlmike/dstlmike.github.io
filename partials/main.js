@@ -109,7 +109,8 @@ let input = inputField.value;
 event.preventDefault();
 
      
-//} else {
+} else {
+  inputt.disabled = true;
 //event.preventDefault();
 }
 });
