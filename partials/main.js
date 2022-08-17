@@ -53,7 +53,7 @@ subInput.disabled = false;
 
 //subInput.disabled = false;
 
-inputt.addEventListener("click", function(event) {
+subInput.addEventListener("click", function(event) {
 /*
     inputt.addEventListener("click", function() {
 let input = inputField.value;
