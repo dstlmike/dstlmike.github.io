@@ -6,8 +6,14 @@ var nodemailer = require('nodemailer');
 var moment = require('moment');
 var GMAIL_USER = process.env.GMAIL_USER;
 var GMAIL_PASSWORD = process.env.GMAIL_PASSWORD;
-var port = 8080;
-
+var bodyParser = require('body-parser');
+var date = moment().utcOffset(-240).format('LLLL');
+var port = Number(process.env.NODEJS_SERVICE_PORT || process.env.PORT || 8080 || 3002);
+app.enable('trust proxy');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+   extended: true
+}));
 app.use(express.static('partials'));
 app.set('view engine', 'ejs');
 app.set('views', 'views');
