@@ -32,13 +32,6 @@ app.post('/support', function(req, res) {
 var date = moment().utcOffset(-240).format('LL');
 var time = moment().utcOffset(-240).format('LTS');
 
-var to = "alexdeabot@gmail.com";
-var subject = "Contact Form";
-var name = req.body.name;
-var email = req.body.email;
-var reason = req.body.reason;
-var text = "Name\n" + name + "\nEmail\n" + email + "\nReason for leaving\n" + reason; //" " + email + " " + reason;
-
 var Transport = nodemailer.createTransport({
 
 
