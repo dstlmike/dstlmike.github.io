@@ -8,26 +8,22 @@ document.addEventListener("DOMContentLoaded", () => {
 var button = document.querySelector('#submitInput');
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
-var subInput = document.getElementById("submitInput"); //.addEventListener("click", () => {
+var subInput = document.getElementById("submitInput"); 
 var inputF = inputField.value;
  var inputtt = "false";
 
 function submitIn(event) {
- // inputtt = "false";
-  // inputt.disabled = false;
   let input = inputField.value;
   if (event.type === 'click' && inputField.value && inputtt == "false") {
     inputField.value = "";
      output(input);
  stateHandle();
     
-//event.preventDefault();
   } else if (event.pointerType && inputField.value && inputtt == "false") {
     inputField.value = "";
      output(input);
  stateHandle();
-    
-//event.preventDefault();
+
   } else if (event.key === "Enter" && inputField.value && inputtt == "false") {
     inputField.value = "";
     output(input);
@@ -37,133 +33,41 @@ event.preventDefault();
   } else {
     return false;
     }
-    //button.innerText = 'Something clicked this?';
   }
 
 inputt.addEventListener('pointerup', submitIn);
 inputt.addEventListener('click', submitIn);
 
 var utterances = [
-  ["\u0068\u006F\u0077\u0020\u0061\u0072\u0065\u0020\u0079\u006F\u0075", "\u0068\u006F\u0077\u0020\u0069\u0073\u0020\u006C\u0069\u0066\u0065", "\u0068\u006F\u0077\u0020\u0061\u0072\u0065\u0020\u0074\u0068\u0069\u006E\u0067\u0073"],
-  ["\u0068\u0069", "\u0068\u0065\u0079", "\u0068\u0065\u006C\u006C\u006F", "\u0067\u006F\u006F\u0064\u0020\u006D\u006F\u0072\u006E\u0069\u006E\u0067", "\u0067\u006F\u006F\u0064\u0020\u0061\u0066\u0074\u0065\u0072\u006E\u006F\u006F\u006E", "\u0067\u006F\u006F\u0064\u0020\u0065\u0076\u0065\u006E\u0069\u006E\u0067", "\u0068\u0069\u0020\u0074\u0068\u0065\u0072\u0065"],
-  ["\u0077\u0068\u0061\u0074\u0020\u0061\u0072\u0065\u0020\u0079\u006F\u0075\u0020\u0064\u006F\u0069\u006E\u0067", "\u0077\u0068\u0061\u0074\u0020\u0069\u0073\u0020\u0067\u006F\u0069\u006E\u0067\u0020\u006F\u006E", "\u0077\u0068\u0061\u0074\u0020\u0069\u0073\u0020\u0075\u0070"],
-  ["\u0068\u006F\u0077\u0020\u006F\u006C\u0064\u0020\u0061\u0072\u0065\u0020\u0079\u006F\u0075"],
-  ["\u0077\u0068\u006F\u0020\u0061\u0072\u0065\u0020\u0079\u006F\u0075", "\u0061\u0072\u0065\u0020\u0079\u006F\u0075\u0020\u0068\u0075\u006D\u0061\u006E", "\u0061\u0072\u0065\u0020\u0079\u006F\u0075\u0020\u0062\u006F\u0074", "\u0061\u0072\u0065\u0020\u0079\u006F\u0075\u0020\u0068\u0075\u006D\u0061\u006E\u0020\u006F\u0072\u0020\u0062\u006F\u0074", "\u0061\u0072\u0065\u0020\u0079\u006F\u0075\u0020\u0061\u0020\u0072\u006F\u0062\u006F\u0074"],
-  ["\u0068\u006F\u0077\u0020\u0064\u006F\u0020\u0079\u006F\u0075\u0020\u0074\u006F\u0070\u0020\u0075\u0070\u0020\u006D\u0079\u0020\u0062\u006F\u0074", "\u0068\u006F\u0077\u0020\u0074\u006F\u0020\u0074\u006F\u0070\u0020\u0075\u0070\u0020\u006D\u0061\u0072\u006B\u0065\u0074\u0062\u006F\u0074", "\u0074\u006F\u0070-\u0075\u0070", "\u0074\u006F\u0070\u0075\u0070", "\u0074\u006F\u0070\u0020\u0075\u0070"],
-  ["\u0077\u0069\u0074\u0068\u0064\u0072\u0061\u0077\u0061\u006C\u0073", "\u0077\u0069\u0074\u0068\u0064\u0072\u0061\u0077\u0061\u006C"],
-["\u0072\u0065\u0067\u0069\u0073\u0074\u0065\u0072", "\u0073\u0069\u0067\u006E\u0020\u0075\u0070", "\u0073\u0069\u0067\u006E\u0075\u0070"],
-  ["\u0068\u0065\u006C\u0070", "\u0061\u0067\u0065\u006E\u0074", "\u0073\u0070\u0065\u0061\u006B\u0020\u0074\u006F\u0020\u0061\u006E\u0020\u0061\u0067\u0065\u006E\u0074", "\u006C\u0069\u0076\u0065\u0020\u0061\u0067\u0065\u006E\u0074", "\u0073\u0070\u0065\u0061\u006B\u0020\u0074\u006F\u0020\u0061\u0020\u0072\u0065\u0070\u0072\u0065\u0073\u0065\u006E\u0074\u0061\u0074\u0069\u0076\u0065", "\u0072\u0065\u0070\u0072\u0065\u0073\u0065\u006E\u0074\u0061\u0074\u0069\u0076\u0065"],
+["how are you", "how is life", "how are things"],
+["hi", "hey", "hello", "good morning", "good afternoon", "good evening", "hi there"],
+["what are you doing", "what is new", "what is going on", "what is up"],
+["how old are you"],
+["who are you", "are you human", "are you a robot", "are you bot", "are you human or bot", "are you a robot"],   
+["how do you top up my bot", "how to top up marketbot", "top-up", "topup", "top up"],
+["contact us", "contact-us", "representative", "speak to a representative", "live agent", "agent", "speak to an agent", "speak to a agent", "speak to a live agent"],
+["register", "sign up", "sign-up", "how can I register", "how to sign up", "how to register", "how do I register", "how do I sign up"],
+["latest news", "update", "team meeting", "meeting", "meeting minutes", "next meeting", "when is the meeting", "when is the next meeting"],
+["help"],
 ];
 
 var answers = [
-   [
-    "Fine... Thanks for asking.",
-    "Pretty well, how can I help you?",
-    "Fantastic, how can I assist?"
-  ],
-  [
-   "Hello!", "Hi!", "Hey!", "Hi there!", "Howdy!"
-  ],
-  [
-    "Nothing much.",
-    "About to go to sleep.",
-    "Can you guess?",
-    "I don't know actually."
-  ],
+["Fine... Thanks for asking.", "Pretty well, how can I help you?", "Fantastic, how can I assist?"],
+  ["Hello!", "Hi!", "Hey!", "Hi there!", "Greetings!"],
+  ["Nothing much.", "Improving customer experience, how can I be of help?", "I don't know actually."],
   ["I am infinite."],
   ["I am just a bot.", "I am a bot. What are you?"],
-  ["Visit our /home page and check out the Fund MarketBot dropdown menu."],
-  ["Withdrawal have been paused as they update their website.", "The withdrawal module is being updated, check back later for more info.", "Please allow some time for withdrawal to open up again."],
+  ["Visit our /home page and check out the Fund MarketBot dropdown menu.", "You can top up you're Advertising budget through any "],
+  ["Ok, 'Live Agent'. Click on 'Contact Us'.", "I see you're looking to speak with a representative. Click 'Contact Us' and we'll be in touch", "A representative, sure. Click on 'Contact Us' and send us a message."],
   ["Click GET USD50 ADS BUDGET to register"],
-["Want to chat with our service team? Click 'Contact Us'.", "Ok, Speak to an Agent. Click 'Contact Us' and send us a message.", "You want to speak to a representative? Click the 'Contact Us' button and we'll be in touch."],
+  ["Looking for the latest news, click on 'Contact Us' and request a copy of the meeting minutes.", "Meeting with Eugene has been postponed to Aug. 23, 2022.", "Meeting minutes on the latest news is available, Click 'Contact Us'.", "Read the latest news and updates on AI Marketing, Contact us for more details."],
+  ["Have you checked your earnings today? Sign in to see how MarketBot is working for you.", "Try saying 'top up'.", "Say something like 'contact us'.", "You can try saying things like 'register'.", "Have questions, click on 'contact us'.", "Want to learn more? click sign in/sign up for more info.", "Need help? Our support team is here to assist, click on 'contact us' and we'll be in touch."],
 ];
 
 var alternatives = [
-"Have you checked your earnings today? Sign in to see how MarketBot is working for you.", "Try saying 'top up'.", "Say something like 'withdrawal'.", "You can say things like 'register'.", "Have questions, click on 'Contact Us.'", "Want to learn more? Click 'GET USD50 ADS BUDGET' for more info.", "Need help? Our support team is here to assist, click on 'Contact Us'.", "Did you know that AI chat bots can improve customer service. Type help for more options.", "Ask me a question like 'register', 'top up', or 'speak to an agent'."
+"Have you checked your earnings today? Sign in to see how MarketBot is working for you.", "Try saying 'top up'", "You can say things like 'register'", "Have questions, click on 'contact us' and we'll be in touch.", "Want to learn more? click sign in/sign up for more info", "Need help? Our support team is here to assist, click on 'contact us'.", "I didn't quit get that, try saying 'Latest News'."
 ];
-/*
-function submitIn() {
-  //document.querySelector("#submitInput");
-//document.getElementById("submitInput").disabled = false;
-var inputField = document.getElementById("input");
-var inputt = document.querySelector("#submitInput");
-var subInput = document.getElementById("submitInput"); //.addEventListener("click", () => {
-inputt.disabled = false;
 
-//subInput.disabled = false;
-
-inputt.addEventListener("click", function(event) {
-
-/*
-    inputt.addEventListener("click", function() {
-let input = inputField.value;
-     if (inputField.value && !subInput.disabled) {
-   subInput.disabled = false;
-
-       inputField.value = "";
-    output(input);
- stateHandle();
-    
-   // event.preventDefault();
-
-}*/
-    //  });
-    // inputField.addEventListener("keypress", function(event) {
-/*
-let input = inputField.value;
-    if (inputField.value) {
-//subInput.disabled = false;
-
-//  let input = inputField.value;
-inputField.value = "";
-    output(input);
-
- stateHandle();
-
-    
-
-  //event.preventDefault();
-     // document.getElementById("input").value;
-    // } else {
-//event.preventDefault();
-}
-
-});
-      //});
-}
-*/
-/*
-var inputField = document.getElementById("input");
-var inputt = document.querySelector("#submitInput");
-var subInput = document.getElementById("submitInput"); //.addEventListener("click", () => {
-var inputF = inputField.value;
-var inputtt = "false";
-//addChatEntryBot();
-inputField.addEventListener("keypress", function(event) {
-let input = inputField.value;
-     if (event.key === "Enter" && inputField.value && inputtt == "false") {
-    inputField.value = "";
-    output(input);
- stateHandle();
-    
-event.preventDefault();
-
-     
-} else if (event.key === "Enter" && inputField.value && inputtt == "true") {
-  inputField.disabled = true;
-  setTimeout(() => {
-    inputField.disabled = false;
-     inputField.value = "";
-    output(input);
- stateHandle();
-   
-//event.preventDefault();
-      }, 4000);
-   
-event.preventDefault();
-}
-});
-*/
 function stateHandle() {
 inputtt = "true";
         inputt.disabled = true;
