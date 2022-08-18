@@ -1,3 +1,4 @@
+var dotenv = require('dotenv');
 var express = require('express');
 var app = express();
 var ejs = require('ejs');
@@ -27,7 +28,7 @@ var date = moment().utcOffset(-240).format('LL');
 
 var time = moment().utcOffset(-240).format('LTS');
 
-  
+
 
 var Transport = nodemailer.createTransport({
 
@@ -69,7 +70,7 @@ text: text
 
 };
 
-Transport.sendMail(mailOptions, function(error, response) { 
+Transport.sendMail(mailOptions, function(error, response) {
 
 if (error) { // throw error; //{
 
