@@ -86,7 +86,7 @@ console.log(error);
 
 console.log(response);
 
-console.log('Question Alert!!\n' + name + '\n' + email + '\n' + reason);
+//console.log('Question Alert!!\n' + name + '\n' + email + '\n' + reason);
 
 Transport.close();
 
@@ -96,7 +96,7 @@ Transport.close();
 
 //  console.log(logg);
 
- res.render('chat.ejs');
+ res.end();
 
 });
 
