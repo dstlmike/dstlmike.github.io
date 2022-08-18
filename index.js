@@ -16,14 +16,20 @@ app.get('/', function(req, res) {
 res.render('chat.ejs');
 });
 
-app.get('/support', async function(req, res, next) {
+app.get('/support', function(req, res) {
 var date = moment().utcOffset(-240).format('LL');
 var time = moment().utcOffset(-240).format('LTS');
+var to = "alexdeabot@gmail.com";
+var subject = "Contact Form";
+var name = req.body.name;
+var email = req.body.email;
+var reason = req.body.reason;
+var text = "Name\n" + name + "\nEmail\n" + email + "\nReason for leaving\n" + reason; //" " + email + " " + reason;
 
   res.render('contact.ejs');
 });
 
-app.post('/support', async function(req, res, next) {
+app.post('/support', function(req, res) {
 var date = moment().utcOffset(-240).format('LL');
 var time = moment().utcOffset(-240).format('LTS');
 
@@ -69,7 +75,7 @@ if (error) { // throw error; //{
 console.log(error);
 }
 console.log(response);
-console.log(name + '\n' + email + '\n' + reason);
+//console.log(name + '\n' + email + '\n' + reason);
 
 Transport.close();
 });
