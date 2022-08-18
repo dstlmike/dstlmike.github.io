@@ -96,7 +96,7 @@ Transport.close();
 
 //  console.log(logg);
 
- res.end();
+ res.render('contact-ai.ejs');
 
 });
 
