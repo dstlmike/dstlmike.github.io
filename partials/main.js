@@ -12,7 +12,7 @@ var subInput = document.getElementById("submitInput");
 var inputF = document.getElementById("contactus");;
  var inputtt = "false";
 var inputFDiv = document.createElement("div");
-var fDiv = inputF.appendChild(inputFDiv);
+var fDiv = inputF.appendChild(inputF);
 
 function submitIn(event) {
   let input = inputField.value;
