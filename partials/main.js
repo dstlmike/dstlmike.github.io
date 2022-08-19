@@ -18,7 +18,7 @@ var inputFDiv = document.createElement("button");
 inputFDiv.name = "btn-contact-us";
 inputFDiv.id = "btn-contact-us";
 inputFDiv.onclick() = window.location.href='/support';
- fDiv = document.getElementById("btn contact-us").onclick();
+ fDiv = document.getElementById("btn-contact-us").onclick();
 
 function submitIn(event) {
   let input = inputField.value;
@@ -69,7 +69,7 @@ var utterances = [
 
 var answers = [
 ["Fine... Thanks for asking." Inputt, "Pretty well, how can I help you?", "Fantastic, how can I assist?"],
-  ["Hello!" && inputFDiv.onclick();, "Hi!", "Hey!", "Hi there!", "Greetings!"],
+  ["Hello!", "Hi!", "Hey!", "Hi there!", "Greetings!"],
   ["Nothing much.", "Improving customer experience, how can I be of help?", "I don't know actually."],
   ["I am infinite."],
   ["I am just a bot.", "I am a bot. What are you?"],
