@@ -18,7 +18,7 @@ var inputFDiv = document.createElement("button");
 inputFDiv.name = "btn-contact-us";
 inputFDiv.id = "btn-contact-us";
 inputFDiv.onclick() = window.location.href='/support';
- fDiv = document.getElementById("btn-contact-us").onclick();
+ var fDiv = document.getElementById("btn-contact-us").onclick();
 
 function submitIn(event) {
   let input = inputField.value;
