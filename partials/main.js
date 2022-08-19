@@ -12,7 +12,7 @@ var subInput = document.getElementById("submitInput");
 var inputF = document.getElementById("contact-us");
  var inputtt = "false";
 var inputFDiv = document.createElement("div");
-var fDiv = inputF.appendChild(inputFDiv);
+var fDiv = inputFDiv.appendChild(inputF);
 
 function submitIn(event) {
   let input = inputField.value;
@@ -146,7 +146,7 @@ function addChatEntry(input, product) {
   messagesContainer.scrollTop =
     messagesContainer.scrollHeight - messagesContainer.clientHeight;
   setTimeout(() => {
-    botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D${name1}, ${inputF}\u000D\u000D`;
+    botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D${name1}, ${fDiv}\u000D\u000D`;
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
   }, 4000);
