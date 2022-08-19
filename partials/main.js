@@ -9,7 +9,7 @@ var button = document.querySelector('#submitInput');
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
 var subInput = document.getElementById("submitInput"); 
-var inputF = inputField.value;
+var inputF = document.getElementById("contactus");;
  var inputtt = "false";
 
 function submitIn(event) {
@@ -41,6 +41,7 @@ inputt.addEventListener('click', submitIn);
 
 var name1 = '\u0041\u006d\u00e9\u006c\u0069\u0065';
 var name2 = '\u0041\u006d\u0065\u0301\u006c\u0069\u0065';
+var contactus = '\u0041\u006d\u0065\u0301\u006c\u0069\u0065';
 
 console.log(`${name1}, ${name2}`);
 
