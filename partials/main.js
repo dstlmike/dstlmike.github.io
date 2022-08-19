@@ -143,7 +143,7 @@ function addChatEntry(input, product) {
   botDiv.className = "bot response";
   botText.innerText = " ";
   botDiv.appendChild(botText);
-if (product == "youu") {
+if (product == "youuu") {
 messagesContainer.appendChild(botDiv);
 messagesContainer.appendChild(botDiv);
   setTimeout(() => {
