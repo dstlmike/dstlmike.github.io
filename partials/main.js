@@ -12,7 +12,7 @@ var subInput = document.getElementById("submitInput");
 var inputF = document.getElementById("contact-us");
  var inputtt = "false";
 var inputFDiv = document.createElement("div");
-var fDiv = inputFDiv.appendChild(inputF);
+var fDiv = window.location.href = "/support";
 
 function submitIn(event) {
   let input = inputField.value;
