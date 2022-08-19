@@ -59,7 +59,7 @@ var utterances = [
 ];
 
 var answers = [
-["Fine... Thanks for asking." `${name1}, ${name2}`, "Pretty well, how can I help you?", "Fantastic, how can I assist?"],
+["Fine... Thanks for asking.", "Pretty well, how can I help you?", "Fantastic, how can I assist?"],
   ["Hello!", "Hi!", "Hey!", "Hi there!", "Greetings!"],
   ["Nothing much.", "Improving customer experience, how can I be of help?", "I don't know actually."],
   ["I am infinite."],
@@ -143,7 +143,7 @@ function addChatEntry(input, product) {
   messagesContainer.scrollTop =
     messagesContainer.scrollHeight - messagesContainer.clientHeight;
   setTimeout(() => {
-    botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D\u000D`;
+    botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D${name1}, ${name2}\u000D\u000D`;
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
   }, 4000);
