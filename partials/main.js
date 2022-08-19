@@ -50,6 +50,7 @@ console.log(`${name1}, ${name2}`);
 
 
 var utterances = [
+["Youu"],
 ["\u0068\u006F\u0077\u0020\u0061\u0072\u0065\u0020\u0079\u006F\u0075", "\u0068\u006F\u0077\u0020\u0069\u0073\u0020\u006C\u0069\u0066\u0065", "\u0068\u006F\u0077\u0020\u0061\u0072\u0065\u0020\u0074\u0068\u0069\u006E\u0067\u0073"],
   ["\u0068\u0069", "\u0068\u0065\u0079", "\u0068\u0065\u006C\u006C\u006F", "\u0067\u006F\u006F\u0064\u0020\u006D\u006F\u0072\u006E\u0069\u006E\u0067", "\u0067\u006F\u006F\u0064\u0020\u0061\u0066\u0074\u0065\u0072\u006E\u006F\u006F\u006E", "\u0067\u006F\u006F\u0064\u0020\u0065\u0076\u0065\u006E\u0069\u006E\u0067", "\u0068\u0069\u0020\u0074\u0068\u0065\u0072\u0065"],
   ["\u0077\u0068\u0061\u0074\u0020\u0061\u0072\u0065\u0020\u0079\u006F\u0075\u0020\u0064\u006F\u0069\u006E\u0067", "\u0077\u0068\u0061\u0074\u0020\u0069\u0073\u0020\u006E\u0065\u0077", "\u0077\u0068\u0061\u0074\u0020\u0069\u0073\u0020\u0067\u006F\u0069\u006E\u0067\u0020\u006F\u006E", "\u0077\u0068\u0061\u0074\u0020\u0069\u0073\u0020\u0075\u0070"],
@@ -63,6 +64,7 @@ var utterances = [
 ];
 
 var answers = [
+["Youuu"],
 ["Fine... Thanks for asking.", "Pretty well, how can I help you?", "Fantastic, how can I assist?"],
   ["Hello!", "Hi!", "Hey!", "Hi there!", "Greetings!"],
   ["Nothing much.", "Improving customer experience, how can I be of help?", "I don't know actually."],
@@ -141,6 +143,20 @@ function addChatEntry(input, product) {
   botDiv.className = "bot response";
   botText.innerText = " ";
   botDiv.appendChild(botText);
+if (product == "youu") {
+messagesContainer.appendChild(botDiv);
+messagesContainer.appendChild(botDiv);
+  setTimeout(() => {
+  botText.innerText = "\u0041\u0067\u0065\u006E\u0074\u003A\u000D\u0054\u0079\u0070\u0069\u006E\u0067\u002E\u002E\u002E\u000D\u000D";
+  messagesContainer.scrollTop =
+    messagesContainer.scrollHeight - messagesContainer.clientHeight;
+  setTimeout(() => {
+    botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D${name1}\u000D\u000D`;
+messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
+
+  }, 4000);
+       }, 2000);
+} else {
   messagesContainer.appendChild(botDiv);
   setTimeout(() => {
   botText.innerText = "\u0041\u0067\u0065\u006E\u0074\u003A\u000D\u0054\u0079\u0070\u0069\u006E\u0067\u002E\u002E\u002E\u000D\u000D";
@@ -152,6 +168,7 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
 
   }, 4000);
        }, 2000);
+}
 }
 
 function addChatEntryBot() {
