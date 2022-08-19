@@ -12,7 +12,7 @@ var subInput = document.getElementById("submitInput");
 var inputF = document.getElementById("btn contact-us");
  var inputtt = "false";
 var inputFDiv = document.createElement("div");
-var fDiv = inputF.value;
+var fDiv = subInput.value;
 
 function submitIn(event) {
   let input = inputField.value;
