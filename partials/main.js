@@ -38,6 +38,13 @@ event.preventDefault();
 inputt.addEventListener('pointerup', submitIn);
 inputt.addEventListener('click', submitIn);
 
+
+var name1 = '\u0041\u006d\u00e9\u006c\u0069\u0065';
+var name2 = '\u0041\u006d\u0065\u0301\u006c\u0069\u0065';
+
+console.log(`${name1}, ${name2}`);
+
+
 var utterances = [
 ["\u0068\u006F\u0077\u0020\u0061\u0072\u0065\u0020\u0079\u006F\u0075", "\u0068\u006F\u0077\u0020\u0069\u0073\u0020\u006C\u0069\u0066\u0065", "\u0068\u006F\u0077\u0020\u0061\u0072\u0065\u0020\u0074\u0068\u0069\u006E\u0067\u0073"],
   ["\u0068\u0069", "\u0068\u0065\u0079", "\u0068\u0065\u006C\u006C\u006F", "\u0067\u006F\u006F\u0064\u0020\u006D\u006F\u0072\u006E\u0069\u006E\u0067", "\u0067\u006F\u006F\u0064\u0020\u0061\u0066\u0074\u0065\u0072\u006E\u006F\u006F\u006E", "\u0067\u006F\u006F\u0064\u0020\u0065\u0076\u0065\u006E\u0069\u006E\u0067", "\u0068\u0069\u0020\u0074\u0068\u0065\u0072\u0065"],
@@ -52,7 +59,7 @@ var utterances = [
 ];
 
 var answers = [
-["Fine... Thanks for asking.", "Pretty well, how can I help you?", "Fantastic, how can I assist?"],
+["Fine... Thanks for asking. `${name1}, ${name2}`", "Pretty well, how can I help you?", "Fantastic, how can I assist?"],
   ["Hello!", "Hi!", "Hey!", "Hi there!", "Greetings!"],
   ["Nothing much.", "Improving customer experience, how can I be of help?", "I don't know actually."],
   ["I am infinite."],
