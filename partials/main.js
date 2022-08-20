@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-var button = document.querySelector('#submitInput');
+//var button = document.querySelector('#submitInput');
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
 var subInput = document.getElementById("submitInput"); 
@@ -129,6 +129,7 @@ function compare(utterancesArray, answersArray, string) {
 }
 
 function addChatEntry(input, product) {
+//var botBttnText = botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuu\u000D\u000D\u000D`;
 
   var messagesContainer = document.getElementById("messages");
   let userDiv = document.createElement("div");
@@ -145,10 +146,11 @@ function addChatEntry(input, product) {
   botText.innerText = " ";
   botDiv.appendChild(botText);
 messagesContainer.appendChild(botDiv);
-if (product == "Youuu") {
-
 let bttn = document.createElement("button");
-bttn.innerHTML = "Save";
+if (botText.innerText == "\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuu\u000D\u000D\u000D") {
+
+
+bttn.innerHTML = "Submit Itt";
 bttn.onclick = function () { 
 alert("Button is clicked"); 
 }; 
@@ -159,8 +161,8 @@ alert("Button is clicked");
   messagesContainer.scrollTop =
     messagesContainer.scrollHeight - messagesContainer.clientHeight;
   setTimeout(() => {
-    botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D${name1}\u000D\u000D`;
-messagesContainer.appendChild(bttn);
+    botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D\u000D\u000D`;
+document.appendChild(bttn);
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
   }, 4000);
@@ -172,7 +174,7 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
   messagesContainer.scrollTop =
     messagesContainer.scrollHeight - messagesContainer.clientHeight;
   setTimeout(() => {
-    botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D${name1}\u000D\u000D`;
+    botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D\u000D\u000D`;
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
   }, 4000);
