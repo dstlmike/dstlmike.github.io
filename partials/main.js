@@ -148,7 +148,7 @@ bttn.id = "bttn";
   userDiv.className = "user response";
   userDiv.innerHTML = `<span>\u0059\u006F\u0075\u003A<br>${input}<br><br></span>`;
   messagesContainer.appendChild(userDiv);
-  messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
+//  messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
   let botDiv = document.createElement("div");
   let botText = document.createElement("span");
@@ -157,7 +157,7 @@ bttn.id = "bttn";
   botText.innerText = " ";
   botDiv.appendChild(botText);
 
-messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
+//messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
 //document.body.appendChild(bttn); 
 if (product == "Youuu") { //\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuu\u000D\u000D") {
@@ -174,13 +174,13 @@ messagesContainer.appendChild(botDiv);
     botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D\u000D`;
 //.appendChild(botText);
 messagesContainer.appendChild(bttn);
-bttnInputt.addEventListener('click', function(bttnInputt) {
-if (event.type === 'click') {
+bttnInputt.onclick = window.location.href="/support"; //addEventListener('click', function(bttnInputt) {
+//if (bttn.type === 'click') {
    
-window.location.href = "/support";
-} else {
-return false;
-}
+//window.location.href = "/support";
+//} else {
+//return false;
+//}
 });
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
