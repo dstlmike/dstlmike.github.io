@@ -181,7 +181,7 @@ bttnInputt.onclick = window.location.href="/support"; //addEventListener('click'
 //} else {
 //return false;
 //}
-});
+//});
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
   }, 4000);
