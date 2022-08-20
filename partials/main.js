@@ -131,12 +131,8 @@ function compare(utterancesArray, answersArray, string) {
 function addChatEntry(input, product) {
   var messagesBttnContainer = document.getElementById("messages");
 let bttn = document.createElement("button");
-
-
 bttn.innerHTML = "Submit Itt";
-bttn.onclick = function () { 
-alert("Button is clicked"); 
-}; 
+
   var messagesContainer = document.getElementById("messages");
   let userDiv = document.createElement("div");
   userDiv.id = "user";
@@ -151,12 +147,16 @@ alert("Button is clicked");
   botDiv.className = "bot response";
   botText.innerText = " ";
   botDiv.appendChild(botText);
-//messagesContainer.appendChild(botDiv);
-//messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
+messagesContainer.appendChild(botDiv);
+messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
 //document.body.appendChild(bttn); 
 if (product == "Youuu") { //\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuu\u000D\u000D") {
-messagesContainer.appendChild(botDiv);
+//bttn.innerHTML = "Submit Itt";
+//bttn.onclick = function () { 
+//alert("Button is clicked"); 
+//}; 
+//messagesContainer.appendChild(botDiv);
   setTimeout(() => {
   botText.innerText = "\u0041\u0067\u0065\u006E\u0074\u003A\u000D\u0054\u0079\u0070\u0069\u006E\u0067\u002E\u002E\u002E\u000D\u000D";
   messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
@@ -165,12 +165,15 @@ messagesContainer.appendChild(botDiv);
     botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D\u000D`;
 //.appendChild(botText);
 messagesContainer.appendChild(bttn);
+bttn.onclick = function () { 
+alert("Button is clicked"); 
+}; 
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
   }, 4000);
        }, 2000);
 } else {
-  messagesContainer.appendChild(botDiv);
+//  messagesContainer.appendChild(botDiv);
   setTimeout(() => {
   botText.innerText = "\u0041\u0067\u0065\u006E\u0074\u003A\u000D\u0054\u0079\u0070\u0069\u006E\u0067\u002E\u002E\u002E\u000D\u000D";
   messagesContainer.scrollTop =
