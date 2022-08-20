@@ -174,8 +174,8 @@ if (product == "Youuu") { //\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuu\u000
     botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D\u000D`;
 //.appendChild(botText);
 messagesContainer.appendChild(bttn);
-bttn.onclick = window.location.href="/support"; 
-bttn.preventDefault();
+//bttn.onclick = window.location.href="/support"; 
+//bttn.preventDefault();
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
   }, 4000);
