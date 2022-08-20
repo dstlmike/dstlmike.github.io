@@ -129,7 +129,7 @@ function compare(utterancesArray, answersArray, string) {
 }
 
 function addChatEntry(input, product) {
-//var botBttnText = botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuu\u000D\u000D\u000D`;
+//var botBttnText = botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuu\u000D\u000D`;
 
   var messagesContainer = document.getElementById("messages");
   let userDiv = document.createElement("div");
@@ -154,15 +154,15 @@ bttn.onclick = function () {
 alert("Button is clicked"); 
 }; 
 //document.body.appendChild(bttn); 
+if (product == "\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuu\u000D\u000D") {
 
   setTimeout(() => {
   botText.innerText = "\u0041\u0067\u0065\u006E\u0074\u003A\u000D\u0054\u0079\u0070\u0069\u006E\u0067\u002E\u002E\u002E\u000D\u000D";
   messagesContainer.scrollTop =
     messagesContainer.scrollHeight - messagesContainer.clientHeight;
   setTimeout(() => {
-if (botText.innerText == "\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuu\u000D\u000D\u000D") {
 
-    botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D\u000D\u000D`;
+    botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D\u000D`;
 messagesContainer.appendChild(bttn);
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
@@ -175,7 +175,7 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
   messagesContainer.scrollTop =
     messagesContainer.scrollHeight - messagesContainer.clientHeight;
   setTimeout(() => {
-    botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D\u000D\u000D`;
+    botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D\u000D`;
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
   }, 4000);
