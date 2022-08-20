@@ -188,7 +188,7 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
   }, 4000);
        }, 2000);
 } else if (product != "Youuu") {
- messagesContainer.appendChild(botDiv);
+// messagesContainer.appendChild(botDiv);
   setTimeout(() => {
   botText.innerText = "\u0041\u0067\u0065\u006E\u0074\u003A\u000D\u0054\u0079\u0070\u0069\u006E\u0067\u002E\u002E\u002E\u000D\u000D";
   messagesContainer.scrollTop =
