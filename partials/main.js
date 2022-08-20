@@ -41,12 +41,12 @@ event.preventDefault();
 
 inputt.addEventListener('pointerup', submitIn);
 inputt.addEventListener('click', submitIn);
-bttnInputt.addEventListener('pointerup', function() {
-window.location.hreff = "/support";
-});
-bttnInputt.addEventListener('click', function() {
-window.location.href = "/support";
-});
+//bttnInputt.addEventListener('pointerup', function() {
+//window.location.href = "/support";
+//});
+//bttnInputt.addEventListener('click', function() {
+//window.location.href = "/support";
+//});
 //var bttnInputt = document.querySelector("#bttn");
 
 
@@ -174,7 +174,7 @@ if (product == "Youuu") { //\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuu\u000
     botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D\u000D`;
 //.appendChild(botText);
 messagesContainer.appendChild(bttn);
-//bttnInput.onclick = window.location.href="/support"; 
+bttnInputt.onclick = window.location.href="/support"; 
 //bttn.preventDefault();
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
