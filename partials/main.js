@@ -14,6 +14,7 @@ var inputt = document.querySelector("#submitInput");
 var subInput = document.getElementById("submitInput"); 
 var inputF = document.getElementById("btn contact-us");
  var inputtt = "false";
+var bttnInputt = document.querySelector("#bttn");
 
 function submitIn(event) {
   let input = inputField.value;
@@ -40,6 +41,13 @@ event.preventDefault();
 
 inputt.addEventListener('pointerup', submitIn);
 inputt.addEventListener('click', submitIn);
+bttnInputt.addEventListener('pointerup', function() {
+window.location.hreff = "/support";
+});
+bttnInputt.addEventListener('click', function() {
+window.location.href = "/support";
+});
+//var bttnInputt = document.querySelector("#bttn");
 
 
 var name1 = '\u0041\u006d\u00e9\u006c\u0069\u0065';
@@ -166,9 +174,7 @@ if (product == "Youuu") { //\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuu\u000
     botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D\u000D`;
 //.appendChild(botText);
 messagesContainer.appendChild(bttn);
-bttn.onclick = function () { 
-alert("Button is clicked"); 
-}; 
+bttn.onclick = window.location.href="/support"; 
 bttn.preventDefault();
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
