@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-//var button = document.querySelector('#submitInput');
+var inputB = document.getElementById("bttn");
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
 var subInput = document.getElementById("submitInput"); 
@@ -41,6 +41,11 @@ event.preventDefault();
 
 inputt.addEventListener('pointerup', submitIn);
 inputt.addEventListener('click', submitIn);
+bttnInputt.addEventListener('pointerup', bttnInputtt);
+bttnInputt.addEventListener('click', bttnInputtt);
+
+
+
 //bttnInputt.addEventListener('pointerup', function() {
 //window.location.href = "/support";
 //});
@@ -141,8 +146,8 @@ function addChatEntry(input, product) {
 let bttn = document.createElement("button");
 bttn.innerHTML = "Submit Itt";
 bttn.id = "bttn";
-bttn.innerHTML = "Submit Itt";
-bttn.onclick = bttnInputtt();
+bttn.innerHTML = `Submit Itt`;
+bttn.onclick="bttnInputtt(event)";
   var messagesContainer = document.getElementById("messages");
   let userDiv = document.createElement("div");
   userDiv.id = "user";
@@ -166,7 +171,7 @@ if (product == "Youuu") { //\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuu\u000
 //bttnInputt.onclick = function () { 
 //alert("Button is clicked"); 
 //}; 
-
+messagesContainer.appendChild(bttn);
   setTimeout(() => {
   botText.innerText = "\u0041\u0067\u0065\u006E\u0074\u003A\u000D\u0054\u0079\u0070\u0069\u006E\u0067\u002E\u002E\u002E\u000D\u000D";
   messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
@@ -187,12 +192,11 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
 
   }, 4000);
        }, 2000);
-} else if (product != "Youuu") {
-// messagesContainer.appendChild(botDiv);
+} else {
+ messagesContainer.appendChild(botDiv);
   setTimeout(() => {
   botText.innerText = "\u0041\u0067\u0065\u006E\u0074\u003A\u000D\u0054\u0079\u0070\u0069\u006E\u0067\u002E\u002E\u002E\u000D\u000D";
-  messagesContainer.scrollTop =
-    messagesContainer.scrollHeight - messagesContainer.clientHeight;
+  messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
   setTimeout(() => {
     botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D\u000D`;
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
@@ -222,20 +226,16 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
 }
 
 function bttnInputtt(event) {
-  if (event.onclick() {
-window.location.href == "/support";
-    
-  } else if (event.pointerType) {
-    window.location.href = "/support";
-    
-event.preventDefault();
+// var inputBb = bttn.onclick;
+  if (event.type === 'click' && inputB.onclick) {
+    window.location.href="/support";
+  } else if (event.pointerType && inputB.onclick) {
+window.location.href="/support
+
   } else {
     return false;
-    });
+    }
   }
-
-bttnInputt.addEventListener('pointerup', bttnInputtt);
-bttnInputt.addEventListener('click', bttnInputtt);
 
 
 
