@@ -147,7 +147,6 @@ function addChatEntry(input, product) {
   botDiv.appendChild(botText);
 messagesContainer.appendChild(botDiv);
 let bttn = document.createElement("button");
-if (botText.innerText == "\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuu\u000D\u000D\u000D") {
 
 
 bttn.innerHTML = "Submit Itt";
@@ -161,6 +160,8 @@ alert("Button is clicked");
   messagesContainer.scrollTop =
     messagesContainer.scrollHeight - messagesContainer.clientHeight;
   setTimeout(() => {
+if (botText.innerText == "\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuu\u000D\u000D\u000D") {
+
     botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D\u000D\u000D`;
 messagesContainer.appendChild(bttn);
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
