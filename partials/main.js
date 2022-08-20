@@ -162,7 +162,7 @@ alert("Button is clicked");
     messagesContainer.scrollHeight - messagesContainer.clientHeight;
   setTimeout(() => {
     botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D\u000D\u000D`;
-document.appendChild(bttn);
+messagesContainer.appendChild(bttn);
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
   }, 4000);
