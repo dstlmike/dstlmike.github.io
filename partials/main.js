@@ -130,7 +130,13 @@ function compare(utterancesArray, answersArray, string) {
 
 function addChatEntry(input, product) {
 //var botBttnText = botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuu\u000D\u000D`;
+let bttn = document.createElement("button");
 
+
+bttn.innerHTML = "Submit Itt";
+bttn.onclick = function () { 
+alert("Button is clicked"); 
+}; 
   var messagesContainer = document.getElementById("messages");
   let userDiv = document.createElement("div");
   userDiv.id = "user";
@@ -145,17 +151,11 @@ function addChatEntry(input, product) {
   botDiv.className = "bot response";
   botText.innerText = " ";
   botDiv.appendChild(botText);
-messagesContainer.appendChild(botDiv);
-let bttn = document.createElement("button");
 
 
-bttn.innerHTML = "Submit Itt";
-bttn.onclick = function () { 
-alert("Button is clicked"); 
-}; 
 //document.body.appendChild(bttn); 
-if (product == "\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuu\u000D\u000D") {
-
+if (product == "Youuu") { //\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuu\u000D\u000D") {
+messagesContainer.appendChild(botDiv);
   setTimeout(() => {
   botText.innerText = "\u0041\u0067\u0065\u006E\u0074\u003A\u000D\u0054\u0079\u0070\u0069\u006E\u0067\u002E\u002E\u002E\u000D\u000D";
   messagesContainer.scrollTop =
