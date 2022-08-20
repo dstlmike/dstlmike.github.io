@@ -142,6 +142,7 @@ let bttn = document.createElement("button");
 bttn.innerHTML = "Submit Itt";
 bttn.id = "bttn";
 bttn.innerHTML = "Submit Itt";
+bttn.onclick = bttnInputtt();
   var messagesContainer = document.getElementById("messages");
   let userDiv = document.createElement("div");
   userDiv.id = "user";
@@ -174,7 +175,7 @@ messagesContainer.appendChild(botDiv);
     botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D\u000D`;
 //.appendChild(botText);
 messagesContainer.appendChild(bttn);
-bttnInputt.onclick = window.location.href="/support"; //addEventListener('click', function(bttnInputt) {
+//bttnInputt.onclick = window.location.href="/support"; //addEventListener('click', function(bttnInputt) {
 //if (bttn.type === 'click') {
    
 //window.location.href = "/support";
@@ -219,6 +220,25 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
 }, 4000);
 }, 2000);
 }
+
+function bttnInputtt(event) {
+  if (event.onclick("bttn") {
+window.location.href == "/support";
+    
+  } else if (event.pointerType && bttnInputtt) {
+    window.location.href = "/support";
+    
+event.preventDefault();
+  } else {
+    return false;
+    });
+  }
+
+bttnInputt.addEventListener('pointerup', bttnInputt);
+bttnInputt.addEventListener('click', bttnInputt);
+
+
+
 
 function openForm() {
    document.getElementById("myForm").style.display = "block";
