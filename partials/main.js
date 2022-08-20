@@ -222,10 +222,10 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
 }
 
 function bttnInputtt(event) {
-  if (event.onclick("bttn") {
+  if (event.onclick() {
 window.location.href == "/support";
     
-  } else if (event.pointerType && bttnInputtt) {
+  } else if (event.pointerType) {
     window.location.href = "/support";
     
 event.preventDefault();
@@ -234,8 +234,8 @@ event.preventDefault();
     });
   }
 
-bttnInputt.addEventListener('pointerup', bttnInputt);
-bttnInputt.addEventListener('click', bttnInputt);
+bttnInputt.addEventListener('pointerup', bttnInputtt);
+bttnInputt.addEventListener('click', bttnInputtt);
 
 
 
