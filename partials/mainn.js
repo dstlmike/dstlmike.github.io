@@ -16,13 +16,12 @@ var inputF = document.getElementById("btn contact-us");
  var inputtt = "false";
 
 function submitIn(event) {
-  let input = inputField.value;
-  if (event.type === 'click' && inputField.value && inputtt == "false") {
+  if (event.type === 'click' && inputtt == "false") {
     inputField.value = "";
      output(input);
  stateHandle();
     
-  } else if (event.pointerType && inputField.value && inputtt == "false") {
+  } else if (event.pointerType && inputtt == "false") {
     inputField.value = "";
      output(input);
  stateHandle();
