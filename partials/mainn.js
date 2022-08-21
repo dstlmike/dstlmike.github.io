@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-var bttnButton = document.querySelector('#bttn');
+var bttnButton = document.getElementById("bttn");
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
 var subInput = document.getElementById("submitInput"); 
