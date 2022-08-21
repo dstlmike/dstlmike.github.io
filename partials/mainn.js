@@ -38,8 +38,8 @@ event.preventDefault();
     }
   }
 
-//inputt.addEventListener('pointerup', submitIn);
-//inputt.addEventListener('click', submitIn);
+inputt.addEventListener('pointerup', submitIn);
+inputt.addEventListener('click', submitIn);
 
 
 var name1 = '\u0041\u006d\u00e9\u006c\u0069\u0065';
