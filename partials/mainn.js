@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+var btnField = document.getElementById("bttn");
 
 var bttnButton = document.querySelector("#bttn");
 var inputField = document.getElementById("input");
@@ -226,11 +227,10 @@ function closeForm() {
 
 function bttnForm() {
  
-   document.getElementById("bttn"); 
-  if (bttnButton && bttnButton.value == "Submit Itt" ) {
-    window.location.href="/support";
-  } else {
-    return false;
-  }
-
+   function submitIn(event) {
+let onc = bttnButton.value;
+if (event && onc == "bttn") {
+window.location.href = "/support";
 }
+}
+
