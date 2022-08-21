@@ -228,9 +228,9 @@ function closeForm() {
 function bttnForm(event) {
  
   // function submitIn(event) {
-let onc = btnField.onclick;
+var onc = btnField.onclick;
 if (btnField.value == "Submit Itt") {
-window.location.href = "/support";
+onc = "window.location.href = '/support'";
 }
 
 }
