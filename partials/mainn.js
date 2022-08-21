@@ -134,7 +134,7 @@ let bttn = document.createElement("button");
 
 
 bttn.innerHTML = "Submit Itt";
-let bttn.onclick = false;
+bttn.onclick = bttnForm();
   var messagesContainer = document.getElementById("messages");
   let userDiv = document.createElement("div");
   userDiv.id = "user";
@@ -216,8 +216,7 @@ function closeForm() {
 }
 
 function bttnForm() {
-  bttn.onclick = true;
-  if (bttn.onclick == true) {
+  if (bttn.onclick) {
    document.getElementById("bttn").onclick = window.location.href="/support";
   }
 }
