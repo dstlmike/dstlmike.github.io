@@ -218,6 +218,6 @@ function closeForm() {
 
 function bttnForm() {
  
-   document.getElementById("bttnButton").onclick = window.location.href="/support";
+   document.getElementById("bttn").onclick = window.location.href="/support";
 
 }
