@@ -15,7 +15,14 @@ var subInput = document.getElementById("submitInput");
 var inputF = document.getElementById("btn contact-us");
  var inputtt = "false";
 
-function submitIn(event) {
+function submitIn() { //event) {
+if (inputt && inputField.value && inputtt == "false") {
+inputField.value = "";
+     output(input);
+ stateHandle();
+}
+}
+/*
   if (event.type === 'click' && inputtt == "false") {
     inputField.value = "";
      output(input);
@@ -27,7 +34,9 @@ function submitIn(event) {
  stateHandle();
 
   } else if (event.key === "Enter" && inputField.value && inputtt == "false") {
-    inputField.value = "";
+  inputt.addEventListener('pointerup', submitIn);
+inputt.addEventListener('click', submitIn); 
+ inputField.value = "";
     output(input);
  stateHandle();
     
@@ -39,7 +48,7 @@ event.preventDefault();
 
 inputt.addEventListener('pointerup', submitIn);
 inputt.addEventListener('click', submitIn);
-
+*/
 
 var name1 = '\u0041\u006d\u00e9\u006c\u0069\u0065';
 var name2 = '\u0041\u006d\u0065\u0301\u006c\u0069\u0065';
@@ -217,10 +226,10 @@ function closeForm() {
 function bttnForm() {
  
    document.getElementById("bttn"); 
-  if (bttn.onclick == true && bttn.value == "Submit Itt" ) {
+  if (bttnButton && bttnButton.value == "Submit Itt" ) {
     window.location.href="/support";
   } else {
-    return false:
+    return false;
   }
 
 }
