@@ -131,9 +131,10 @@ function compare(utterancesArray, answersArray, string) {
 function addChatEntry(input, product) {
   var messagesBttnContainer = document.getElementById("messages");
 let bttn = document.createElement("button");
-
-
-bttn.innerHTML = "Submit Itt";
+bttn.id = "bttn";
+bttn.className = "bttn";
+bttn.type = "button";
+bttn.innerHTML = `Submit Itt`;
 bttn.onclick = bttnForm();
   var messagesContainer = document.getElementById("messages");
   let userDiv = document.createElement("div");
