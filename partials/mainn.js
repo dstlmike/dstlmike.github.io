@@ -16,7 +16,7 @@ var inputF = document.getElementById("btn contact-us");
  var inputtt = "false";
 
 function submitIn() { //event) {
-if (inputt && inputField.value && inputtt == "false") {
+if (inputField.value && inputtt == "false") {
 inputField.value = "";
      output(input);
  stateHandle();
