@@ -225,11 +225,11 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 
-//function bttnForm(event) {
+function bttnForm(event) {
  
   // function submitIn(event) {
 let onc = btnField.value;
-if (event. && onc == "bttn") {
+if (event && onc == "Submit Itt") {
 window.location.href = "/support";
 }
 }
