@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-//var button = document.querySelector('#submitInput');
+var bttnButton = document.querySelector('#bttn');
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
 var subInput = document.getElementById("submitInput"); 
@@ -217,7 +217,8 @@ function closeForm() {
 }
 
 function bttnForm() {
+  if (bttnButton.onclick) {
  
    document.getElementById("bttn").onclick = window.location.href="/support";
-  
+}
 }
