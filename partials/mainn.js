@@ -38,8 +38,8 @@ event.preventDefault();
     }
   }
 
-inputt.addEventListener('pointerup', submitIn);
-inputt.addEventListener('click', submitIn);
+//inputt.addEventListener('pointerup', submitIn);
+//inputt.addEventListener('click', submitIn);
 
 
 var name1 = '\u0041\u006d\u00e9\u006c\u0069\u0065';
@@ -134,9 +134,7 @@ let bttn = document.createElement("button");
 
 
 bttn.innerHTML = "Submit Itt";
-bttn.onclick = function () { 
-alert("Button is clicked"); 
-}; 
+let bttn.onclick = false;
   var messagesContainer = document.getElementById("messages");
   let userDiv = document.createElement("div");
   userDiv.id = "user";
@@ -164,7 +162,7 @@ messagesContainer.appendChild(botDiv);
 //messagesContainer.appendChild(botDiv);
     botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D\u000D`;
 //.appendChild(botText);
-messagesContainer.appendChild(bttn);
+messagesBttnContainer.appendChild(bttn);
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
   }, 4000);
@@ -215,4 +213,11 @@ if (box.childNodes.length === 0) {
 
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
+}
+
+function bttnForm() {
+  bttn.onclick = true;
+  if (bttn.onclick == true) {
+   document.getElementById("bttn").onclick = window.location.href="/support";
+  }
 }
