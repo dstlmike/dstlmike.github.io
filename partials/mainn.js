@@ -228,8 +228,8 @@ function closeForm() {
 function bttnForm(event) {
  
   // function submitIn(event) {
-let onc = btnField.value;
-if (event && onc == "Submit Itt") {
+let onc = btnField.onclick;
+if (event && btnField.onclick == "Submit Itt") {
 window.location.href = "/support";
 }
 }
