@@ -229,8 +229,9 @@ function bttnForm(event) {
  
   // function submitIn(event) {
 let onc = btnField.onclick;
-if (event && btnField.onclick == "Submit Itt") {
+if (btnField.value == "Submit Itt") {
 window.location.href = "/support";
 }
+
 }
 
