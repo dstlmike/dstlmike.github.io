@@ -216,7 +216,7 @@ function closeForm() {
 }
 
 function bttnForm() {
-  if (bttn.onclick) {
+ 
    document.getElementById("bttn").onclick = window.location.href="/support";
-  }
+  
 }
