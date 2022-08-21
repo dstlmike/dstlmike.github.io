@@ -151,7 +151,7 @@ bttn.onclick = bttnForm();
   botText.innerText = " ";
   botDiv.appendChild(botText);
 //messagesContainer.appendChild(botDiv);
-//messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
+messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
 //document.body.appendChild(bttn); 
 if (product == "Youuu") { //\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuu\u000D\u000D") {
