@@ -141,11 +141,11 @@ function compare(utterancesArray, answersArray, string) {
 function addChatEntry(input, product) {
   var messagesBttnContainer = document.getElementById("messages");
 let bttn = document.createElement("button");
-bttn.id = "bttn";
-bttn.className = "bttn";
+bttn.id = "bttnn";
+bttn.className = "bttnn";
 bttn.type = "button";
 bttn.innerHTML = `Submit Itt`;
-bttn.addEventListener('click', handleClick, event);
+bttn.onclick = handleClick(); //bttn.addEventListener('click', handleClick, event);
 
   var messagesContainer = document.getElementById("messages");
   let userDiv = document.createElement("div");
@@ -238,8 +238,7 @@ window.location.href = '/support'; //";
 
 //}
 
-var handleClick = function(event) {
-bttn.href = "/support";
- } 
-//bttn.addEventListener('click', handleClick, event);
+function handleClick() {
+document.getElementById("bttnn").addEventListener('click', function(event) {
+}
 
