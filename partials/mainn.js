@@ -184,6 +184,7 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
 
   }, 4000);
        }, 2000);
+*/
 } else {
   messagesContainer.appendChild(botDiv);
   setTimeout(() => {
@@ -198,7 +199,7 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
        }, 2000);
 }
 }
-*/
+
 
 function addChatEntryBot() {
 var messagesContainer = document.getElementById("messages");
@@ -279,6 +280,7 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
 
   }, 4000);
        }, 2000);
+/*
 } else {
   messagesContainer.appendChild(botDiv);
   setTimeout(() => {
@@ -292,6 +294,7 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
   }, 4000);
        }, 2000);
 }
+*/
 }
 
 }
