@@ -241,4 +241,4 @@ window.location.href = '/support'; //";
 function handleClick() {
 document.getElementById("bttnn").addEventListener('click', function(event) {
 }
-
+}
