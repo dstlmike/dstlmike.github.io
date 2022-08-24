@@ -144,7 +144,7 @@ let bttn = document.createElement("input");
 bttn.id = "bttnn";
 bttn.className = "bttnn";
 bttn.type = "button";
-bttn.innerHTML = `<input onclick="/support" value="Submit Itt">`;
+bttn.innerHTML = `<input id="bttnn" type="button" onclick="window.location.href='/support'" value="Submit Itt">`;
 //bttn.onclick = handleClick(); //bttn.addEventListener('click', handleClick, event);
 
   var messagesContainer = document.getElementById("messages");
