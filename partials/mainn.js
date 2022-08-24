@@ -149,7 +149,7 @@ bttn.className = "bttn";
 //bttn.type = "button";
 //bttnText.innerText = "Submit Itt";
 //bttn.innerHTML = `<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
-//bttn.onclick = handleClick(); //bttn.addEventListener('click', handleClick, event);
+bttn.onclick = handleClick(); //bttn.addEventListener('click', handleClick, event);
 
   var messagesContainer = document.getElementById("messages");
   let userDiv = document.createElement("div");
@@ -171,7 +171,7 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
 //document.body.appendChild(bttn); 
 if (product == "Youuu" || product == "Youuuu") { //\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuu\u000D\u000D") {
 messagesContainer.appendChild(botDiv);
-handleClick();
+//handleClick();
 //messagesContainer.appendChild(botDiv);
   setTimeout(() => {
   botText.innerText = "\u0041\u0067\u0065\u006E\u0074\u003A\u000D\u0054\u0079\u0070\u0069\u006E\u0067\u002E\u002E\u002E\u000D\u000D";
@@ -181,6 +181,7 @@ handleClick();
     botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D\u000D`;
 //.appendChild(botText);
 //bttn.appendChild(bttnText);
+handleClick();
 messagesBttnContainer.appendChild(bttn);
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
