@@ -182,14 +182,14 @@ messagesContainer.appendChild(botDiv);
 //.appendChild(botText);
 //bttn.appendChild(bttnText);
 //handleClick();
-if (product == "Youuu") {
-bttn.innerHTML = `<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
+//if (product == "Youuu") {
+//bttn.innerHTML = `<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
 
 messagesBttnContainer.appendChild(bttn);
-} else if (product == "Youuuu") {
-bttn.innerHTML = `<button id="bttnn" type="button" onclick="window.location.href='https://marketbotai.com/support'">Submit Itt</button>`;
-messagesBttnContainer.appendChild(bttn);
-}
+//} else if (product == "Youuuu") {
+//bttn.innerHTML = `<button id="bttnn" type="button" onclick="window.location.href='https://marketbotai.com/support'">Submit Itt</button>`;
+//messagesBttnContainer.appendChild(bttn);
+//}
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
   }, 4000);
@@ -252,7 +252,7 @@ window.location.href = '/support'; //";
 }
 
 //}
-
+/*
 function handleClick() {
 if (product == "Youuu") { 
 bttn.innerHTML = <button id="bttn" type="button" onclick="window.location.href='/support'">Submit Itt</button>;
@@ -265,4 +265,4 @@ bttn.innerHTML = <button id="bttn" type="button" onclick="window.location.href='
 }
 //return bttn.innerHTML;
 
-}
+}*/
