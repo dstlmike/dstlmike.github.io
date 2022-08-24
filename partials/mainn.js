@@ -144,12 +144,12 @@ function addChatEntry(input, product) {
   var messagesBttnContainer = document.getElementById("messages");
 let bttn = document.createElement("button");
 //let bttnText = document.createElement("span");
-bttn.id = "bttn";
-bttn.className = "bttn";
+bttn.id = "bttnn";
+bttn.className = "bttnn";
 //bttn.type = "button";
 //bttnText.innerText = "Submit Itt";
-//bttn.innerHTML = `<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
-bttn.onclick = handleClick(); //bttn.addEventListener('click', handleClick, event);
+bttn.innerHTML = `<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
+//bttn.onclick = handleClick(); //bttn.addEventListener('click', handleClick, event);
 
   var messagesContainer = document.getElementById("messages");
   let userDiv = document.createElement("div");
@@ -181,8 +181,15 @@ messagesContainer.appendChild(botDiv);
     botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D\u000D`;
 //.appendChild(botText);
 //bttn.appendChild(bttnText);
-handleClick();
+//handleClick();
+if (product == "Youuu") {
+bttn.innerHTML = `<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
+
 messagesBttnContainer.appendChild(bttn);
+} else if (product == "Youuuu") {
+bttn.innerHTML = `<button id="bttnn" type="button" onclick="window.location.href='https://marketbotai.com/support'">Submit Itt</button>`;
+messagesBttnContainer.appendChild(bttn);
+}
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
   }, 4000);
