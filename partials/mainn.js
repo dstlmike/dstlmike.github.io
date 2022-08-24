@@ -141,12 +141,12 @@ function compare(utterancesArray, answersArray, string) {
 function addChatEntry(input, product) {
   var messagesBttnContainer = document.getElementById("messages");
 let bttn = document.createElement("button");
-let bttnText = document.createElement("span");
+//let bttnText = document.createElement("span");
 bttn.id = "bttnn";
 bttn.className = "bttnn";
 bttn.type = "button";
-bttnText.innerText = "Submit Itt";
-bttn.innerHTML = `<button id="bttnn" type="button" onclick="window.location.href='/support'"></button>`;
+//bttnText.innerText = "Submit Itt";
+bttn.innerHTML = `<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
 //bttn.onclick = handleClick(); //bttn.addEventListener('click', handleClick, event);
 
   var messagesContainer = document.getElementById("messages");
@@ -176,7 +176,7 @@ messagesContainer.appendChild(botDiv);
 //messagesContainer.appendChild(botDiv);
     botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D\u000D`;
 //.appendChild(botText);
-bttn.appendChild(bttnText);
+//bttn.appendChild(bttnText);
 messagesBttnContainer.appendChild(bttn);
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
