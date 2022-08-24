@@ -165,7 +165,7 @@ bttn.innerHTML = `<button id="bttnn" type="button" onclick="window.location.href
   botDiv.className = "bot response";
   botText.innerText = " ";
   botDiv.appendChild(botText);
-messagesContainer.appendChild(botDiv);
+//messagesContainer.appendChild(botDiv);
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
 //document.body.appendChild(bttn); 
