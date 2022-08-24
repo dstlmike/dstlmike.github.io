@@ -145,6 +145,8 @@ bttn.id = "bttn";
 bttn.className = "bttn";
 bttn.type = "button";
 bttn.innerHTML = `Submit Itt`;
+bttn.addEventListener('onclick', handleClick, false);
+
   var messagesContainer = document.getElementById("messages");
   let userDiv = document.createElement("div");
   userDiv.id = "user";
@@ -235,4 +237,9 @@ window.location.href = '/support'; //";
 }
 
 //}
+
+var handleClick = function(e) {
+window.location.href="/support";
+ } 
+//bttn.addEventListener('onclick', handleClick, false);
 
