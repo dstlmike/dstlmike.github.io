@@ -144,11 +144,11 @@ function addChatEntry(input, product) {
   var messagesBttnContainer = document.getElementById("messages");
 let bttn = document.createElement("button");
 //let bttnText = document.createElement("span");
-bttn.id = "bttnn";
-bttn.className = "bttnn";
-bttn.type = "button";
+bttn.id = "bttn";
+bttn.className = "bttn";
+//bttn.type = "button";
 //bttnText.innerText = "Submit Itt";
-bttn.innerHTML = `<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
+//bttn.innerHTML = `<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
 //bttn.onclick = handleClick(); //bttn.addEventListener('click', handleClick, event);
 
   var messagesContainer = document.getElementById("messages");
@@ -247,14 +247,14 @@ window.location.href = '/support'; //";
 
 function handleClick() {
 if (product == "Youuu") { 
-bttn.innerHTML = `<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
+bttn.innerHTML = <button id="bttn" type="button" onclick="window.location.href='/support'">Submit Itt</button>;
 } else if (product == "youuuu") {
-bttn.innerHTML = `<button id="bttnn" type="button" onclick="window.location.href='https://marketbotai.com/support'">Submit Itt</button>`;
+bttn.innerHTML = <button id="bttn" type="button" onclick="window.location.href='https://marketbotai.com/support'">Submit Ittt</button>;
 //} else {
 //product = product; //bttn.innerHTML = bttn.innerHTML; //`<button id="bttnn" type="button" onclick="window.location.href='/#'">Submit Itt</button>`;
 
 //return bttn.innerHTML;
 }
-return bttn.innerHTML;
+//return bttn.innerHTML;
 
 }
