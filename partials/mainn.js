@@ -55,11 +55,11 @@ inputt.addEventListener('pointerup', submitIn);
 inputt.addEventListener('click', submitIn);
 */
 
-var name1 = '\u0041\u006d\u00e9\u006c\u0069\u0065';
-var name2 = '\u0041\u006d\u0065\u0301\u006c\u0069\u0065';
-var contactus = '\u0041\u006d\u0065\u0301\u006c\u0069\u0065';
+//var name1 = '\u0041\u006d\u00e9\u006c\u0069\u0065';
+//var name2 = '\u0041\u006d\u0065\u0301\u006c\u0069\u0065';
+//var contactus = '\u0041\u006d\u0065\u0301\u006c\u0069\u0065';
 
-console.log(`${name1}, ${name2}`);
+//console.log(`${name1}, ${name2}`);
 
 
 var utterances = [
@@ -145,13 +145,13 @@ function compare(utterancesArray, answersArray, string) {
 
 function addChatEntry(input, product) {
   var messagesBttnContainer = document.getElementById("messages");
-let bttn = document.createElement("button");
+let bttn = document.createElement("input"); //button");
 //let bttnText = document.createElement("span");
 bttn.id = "bttnn";
 bttn.className = "bttnn";
 //bttn.type = "button";
 //bttnText.innerText = "Submit Itt";
-bttn.innerHTML = `<button id="bttnn" onclick="location.href='/support';">Support</button>`; //<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
+bttn.innerHTML = `<input id="bttnn" type="button" onclick="location.href='/support'" value="Suport" />`; //<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
 //bttn.onclick = handleClick(); //bttn.addEventListener('click', handleClick, event);
 
   var messagesContainer = document.getElementById("messages");
