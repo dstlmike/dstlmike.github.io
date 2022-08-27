@@ -145,7 +145,7 @@ function compare(utterancesArray, answersArray, string) {
 
 function addChatEntry(input, product) {
   var messagesBttnContainer = document.getElementById("messages");
-let bttn = document.createElement("input"); //button");
+let bttn = document.createElement("button");
 //let bttnText = document.createElement("span");
 bttn.id = "bttnn";
 bttn.className = "bttnn";
