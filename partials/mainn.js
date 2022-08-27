@@ -18,10 +18,12 @@ var inputF = document.getElementById("btn contact-us");
 
 function submitIn(event) {
 let input = inputField.value;
-if (inputField.value && inputtt == "false") {
+if (event.key === "Enter" && inputField.id == "input" && inputField.value && inputtt == "false") {
 inputField.value = "";
      output(input);
  stateHandle();
+} else {
+return false;
 }
 }
 /*
