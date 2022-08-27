@@ -142,13 +142,13 @@ function compare(utterancesArray, answersArray, string) {
 
 function addChatEntry(input, product) {
   var messagesBttnContainer = document.getElementById("messages");
-let bttn = document.createElement("button");
+let bttn = document.createElement("input"); //button");
 //let bttnText = document.createElement("span");
 bttn.id = "bttnn";
 bttn.className = "bttnn";
 //bttn.type = "button";
 //bttnText.innerText = "Submit Itt";
-bttn.innerHTML = `<input type="button" onclick="location.href='/support';" value="Support" />` //<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
+bttn.innerHTML = `<input id="bttnn" type="button" onclick="location.href='/support';" value="Support" />` //<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
 //bttn.onclick = handleClick(); //bttn.addEventListener('click', handleClick, event);
 
   var messagesContainer = document.getElementById("messages");
@@ -169,7 +169,7 @@ bttn.innerHTML = `<input type="button" onclick="location.href='/support';" value
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
 //document.body.appendChild(bttn); 
-if (product == "Youuu") { // || product == "Youuuu") { //\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuu\u000D\u000D") {
+if (input == "You") { // || product == "Youuuu") { //\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuu\u000D\u000D") {
 //messagesContainer.appendChild(botDiv);
 //handleClick(input, product);
 
