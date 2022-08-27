@@ -151,7 +151,7 @@ bttn.id = "bttnn";
 bttn.className = "bttnn";
 //bttn.type = "button";
 //bttnText.innerText = "Submit Itt";
-bttn.innerHTML = `<input id="bttnn" type="button" onclick="location.href='/support';" value="Support" />`; //<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
+bttn.innerHTML = `<button id="bttnn" type="button" onclick="location.href='/support';" value="Support" />Support</button>`; //<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
 //bttn.onclick = handleClick(); //bttn.addEventListener('click', handleClick, event);
 
   var messagesContainer = document.getElementById("messages");
