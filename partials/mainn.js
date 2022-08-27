@@ -1,11 +1,11 @@
-/*document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#input").addEventListener("keypress", function(event) {
     if (event.code === "Enter") {
     }
   });
 });
 
-*/
+
 
 var btnField = document.getElementById("bttn");
 
