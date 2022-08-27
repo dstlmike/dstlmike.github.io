@@ -172,7 +172,7 @@ bttn.innerHTML = `<input id="bttnn" type="button" onclick="location.href='/suppo
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
 //document.body.appendChild(bttn); 
-if (input == "You") { // || product == "Youuuu") { //\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuu\u000D\u000D") {
+if (product == "You" || product == "Youu") { // || product == "Youuuu") { //\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuu\u000D\u000D") {
 //messagesContainer.appendChild(botDiv);
 //handleClick(input, product);
 
