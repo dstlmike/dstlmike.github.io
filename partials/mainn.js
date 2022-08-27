@@ -22,6 +22,7 @@ if (event.key === "Enter" && inputField.id == "input" && inputField.value && inp
 inputField.value = "";
      output(input);
  stateHandle();
+event.preventDefault();
 } else {
 return false;
 }
