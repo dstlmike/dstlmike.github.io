@@ -5,8 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-var submitIn = require("./mn.js");
-submitIn.submitIn(event);
+var ssubmitIn = require("./mn.js");
+function submitIn(event) {
+ssubmitIn.submitIn(event);
+};
 
 var btnField = document.getElementById("bttn");
 
