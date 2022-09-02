@@ -160,8 +160,8 @@ function addChatEntry(input, product) {
   var messagesBttnContainer = document.getElementById("messages");
 let bttn = document.createElement("button");
 //let bttnText = document.createElement("span");
-bttn.id = "bttnn";
-bttn.className = "bttnn";
+//bttn.id = "bttnn";
+//bttn.className = "bttnn";
 //bttn.type = "button";
 //bttnText.innerText = "Submit Itt";
 bttn.innerHTML = `<button id="bttnn" onclick="location.href='/support';" value="Support" />Support</button>`; //<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
