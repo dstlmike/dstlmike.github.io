@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 var submitIn = require("./mn.js");
-submitIn(event);
+submitIn.submitIn(event);
 
 var btnField = document.getElementById("bttn");
 
