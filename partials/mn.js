@@ -1,22 +1,20 @@
-var ooutput = require("./main.js");
-var iinputField = require("./main.js");
-var sstateHandle = require("./main.js");
+var output = require("./main.js");
+var inputField = require("./main.js");
+var stateHandle = require("./main.js");
 //var outputt = require("./main.js");
 
 //submitIn(event);
 
 function submitIn(event) {
-let input = iinputField.inputField.value;
-if (iinputField.inputField.value && iinputField.inputtt == "false") {
-iinputField.inputField.value = "";
-     ooutput.output(input);
- sstateHandle.stateHandle();
+let input = inputField.value;
+if (inputField.value && inputtt == "false") {
+inputField.value = "";
+     output(input);
+ stateHandle();
 //event.preventDefault();
 //} else {
 //return false;
 }
 }
 
-module.exports = {
-submitIn
-}
+module.exports = { submitIn };
