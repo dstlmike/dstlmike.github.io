@@ -1,6 +1,6 @@
-var output = require("./main.js");
-var inputField = require("./main.js");
-var stateHandle = require("./main.js");
+//var output = require("./main.js");
+//var inputField = require("./main.js");
+//var stateHandle = require("./main.js");
 //var outputt = require("./main.js");
 
 //submitIn(event);
