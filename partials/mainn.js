@@ -5,7 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
+var submitIn = require("./mn.js");
+submitIn(event);
 
 var btnField = document.getElementById("bttn");
 
@@ -15,7 +16,7 @@ var inputt = document.querySelector("#submitInput");
 var subInput = document.getElementById("submitInput"); 
 var inputF = document.getElementById("btn contact-us");
  var inputtt = "false";
-
+/*
 function submitIn(event) {
 let input = inputField.value;
 if (inputField.value && inputtt == "false") {
@@ -27,6 +28,7 @@ inputField.value = "";
 //return false;
 }
 }
+*/
 /*
   if (event.type === 'click' && inputtt == "false") {
     inputField.value = "";
