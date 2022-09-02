@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 var ssubmitIn = require("./mn.js");
-var submitIn(event) = ssubmitIn.submitIn(event);
+var submitIn = ssubmitIn.submitIn(event);
 
 var btnField = document.getElementById("bttn");
 
@@ -307,3 +307,5 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
 }
 
 }
+
+module.exports = {submitIn};
