@@ -5,7 +5,7 @@
 
 //submitIn(event);
 
-function submitIn(event) {
+
 let input = inputField.value;
 if (inputField.value && inputtt == "false") {
 inputField.value = "";
@@ -15,6 +15,6 @@ inputField.value = "";
 //} else {
 //return false;
 }
-}
+
 
 module.exports = { submitIn };
