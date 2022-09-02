@@ -3,7 +3,7 @@
 //var stateHandle = require("./main.js");
 //var outputt = require("./main.js");
 
-//submitIn(event);
+var submitIn = function(event) {
 
 
 let input = inputField.value;
@@ -16,5 +16,5 @@ inputField.value = "";
 //return false;
 }
 
-
-module.exports = { submitIn };
+}
+module.exports = submitIn;
