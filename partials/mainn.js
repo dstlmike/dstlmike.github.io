@@ -15,6 +15,8 @@ async function include(file) {
 /* Include Many js files */
 
 include('/mn.js');
+include('/cla.js');
+include('/ana.js');
 //include('/mn.js');
 
 var btnField = document.getElementById("bttn");
