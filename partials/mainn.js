@@ -15,7 +15,7 @@ async function include(file) {
 /* Include Many js files */
 
 include('/mn.js');
-include('/cla.js');
+include('/mnn.js');
 include('/ana.js');
 //include('/mn.js');
 
@@ -108,7 +108,7 @@ var answers = [
 var alternatives = [
 "Have you checked your earnings today? Sign in to see how MarketBot is working for you.", "Try saying 'top up'", "You can say things like 'register'", "Have questions, click on 'contact us' and we'll be in touch.", "Want to learn more? click sign in/sign up for more info", "Need help? Our support team is here to assist, click on 'contact us'.", "I didn't quit get that, try saying 'Latest News'."
 ];
-
+/*
 function stateHandle() {
 inputtt = "true";
         inputt.disabled = true;
@@ -118,7 +118,7 @@ inputtt = "true";
       inputField.autofocus = true;
       }, 6000);
 }
-
+*/
 function output(input) {
   let product;
   let text = input.toLowerCase().replace(/[^\w\s\d]/gi, "");
