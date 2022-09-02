@@ -1,4 +1,4 @@
-function include(file) {
+async function include(file) {
   var script  = document.createElement('script');
   script.src  = file;
   script.type = 'text/javascript';
