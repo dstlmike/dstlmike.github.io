@@ -5,11 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-var ssubmitIn = require("./mn.js");
-function submitIn(event) {
-ssubmitIn.submitIn(event);
-}
-
 var btnField = document.getElementById("bttn");
 
 var bttnButton = document.querySelector("#bttn");
