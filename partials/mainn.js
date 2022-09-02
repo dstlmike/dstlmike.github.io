@@ -317,4 +317,4 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
 
 }
 
-module.exports = {submitIn};
+//module.exports = {submitIn};
