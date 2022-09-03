@@ -11,7 +11,7 @@ if (event.code === "Enter" && inputField.value && inputtt == "false") {
 inputField.value = "";
      output(input);
  stateHandle();
-event.preventDefault();
+//event.preventDefault();
 //} else {
 //event.preventDefault();
 
