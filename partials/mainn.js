@@ -157,16 +157,16 @@ function compare(utterancesArray, answersArray, string) {
 }
 
 function addChatEntry(input, product) {
-  var messagesBttnContainer = document.getElementById("bttnn");
+  var messagesBttnContainer = document.getElementById("messages");
 let bttn = document.createElement("button");
 //let bttnText = document.createElement("span");
 bttn.id = "bttnn";
 //bttn.className = "bttnn";
-bttn.onclick="location.href='/support'";
+//bttn.onclick = "location.href='/support'";
 //bttnText.innerText = "Submit Itt";
-//bttn.innerHTML = `<button id="bttnn" onclick="location.href='/support';" value="Support" />Support</button>`; //<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
+bttn.innerHTML = `<button id="bttnn" onclick="location.href='/support';" value="Support" />Support</button>`; //<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
 //bttn.onclick = handleClick(); //bttn.addEventListener('click', handleClick, event);
-bttn.innerHTML = `<button id="bttnn" />Support</button>`;
+//bttn.innerHTML = `<button id="bttnn" />Support</button>`;
   
   var messagesContainer = document.getElementById("messages");
   let userDiv = document.createElement("div");
