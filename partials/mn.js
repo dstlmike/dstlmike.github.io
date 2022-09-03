@@ -7,13 +7,14 @@ var submitIn = function(event) {
 
 
 let input = inputField.value;
-if (inputField.value && inputtt == "false") {
+if (event.keyCode === 13 && inputField.value && inputtt == "false") {
 inputField.value = "";
      output(input);
  stateHandle();
 //event.preventDefault();
-//} else {
-//return false;
+} else {
+event.preventDefault();
+
 }
 
 }
