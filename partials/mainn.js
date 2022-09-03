@@ -1,10 +1,10 @@
-document.addEventListener("DOMContentLoaded", () => {
+/*document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#input").addEventListener("keypress", function(event) {
     if (event.code === "Enter") {
     }
   });
 });
-
+*/
 async function include(file) {
   var script  = document.createElement('script');
   script.src  = file;
