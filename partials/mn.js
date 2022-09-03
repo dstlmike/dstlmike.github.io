@@ -7,7 +7,7 @@ var submitIn = function(event) {
 
 
 let input = inputField.value;
-if (event.keyCode === "Enter" && inputField.value && inputtt == "false") {
+if (event.code === "Enter" && inputField.value && inputtt == "false") {
 inputField.value = "";
      output(input);
  stateHandle();
