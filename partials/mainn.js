@@ -159,9 +159,12 @@ function compare(utterancesArray, answersArray, string) {
 
 function addChatEntry(input, product) {
   var messagesBttnContainer = document.getElementById("messages");
-let bttn = document.createElement("button");
+let bttn = document.createElement("div");
 //let bttnText = document.createElement("span");
 bttn.id = "bttnn";
+bttn.addEventListener("click", function() {
+    if (event.code === "Enter") {
+    }
 //bttn.className = "bttnn";
 //bttn.onclick = "location.href='/support'";
 //bttnText.innerText = "Submit Itt";
