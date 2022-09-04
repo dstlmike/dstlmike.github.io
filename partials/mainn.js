@@ -197,7 +197,7 @@ bttn.innerHTML = `<button id="bttnn" onclick="clickBttn()" />Support</button>`; 
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
 //document.body.appendChild(bttn); 
-if (botText.innerText == "\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuu\u000D\u000D") { //; //product == "Youuu") { //\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuu\u000D\u000D" || botText.innerText == "\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuuu\u000D\u000D") { // || product == "Youuuu") { //\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuu\u000D\u000D") {
+if (product == "Youuu") { //\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuu\u000D\u000D" || botText.innerText == "\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuuu\u000D\u000D") { // || product == "Youuuu") { //\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuu\u000D\u000D") {
 //messagesContainer.appendChild(botDiv);
 //handleClick(input, product);
 
@@ -209,7 +209,7 @@ messagesContainer.appendChild(botDiv);
 //messagesContainer.appendChild(botDiv);
     botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D\u000D`;
 //.appendChild(botText);
-messagesBttnContainer.appendChild(bttn);
+messagesBttnContainer.appendChild(bttn).addEventListener("click", clickBttn());
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
 
