@@ -203,6 +203,7 @@ messagesContainer.appendChild(botDiv);
 bttnText.addEventListener("click", function(event) {
 if (event.type === 'click') {
 window.location.href = '/support';
+}
 });
 messagesBttnContainer.appendChild(bttn);
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
