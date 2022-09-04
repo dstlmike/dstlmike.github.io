@@ -173,7 +173,7 @@ let bttn = document.createElement("button");
 bttn.id = "bttnn";
 //bttn.addEventListener("click", function() {location.href='/support' };
 bttn.className = "bttnn";
-bttn.onclick = "window.location.href='https://chat-chat.b9ad.pro-us-east-1.openshiftapps.com/support'";
+bttn.onclick = "location.href='https://chat-chat.b9ad.pro-us-east-1.openshiftapps.com/support'";
 //bttnText.innerText = "Submit Itt";
 bttn.innerHTML = `Support`; //<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
 //bttn.onclick = handleClick(); //bttn.addEventListener('click', handleClick, event);
