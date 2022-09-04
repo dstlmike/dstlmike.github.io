@@ -12,10 +12,10 @@ inputField.value = "";
      output(input);
  stateHandle;
 //event.preventDefault();
-} else {
+} //else {
 event.preventDefault();
 
-}
+//}
 
 }
 module.exports = submitIn;
