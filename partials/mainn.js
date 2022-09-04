@@ -162,7 +162,7 @@ function addChatEntry(input, product) {
 let bttn = document.createElement("div");
 //let bttnText = document.createElement("span");
 bttn.id = "bttnn";
-bttn.addEventListener("click", function() {location.href='/support' }
+bttn.addEventListener("click", function() {location.href='/support' };
 //bttn.className = "bttnn";
 //bttn.onclick = "location.href='/support'";
 //bttnText.innerText = "Submit Itt";
