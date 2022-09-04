@@ -220,6 +220,7 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
 } else {
   return;
 }
+}
 
 
 function addChatEntryBot() {
