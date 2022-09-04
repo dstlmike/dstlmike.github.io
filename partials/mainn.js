@@ -200,7 +200,9 @@ messagesContainer.appendChild(botDiv);
 //messagesContainer.appendChild(botDiv);
     botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D\u000D`;
 //.appendChild(botText);
-//bttn.appendChild(bttnText);
+bttn.addEventListener("click", function() {
+location.href = '/support';
+};
 messagesBttnContainer.appendChild(bttn);
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
