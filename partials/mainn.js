@@ -20,6 +20,7 @@ include('/ana.js');
 //include('/mn.js');
 
 var btnField = document.getElementById("bttn");
+var bttnText = document.querySelector("#bttnn");
 
 var bttnButton = document.querySelector("#bttn");
 var inputField = document.getElementById("input");
@@ -158,7 +159,7 @@ function compare(utterancesArray, answersArray, string) {
 }
 
 function clickBttn() {
-bttn.addEventListener("click", function() {
+bttnText.addEventListener("click", function() {
 location.href = '/support';
 
 });
@@ -167,7 +168,7 @@ location.href = '/support';
 function addChatEntry(input, product) {
   var messagesBttnContainer = document.getElementById("messages");
 let bttn = document.createElement("button");
-var bttnText = document.querySelector("#bttnn");
+//var bttnText = document.querySelector("bttnn");
 bttn.id = "bttnn";
 //bttn.addEventListener("click", function() {location.href='/support' };
 //bttn.className = "bttnn";
@@ -258,7 +259,7 @@ function openForm() {
   var box = document.getElementById('messages');
 if (box.childNodes.length === 0) {
   addChatEntryBot();
-  //inputField.autofocus = true;
+  inputField.autofocus = true;
   stateHandle();
 }
 }
