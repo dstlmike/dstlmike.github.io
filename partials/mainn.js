@@ -159,7 +159,7 @@ function compare(utterancesArray, answersArray, string) {
 
 function addChatEntry(input, product) {
   var messagesBttnContainer = document.getElementById("messages");
-let bttn = document.createElement("div");
+let bttn = document.createElement("button");
 //let bttnText = document.createElement("span");
 bttn.id = "bttnn";
 bttn.addEventListener("click", function() {location.href='/support' };
