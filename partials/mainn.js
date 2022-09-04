@@ -204,7 +204,7 @@ messagesBttnContainer.appendChild(bttn);
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
 bttnText.addEventListener("click", function(event) {
-if (event.type === 'click') {
+if (event.type == 'click') {
 window.location.href = '/support';
 }
 });
