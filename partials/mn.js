@@ -11,9 +11,9 @@ if (inputField.value && inputtt == "false") {
 inputField.value = "";
      output(input);
  stateHandle;
-event.preventDefault();
-//} else {
 //event.preventDefault();
+} else {
+event.preventDefault();
 
 }
 
