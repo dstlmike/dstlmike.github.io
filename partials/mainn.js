@@ -166,7 +166,7 @@ bttn.id = "bttnn";
 //bttn.className = "bttnn";
 //bttn.onclick = "location.href='/support'";
 //bttnText.innerText = "Submit Itt";
-bttn.innerHTML = `<button id="bttnn" />Support</button>`; // onclick="location.href='/support';" />Support</button>`; //<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
+bttn.innerHTML = `<button id="bttnn" onclick="location.href='/support';" />Support</button>`; //<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
 //bttn.onclick = handleClick(); //bttn.addEventListener('click', handleClick, event);
 //bttn.innerHTML = `<button id="bttnn" />Support</button>`;
   
