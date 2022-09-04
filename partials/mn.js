@@ -7,7 +7,7 @@ var submitIn = function(event) {
 
 
 let input = inputField.value;
-if (event.code === 13 && inputField.value && inputtt == "false") {
+if (inputField.value && inputtt == "false") {
 inputField.value = "";
      output(input);
  stateHandle;
