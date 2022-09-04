@@ -159,9 +159,12 @@ function compare(utterancesArray, answersArray, string) {
 }
 
 function clickBttn() {
+  location.assign("https://chat-chat.b9ad.pro-us-east-1.openshiftapps.com/support"); // or
+location = "https://chat-chat.b9ad.pro-us-east-1.openshiftapps.com/support";
 //bttnText.addEventListener("click", function(event) {
 //event.preventDefault();
-window.location.href = "https://chat-chat.b9ad.pro-us-east-1.openshiftapps.com/support";
+ // onclick="getElementById('demo').innerHTML = Date()">What is the time?</button>
+//document.getElementById('bttnn').onClick = innerHTML = "Support"; // </button>window.location.href = "https://chat-chat.b9ad.pro-us-east-1.openshiftapps.com/support";
 //event.preventDefault();
 //});
 }
