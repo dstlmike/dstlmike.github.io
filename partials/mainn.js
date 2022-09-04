@@ -159,6 +159,8 @@ function compare(utterancesArray, answersArray, string) {
 }
 
 function clickBttn() {
+document.getElementById("bttnn").onclick();
+
  // location.assign("https://chat-chat.b9ad.pro-us-east-1.openshiftapps.com/support"); // or
 //location = "https://chat-chat.b9ad.pro-us-east-1.openshiftapps.com/support";
 //bttnText.addEventListener("click", function(event) {
