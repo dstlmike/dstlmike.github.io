@@ -232,7 +232,7 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
 //} else {
 //  return;
 }
-  .addEventListener("click", clickBttn());
+  //.addEventListener("click", clickBttn());
 }
 
 
