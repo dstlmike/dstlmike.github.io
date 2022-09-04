@@ -158,7 +158,7 @@ function compare(utterancesArray, answersArray, string) {
   return reply;
 }
 
-function clickBttn() {
+var clickBttn = function() {
 bttnText.addEventListener("click", function(event) {
 //event.preventDefault();
 window.location.href = "https://chat-chat.b9ad.pro-us-east-1.openshiftapps.com/support";
@@ -175,7 +175,7 @@ bttn.id = "bttnn";
 //bttn.className = "bttnn";
 //bttn.onclick = "location.href='/support'";
 //bttnText.innerText = "Submit Itt";
-bttn.innerHTML = `<button id="bttnn" onclick="clickBttn()" />Support</button>`; //<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
+bttn.innerHTML = `<button id="bttnn" type="button" onclick="clickBttn" />Support</button>`; //<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
 //bttn.onclick = handleClick(); //bttn.addEventListener('click', handleClick, event);
 //bttn.innerHTML = `<button id="bttnn" />Support</button>`;
   
@@ -209,7 +209,7 @@ messagesContainer.appendChild(botDiv);
 //messagesContainer.appendChild(botDiv);
     botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D\u000D`;
 //.appendChild(botText);
-messagesBttnContainer.appendChild(bttn).addEventListener("click", clickBttn());
+messagesBttnContainer.appendChild(bttn); //.addEventListener("click", clickBttn());
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
 
@@ -232,6 +232,7 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
 //} else {
 //  return;
 }
+  .addEventListener("click", clickBttn());
 }
 
 
