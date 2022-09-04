@@ -164,12 +164,12 @@ function clickBttn() {
 //bttnText.addEventListener("click", function(event) {
 //event.preventDefault();
  // onclick="getElementById('demo').innerHTML = Date()">What is the time?</button>
-btnField.onClick = function() {
+//btnField.onClick = function() {
   window.location.href = "https://chat-chat.b9ad.pro-us-east-1.openshiftapps.com/support";
   //innerHTML = "Support"; // </button>window.location.href = "https://chat-chat.b9ad.pro-us-east-1.openshiftapps.com/support";
 //event.preventDefault();
 //});
-}
+//}
 }
   
 function addChatEntry(input, product) {
@@ -179,7 +179,7 @@ let bttn = document.createElement("button");
 bttn.id = "bttnn";
 //bttn.addEventListener("click", function() {location.href='/support' };
 bttn.className = "bttnn";
-bttn.onclick = "clickBttn();"; //location.href='https://chat-chat.b9ad.pro-us-east-1.openshiftapps.com/support'";
+bttn.onclick = function(){clickBttn()}; //location.href='https://chat-chat.b9ad.pro-us-east-1.openshiftapps.com/support'";
 //bttnText.innerText = "Submit Itt";
 bttn.innerHTML = `Support`; //<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
 //bttn.onclick = handleClick(); //bttn.addEventListener('click', handleClick, event);
