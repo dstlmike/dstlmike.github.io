@@ -24,6 +24,7 @@ var btnField = document.getElementById("bttn");
 var bttnButton = document.querySelector("#bttn");
 var inputField = document.getElementById("input");
 var inputt = document.querySelector("#submitInput");
+var inpuutt = document.querySelector("#submitInput");
 var subInput = document.getElementById("submitInput"); 
 var inputF = document.getElementById("btn contact-us");
  var inputtt = "false";
