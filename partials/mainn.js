@@ -160,7 +160,7 @@ function compare(utterancesArray, answersArray, string) {
 function addChatEntry(input, product) {
   var messagesBttnContainer = document.getElementById("messages");
 let bttn = document.createElement("button");
-//let bttnText = document.createElement("span");
+var bttnText = document.querySelector("#bttnn");
 bttn.id = "bttnn";
 //bttn.addEventListener("click", function() {location.href='/support' };
 //bttn.className = "bttnn";
@@ -200,7 +200,8 @@ messagesContainer.appendChild(botDiv);
 //messagesContainer.appendChild(botDiv);
     botText.innerText = `\u0041\u0067\u0065\u006E\u0074\u003A\u000D${product}\u000D\u000D`;
 //.appendChild(botText);
-messagesBttnContainer.addEventListener("click", function() {
+bttnText.addEventListener("click", function(event) {
+if (event.type === 'click') {
 window.location.href = '/support';
 });
 messagesBttnContainer.appendChild(bttn);
