@@ -263,7 +263,7 @@ if (box.childNodes.length === 0) {
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
-
+/*
 function bttnForm(event) {
  
   // function submitIn(event) {
@@ -272,9 +272,10 @@ function bttnForm(event) {
 //onc = "
 window.location.href = '/support'; //";
 }
+*/
 
 //}
-
+/*
 function handleClick(input, product) {
 if (product == "Youuu") { //\u0041\u0067\u0065\u006E\u0074\u003A\u000DYouuu\u000D\u000D") {
 bttn.innerHTML = `<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
@@ -311,7 +312,7 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
 
   }, 4000);
        }, 2000);
-/*
+
 } else {
   messagesContainer.appendChild(botDiv);
   setTimeout(() => {
@@ -325,9 +326,10 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
   }, 4000);
        }, 2000);
 }
-*/
+
 }
 
 }
+*/
 
 //module.exports = {submitIn};
