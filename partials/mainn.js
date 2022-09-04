@@ -160,9 +160,9 @@ function compare(utterancesArray, answersArray, string) {
 
 function clickBttn() {
 bttnText.addEventListener("click", function(event) {
+//event.preventDefault();
+location.href = "/support";
 event.preventDefault();
-window.location = "/support";
-
 });
 }
 
