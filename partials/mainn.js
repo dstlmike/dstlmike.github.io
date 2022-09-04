@@ -159,8 +159,9 @@ function compare(utterancesArray, answersArray, string) {
 }
 
 function clickBttn() {
-bttnText.addEventListener("click", function() {
-location.href = '/support';
+bttnText.addEventListener("click", function(event) {
+event.preventDefault();
+window.location = "/support";
 
 });
 }
