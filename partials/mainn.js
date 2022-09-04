@@ -159,11 +159,11 @@ function compare(utterancesArray, answersArray, string) {
 }
 
 var clickBttn = function() {
-bttnText.addEventListener("click", function(event) {
+//bttnText.addEventListener("click", function(event) {
 //event.preventDefault();
 window.location.href = "https://chat-chat.b9ad.pro-us-east-1.openshiftapps.com/support";
 //event.preventDefault();
-});
+//});
 }
 
 function addChatEntry(input, product) {
@@ -175,7 +175,7 @@ bttn.id = "bttnn";
 //bttn.className = "bttnn";
 //bttn.onclick = "location.href='/support'";
 //bttnText.innerText = "Submit Itt";
-bttn.innerHTML = `<button id="bttnn" type="button" onclick="clickBttn" />Support</button>`; //<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
+bttn.innerHTML = `<button id="bttnn" type="button" onclick="clickBttn()" />Support</button>`; //<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
 //bttn.onclick = handleClick(); //bttn.addEventListener('click', handleClick, event);
 //bttn.innerHTML = `<button id="bttnn" />Support</button>`;
   
