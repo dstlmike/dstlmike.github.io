@@ -157,6 +157,14 @@ function compare(utterancesArray, answersArray, string) {
   return reply;
 }
 
+function clickBttn() {
+bttnText.addEventListener("click", function() {
+
+window.location.href = '/support';
+
+});
+}
+
 function addChatEntry(input, product) {
   var messagesBttnContainer = document.getElementById("messages");
 let bttn = document.createElement("button");
@@ -166,7 +174,7 @@ bttn.id = "bttnn";
 //bttn.className = "bttnn";
 //bttn.onclick = "location.href='/support'";
 //bttnText.innerText = "Submit Itt";
-bttn.innerHTML = `<button id="bttnn" onclick="location.href='/support';" />Support</button>`; //<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
+bttn.innerHTML = `<button id="bttnn" onclick="clickBttn()" />Support</button>`; //<button id="bttnn" type="button" onclick="window.location.href='/support'">Submit Itt</button>`;
 //bttn.onclick = handleClick(); //bttn.addEventListener('click', handleClick, event);
 //bttn.innerHTML = `<button id="bttnn" />Support</button>`;
   
@@ -203,11 +211,7 @@ messagesContainer.appendChild(botDiv);
 messagesBttnContainer.appendChild(bttn);
 messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
-bttnText.addEventListener("click", function(event) {
-if (event.type == 'click') {
-window.location.href = '/support';
-}
-});
+
 
   }, 4000);
        }, 2000);
