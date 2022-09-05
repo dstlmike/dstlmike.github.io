@@ -1,3 +1,4 @@
+var inputtt = "false";
 //var inputtt = require('./mainn.js');
 //var inputt = require('./mainn.js'); 
 var stateHandle = function() {
