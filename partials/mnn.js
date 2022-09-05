@@ -10,5 +10,5 @@ var stateHandle = function() {
         inputt.disabled = false;
       inputField.autofocus = true;
       }, 6000);
-//}
+}
 module.exports = stateHandle;
