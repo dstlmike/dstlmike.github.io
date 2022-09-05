@@ -289,7 +289,7 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
 
 function openForm() {
    document.getElementById("myForm").style.display = "block";
-document.getElementById("input").autofocus = "true";
+document.getElementById("input").focus();
 // inputField.autofocus = true;
   var box = document.getElementById('messages');
 if (box.childNodes.length === 0) {
