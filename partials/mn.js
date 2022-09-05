@@ -1,9 +1,9 @@
 //var output = require("./main.js");
 //var inputField = require("./main.js");
-var stateHandle = require("./mnn.js");
+//var stateHandle = require("./mnn.js");
 //var outputt = require("./mainn.js");
 
-var submitIn = function(event) {
+//var submitIn = function(event) {
 
 
 let input = inputField.value;
@@ -19,7 +19,7 @@ inputField.value = "";
 
 //}
 
-}
+//}
 /*
 //var stateHandle = require("./mnn.js");
 //var output = require("./mainn.js");
@@ -37,4 +37,4 @@ stateHandle;
 });
 });
 */
-module.exports = submitIn;
+//module.exports = submitIn;
