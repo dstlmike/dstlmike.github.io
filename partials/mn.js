@@ -1,4 +1,4 @@
-//var output = require("./main.js");
+var inputtt = "false"; // require("./main.js");
 //var inputField = require("./main.js");
 //var stateHandle = require("./mnn.js");
 //var outputt = require("./mainn.js");
