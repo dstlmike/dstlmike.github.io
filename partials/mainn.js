@@ -51,7 +51,7 @@ var inputt = document.querySelector("#submitInput");
 var inpuutt = document.querySelector("#bttnn");
 var subInput = document.getElementById("submitInput"); 
 var inputF = document.getElementById("btn contact-us");
-var inputtt = "false";
+let inputtt = false;
 /*
 function submitIn(event) {
 let input = inputField.value;
@@ -296,7 +296,7 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
 
 function openForm() {
    document.getElementById("myForm").style.display = "block";
- // inputField.autofocus = true;
+ let inputField.autofocus = true;
   var box = document.getElementById('messages');
 if (box.childNodes.length === 0) {
   addChatEntryBot();
