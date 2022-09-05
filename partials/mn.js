@@ -4,7 +4,7 @@
 //var outputt = require("./main.js");
 
 //var submitIn = 
-module.exports = function submitIn(event) {
+//module.exports = function submitIn(event) {
 
 
 let input = inputField.value;
@@ -18,7 +18,7 @@ inputField.value = "";
 //} //else {
 //event.preventDefault();
 
-}
+//}
 
 }
-//module.exports = submitIn;
+module.exports = submitIn;
