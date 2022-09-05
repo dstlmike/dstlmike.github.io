@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#input").addEventListener("keypress", function(event) {
-    //if (event.code === "Enter") {
+    if (event.code === "Enter") {
    // }
 let input = inputField.value;
-if (event.code === "Enter" && inputField.value >= 1 && inputtt == "false") {
+//if (event.code === "Enter" && inputField.value >= 1 && inputtt == "false") {
 //let input = inputField.value;
 inputField.value = "";
 output(input);
