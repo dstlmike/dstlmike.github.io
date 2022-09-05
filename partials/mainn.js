@@ -1,19 +1,12 @@
-/*document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#input").addEventListener("keypress", function(event) {
     if (event.code === "Enter") {
-   // }
-let input = inputField.value;
-//if (event.code === "Enter" && inputField.value >= 1 && inputtt == "false") {
-//let input = inputField.value;
-inputField.value = "";
-output(input);
-//stateHandle();
-//include('./mnn.js');
+   
 }
   });
 });
 
-
+/*
 document.addEventListener("DOMContentLoaded", () => {
 var inputField = document.getElementById("input");
 inputField.addEventListener("keydown", function(event) {
