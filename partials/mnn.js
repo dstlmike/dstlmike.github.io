@@ -1,5 +1,5 @@
-var inputtt = require('./mainn.js');
-var inputt = require('./mainn.js'); 
+//var inputtt = require('./mainn.js');
+//var inputt = require('./mainn.js'); 
 var stateHandle = function() {
          //inputField.autofocus = true;
 inputtt = true;
