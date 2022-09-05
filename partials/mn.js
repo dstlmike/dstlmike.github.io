@@ -3,7 +3,7 @@
 //var stateHandle = require("./mnn.js");
 //var outputt = require("./mainn.js");
 
-var submitIn = function() {
+var submitIn = function(event) {
 
 
 let input = inputField.value;
