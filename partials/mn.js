@@ -22,7 +22,7 @@ inputField.value = "";
 
 }
 */
-var stateHandle = require("./mnn.js");
+//var stateHandle = require("./mnn.js");
 var output = require("./mainn.js");
 
 document.addEventListener("DOMContentLoaded", () => {
