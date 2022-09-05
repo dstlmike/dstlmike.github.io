@@ -7,10 +7,10 @@ var submitIn = function(event) {
 //event.preventDefault();
 
 let input = inputField.value;
-if (event.code === "Enter" && inputField.value && inputtt == "false") {
+if (inputField.value && inputtt == "false") {
 
 // if (inputtt == false)
-inputField.value = "";
+//inputField.value = "";
      output(input);
  stateHandle();
 //event.preventDefault();
