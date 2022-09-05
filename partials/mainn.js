@@ -296,11 +296,11 @@ messagesContainer.scrollTop = messagesContainer.scrollHeight - messagesContainer
 
 function openForm() {
    document.getElementById("myForm").style.display = "block";
-//  inputField.autofocus = true;
+  inputField.autofocus = true;
   var box = document.getElementById('messages');
 if (box.childNodes.length === 0) {
   addChatEntryBot();
-  //inputField.autofocus = true;
+  inputField.autofocus = true;
   stateHandle();
 }
 }
