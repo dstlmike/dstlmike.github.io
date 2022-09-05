@@ -1,4 +1,4 @@
-var stateHandle = function() {
+//var stateHandle = function() {
          //inputField.autofocus = true;
 inputtt = true;
         inputt.disabled = true;
@@ -7,5 +7,5 @@ inputtt = true;
         inputt.disabled = false;
   //    inputField.autofocus = true;
       }, 6000);
-}
+//}
 module.exports = stateHandle;
