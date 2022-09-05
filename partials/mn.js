@@ -7,7 +7,7 @@ var submitIn = function(event) {
 //event.preventDefault();
 
 let input = inputField.value;
-if (inputtt == "false") {
+if (event.code == "Enter" && inputField.value && inputtt == "false") {
 
 // if (inputtt == false)
 inputField.value = "";
