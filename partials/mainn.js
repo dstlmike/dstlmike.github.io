@@ -1,4 +1,4 @@
-/*document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#input").addEventListener("keypress", function(event) {
     //if (event.code === "Enter") {
    // }
@@ -11,7 +11,7 @@ stateHandle();
 }
   });
 });
-*/
+
 /*
 document.addEventListener("DOMContentLoaded", () => {
 var inputField = document.getElementById("input");
