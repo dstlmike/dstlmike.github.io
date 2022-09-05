@@ -1,4 +1,4 @@
-//var output = require("./main.js");
+/*//var output = require("./main.js");
 //var inputField = require("./main.js");
 //var stateHandle = require("./main.js");
 //var outputt = require("./main.js");
@@ -21,4 +21,17 @@ inputField.value = "";
 //}
 
 }
+*/
+
+document.addEventListener("DOMContentLoaded", () => {
+var inputField = document.getElementById("input");
+inputField.addEventListener("keydown", function(e) {
+if (event.code === "Enter") {
+let input = inputField.value;
+inputField.value = "";
+output(input);
+}
+});
+});
+
 module.exports = submitIn;
