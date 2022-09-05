@@ -10,7 +10,7 @@ let input = inputField.value;
 if (inputField.value && inputtt == "false") {
 
 // if (inputtt == false)
-//inputField.value = "";
+inputField.value = "";
      output(input);
  stateHandle();
 //event.preventDefault();
