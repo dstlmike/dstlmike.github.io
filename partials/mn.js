@@ -1,7 +1,7 @@
 /*//var output = require("./main.js");
 //var inputField = require("./main.js");
-//var stateHandle = require("./main.js");
-//var outputt = require("./main.js");
+var stateHandle = require("./mnn.js");
+//var outputt = require("./mainn.js");
 
 //var submitIn = 
 //module.exports = function submitIn(event) {
@@ -31,6 +31,7 @@ if (event.code === "Enter") {
 //let input = inputField.value;
 inputField.value = "";
 output(input);
+stateHandle();
 }
 });
 });
