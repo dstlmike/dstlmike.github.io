@@ -3,18 +3,9 @@
 //var stateHandle = require("./mnn.js");
 //var outputt = require("./mainn.js");
 
-var submitIn = document.addEventListener("DOMContentLoaded", () => {
- let input = inputField.value;
- document.querySelector("#input").addEventListener("keypress", function(event) {
-  //  let input = inputField.value;
-if (event.key === "Enter" && inputField.value) {
-   inputField.value = "";
-inputField.focus();
-     output(input);
- stateHandle();
-
-//let input = inputField.value;
-} else if (inputField.value) { //&& inputtt == false) {
+var submitIn = function() {
+let input = inputField.value;
+if (inputField.value) { //&& inputtt == false) {
 
 inputField.value = "";
 inputField.focus();
@@ -22,8 +13,7 @@ inputField.focus();
  stateHandle();
 
 }
-});
-});
+}
 /*
 //var stateHandle = require("./mnn.js");
 //var output = require("./mainn.js");
