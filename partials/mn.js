@@ -26,8 +26,9 @@ inputField.value = "";
 document.addEventListener("DOMContentLoaded", () => {
 var inputField = document.getElementById("input");
 inputField.addEventListener("keydown", function(event) {
-if (event.code === "Enter") {
 let input = inputField.value;
+if (event.code === "Enter") {
+//let input = inputField.value;
 inputField.value = "";
 output(input);
 }
