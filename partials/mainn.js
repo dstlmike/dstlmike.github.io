@@ -209,6 +209,7 @@ function addChatEntry(input, product) {
 let bttn = document.createElement("button");
 //var bttnText = document.querySelector("bttnn");
 bttn.id = "bttnn";
+bttn.type = "button";
 //bttn.addEventListener("click", function() {location.href='/support' };
 bttn.className = "bttnn";
 bttn.onclick = function(){clickBttn()}; //location.href='https://chat-chat.b9ad.pro-us-east-1.openshiftapps.com/support'";
