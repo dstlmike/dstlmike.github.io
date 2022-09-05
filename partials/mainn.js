@@ -300,7 +300,7 @@ function openForm() {
   var box = document.getElementById('messages');
 if (box.childNodes.length === 0) {
   addChatEntryBot();
-  inputField.autofocus = true;
+//  inputField.autofocus = true;
   stateHandle();
 }
 }
