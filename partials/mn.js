@@ -15,10 +15,11 @@ inputField.value = "";
  stateHandle();
 //event.preventDefault();
 //} //else {
-event.preventDefault();
-
+//event.preventDefault();
+//return false;
 }
 //event.preventDefault();
+return false;
 }
 /*
 //var stateHandle = require("./mnn.js");
