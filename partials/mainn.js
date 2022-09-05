@@ -5,9 +5,10 @@
   });
 });
 */
+/*
 document.addEventListener("DOMContentLoaded", () => {
 var inputField = document.getElementById("input");
-inputField.addEventListener("keydown", function(e) {
+inputField.addEventListener("keydown", function(event) {
 if (event.code === "Enter") {
 let input = inputField.value;
 inputField.value = "";
@@ -16,7 +17,7 @@ output(input);
 });
 });
 
-
+*/
 async function include(file) {
   var script  = document.createElement('script');
   script.src  = file;
@@ -26,7 +27,7 @@ async function include(file) {
 }
 /* Include Many js files */
 
-//include('/mn.js');
+include('/mn.js');
 //include('/mnn.js');
 //include('/ana.js');
 //include('/mn.js');
