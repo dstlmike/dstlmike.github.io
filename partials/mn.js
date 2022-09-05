@@ -1,4 +1,4 @@
-var inputtt = "false"; // require("./main.js");
+//var inputtt = "false"; // require("./main.js");
 //var inputField = require("./main.js");
 //var stateHandle = require("./mnn.js");
 //var outputt = require("./mainn.js");
@@ -15,10 +15,10 @@ inputField.value = "";
  stateHandle();
 //event.preventDefault();
 //} //else {
-//event.preventDefault();
+event.preventDefault();
 
 }
-event.preventDefault();
+//event.preventDefault();
 }
 /*
 //var stateHandle = require("./mnn.js");
