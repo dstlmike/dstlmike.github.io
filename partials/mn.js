@@ -33,7 +33,7 @@ if (event.code === "Enter" && inputField.value && inputtt == "false") {
 //let input = inputField.value;
 inputField.value = "";
 output(input);
-stateHandle();
+stateHandle;
 }
 });
 });
