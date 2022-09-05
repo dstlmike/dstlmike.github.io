@@ -7,7 +7,8 @@ let input = inputField.value;
 //let input = inputField.value;
 inputField.value = "";
 output(input);
-stateHandle();
+//stateHandle();
+include('./mnn.js');
 }
   });
 });
@@ -36,7 +37,7 @@ async function include(file) {
 /* Include Many js files */
 
 //include('/mn.js');
-include('/mnn.js');
+//include('/mnn.js');
 //include('/ana.js');
 //include('/mn.js');
 
