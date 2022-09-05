@@ -12,14 +12,15 @@ if (inputField.value && inputtt == "false") {
 // if (inputtt == false)
 inputField.value = "";
      output(input);
- stateHandle();
+// stateHandle();
 //event.preventDefault();
 //} //else {
 //event.preventDefault();
 //return false;
 }
 //event.preventDefault();
-return false;
+//return false;
+stateHandle();
 }
 /*
 //var stateHandle = require("./mnn.js");
