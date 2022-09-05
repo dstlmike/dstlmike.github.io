@@ -43,7 +43,7 @@ async function include(file) {
 
 var btnField = document.getElementById("bttnn");
 var bttnText = document.querySelector("#bttnn");
-var stateHandle = require('./mnn.js');
+//var stateHandle = require('./mnn.js');
 
 var bttnButton = document.querySelector("#bttn");
 var inputField = document.getElementById("input");
