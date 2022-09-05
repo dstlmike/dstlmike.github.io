@@ -7,7 +7,7 @@ inputtt = "true";
      setTimeout(() => {
        inputtt = "false";
         inputt.disabled = false;
-  //    inputField.autofocus = true;
+      inputField.autofocus = true;
       }, 6000);
 //}
 module.exports = stateHandle;
