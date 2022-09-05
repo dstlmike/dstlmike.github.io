@@ -1,7 +1,14 @@
 /*document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#input").addEventListener("keypress", function(event) {
-    if (event.code === "Enter") {
-    }
+    //if (event.code === "Enter") {
+   // }
+let input = inputField.value;
+if (event.code === "Enter" && inputField.value >= 1 && inputtt == "false") {
+//let input = inputField.value;
+inputField.value = "";
+output(input);
+stateHandle();
+}
   });
 });
 */
@@ -13,6 +20,7 @@ if (event.code === "Enter") {
 let input = inputField.value;
 inputField.value = "";
 output(input);
+stateHandle();
 }
 });
 });
@@ -27,13 +35,14 @@ async function include(file) {
 }
 /* Include Many js files */
 
-include('/mn.js');
+//include('/mn.js');
 include('/mnn.js');
 //include('/ana.js');
 //include('/mn.js');
 
 var btnField = document.getElementById("bttnn");
 var bttnText = document.querySelector("#bttnn");
+var stateHandle = require('./mnn.js');
 
 var bttnButton = document.querySelector("#bttn");
 var inputField = document.getElementById("input");
