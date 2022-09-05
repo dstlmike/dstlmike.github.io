@@ -1,9 +1,21 @@
-document.addEventListener("DOMContentLoaded", () => {
+/*document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#input").addEventListener("keypress", function(event) {
     if (event.code === "Enter") {
     }
   });
 });
+*/
+document.addEventListener("DOMContentLoaded", () => {
+var inputField = document.getElementById("input");
+inputField.addEventListener("keydown", function(e) {
+if (event.code === "Enter") {
+let input = inputField.value;
+inputField.value = "";
+output(input);
+}
+});
+});
+
 
 async function include(file) {
   var script  = document.createElement('script');
