@@ -301,7 +301,7 @@ function openForm() {
 if (box.childNodes.length === 0) {
   addChatEntryBot();
   //inputField.autofocus = true;
-  stateHandle;
+  stateHandle();
 }
 }
 
