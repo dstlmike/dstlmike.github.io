@@ -41,7 +41,7 @@ var inputt = document.querySelector("#submitInput");
 var inpuutt = document.querySelector("#bttnn");
 var subInput = document.getElementById("submitInput"); 
 var inputF = document.getElementById("btn contact-us");
- var inputtt = false;
+ var inputtt = "false";
 /*
 function submitIn(event) {
 let input = inputField.value;
