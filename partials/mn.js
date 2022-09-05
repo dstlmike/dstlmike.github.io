@@ -1,19 +1,18 @@
-/*//var output = require("./main.js");
+//var output = require("./main.js");
 //var inputField = require("./main.js");
 var stateHandle = require("./mnn.js");
 //var outputt = require("./mainn.js");
 
-//var submitIn = 
-//module.exports = function submitIn(event) {
+var submitIn = function(event) {
 
 
 let input = inputField.value;
 //if (inputField.value && inputtt == "false") {
 
- if (inputtt == false)
+// if (inputtt == false)
 inputField.value = "";
      output(input);
- stateHandle;
+ stateHandle();
 //event.preventDefault();
 //} //else {
 //event.preventDefault();
@@ -21,7 +20,7 @@ inputField.value = "";
 //}
 
 }
-*/
+/*
 //var stateHandle = require("./mnn.js");
 //var output = require("./mainn.js");
 
@@ -37,5 +36,5 @@ stateHandle;
 }
 });
 });
-
+*/
 module.exports = submitIn;
