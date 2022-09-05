@@ -182,8 +182,8 @@ function compare(utterancesArray, answersArray, string) {
 }
 
 function clickBttn() {
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelector("#bttnn").addEventListener("click", function() {
+//document.addEventListener("DOMContentLoaded", () => {
+ // document.querySelector("#bttnn").addEventListener("click", function() {
    // if (event.code === "Enter") {
    // }
 
@@ -200,8 +200,8 @@ document.addEventListener("DOMContentLoaded", () => {
 //event.preventDefault();
 //});
 //}
-});
-});
+//});
+//});
 }
   
 function addChatEntry(input, product) {
