@@ -4,7 +4,7 @@
 //var outputt = require("./mainn.js");
 
 var submitIn = function(event) {
-event.preventDefault();
+//event.preventDefault();
 
 let input = inputField.value;
 if (inputField.value && inputtt == "false") {
@@ -18,7 +18,7 @@ inputField.value = "";
 //event.preventDefault();
 
 }
-
+event.preventDefault();
 }
 /*
 //var stateHandle = require("./mnn.js");
