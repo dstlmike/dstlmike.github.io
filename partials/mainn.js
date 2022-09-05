@@ -182,6 +182,11 @@ function compare(utterancesArray, answersArray, string) {
 }
 
 function clickBttn() {
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelector("#bttnn").addEventListener("click", function() {
+   // if (event.code === "Enter") {
+   // }
+
 //document.getElementById("bttnn").onclick();
 
  // location.assign("https://chat-chat.b9ad.pro-us-east-1.openshiftapps.com/support"); // or
@@ -195,6 +200,8 @@ function clickBttn() {
 //event.preventDefault();
 //});
 //}
+});
+});
 }
   
 function addChatEntry(input, product) {
