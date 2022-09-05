@@ -12,6 +12,7 @@ if (inputField.value) { //&& inputtt == false) {
 
 // if (inputtt == false)
 inputField.value = "";
+inputField.focus();
 //inputField.autofocus;
      output(input);
  stateHandle();
