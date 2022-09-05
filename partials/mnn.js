@@ -1,9 +1,9 @@
-var inputtt = "false";
+//var inputtt = "false";
 //var inputtt = require('./mainn.js');
 //var inputt = require('./mainn.js'); 
 var stateHandle = function() {
          //inputField.autofocus = true;
-inputtt = "true";
+ inputtt = "true";
         inputt.disabled = true;
      setTimeout(() => {
        inputtt = "false";
