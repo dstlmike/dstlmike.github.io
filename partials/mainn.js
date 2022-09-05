@@ -5,6 +5,16 @@
   });
 });
 */
+document.addEventListener("DOMContentLoaded", () => {
+var inputField = document.getElementById("input");
+inputField.addEventListener("keydown", function(e) {
+if (event.code === "Enter") {
+let input = inputField.value;
+inputField.value = "";
+output(input);
+}
+});
+});
 
 
 async function include(file) {
@@ -16,7 +26,7 @@ async function include(file) {
 }
 /* Include Many js files */
 
-include('/mn.js');
+//include('/mn.js');
 //include('/mnn.js');
 //include('/ana.js');
 //include('/mn.js');
