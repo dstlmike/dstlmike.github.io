@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+/*document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#input").addEventListener("keypress", function(event) {
     if (event.code === "Enter") {
    // }
@@ -8,12 +8,12 @@ let input = inputField.value;
 inputField.value = "";
 output(input);
 //stateHandle();
-include('./mnn.js');
+//include('./mnn.js');
 }
   });
 });
 
-/*
+
 document.addEventListener("DOMContentLoaded", () => {
 var inputField = document.getElementById("input");
 inputField.addEventListener("keydown", function(event) {
@@ -36,8 +36,8 @@ async function include(file) {
 }
 /* Include Many js files */
 
-//include('/mn.js');
-//include('/mnn.js');
+include('/mn.js');
+include('/mnn.js');
 //include('/ana.js');
 //include('/mn.js');
 
