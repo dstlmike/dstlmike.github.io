@@ -4,9 +4,10 @@
 //var outputt = require("./mainn.js");
 
 var submitIn = document.addEventListener("DOMContentLoaded", () => {
-  document.querySelector("#input").addEventListener("keypress", function(event) {
-    let input = inputField.value;
-if (event.code === "Enter") {
+ let input = inputField.value;
+ document.querySelector("#input").addEventListener("keypress", function(event) {
+  //  let input = inputField.value;
+if (event.key === "Enter" && inputField.value) {
    inputField.value = "";
 inputField.focus();
      output(input);
