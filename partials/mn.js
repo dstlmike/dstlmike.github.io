@@ -8,7 +8,7 @@ var submitIn = function(event) {
 //let inputField.autofocus = true;
 
 let input = inputField.value;
-if (inputField.value && inputtt == false) {
+if (inputField.value) { //&& inputtt == false) {
 
 // if (inputtt == false)
 inputField.value = "";
