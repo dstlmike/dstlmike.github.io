@@ -7,7 +7,7 @@ var submitIn = function(event) {
 //event.preventDefault();
 
 let input = inputField.value;
-if (inputField.value && inputtt == "false") {
+if (inputField.value > 0 && inputtt == "false") {
 
 // if (inputtt == false)
 inputField.value = "";
