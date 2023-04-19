@@ -1,16 +1,20 @@
-function parallax_height() {
-  var scroll_top = $(this).scrollTop();
-  var sample_section_top = $(".sample-section").offset().top;
-  var header_height = $(".sample-header-section").outerHeight();
-  $(".sample-section").css({ "margin-top": header_height });
-  $(".sample-header").css({ height: header_height - scroll_top });
-}
-parallax_height();
-$(window).scroll(function() {
-  parallax_height();
-});
-$(window).resize(function() {
-  parallax_height();
-
-
+$(document).ready(function() {
+  //parallax scroll
+  $(window).on("load scroll", function() {
+    var parallaxElement = $(".parallax_scroll"),
+      parallaxQuantity = parallaxElement.length;
+    window.requestAnimationFrame(function() {
+      for (var i = 0; i < parallaxQuantity; i++) {
+        var currentElement = parallaxElement.eq(i),
+          windowTop = $(window).scrollTop(),
+          elementTop = currentElement.offset().top,
+          elementHeight = currentElement.height(),
+          viewPortHeight = window.innerHeight * 0.5 - elementHeight * 0.5,
+          scrolled = windowTop - elementTop + viewPortHeight;
+        currentElement.css({
+          transform: "translate3d(0," + scrolled * -0.15 + "px, 0)"
+        });
+      }
+    });
+  });
 });
