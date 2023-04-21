@@ -1,5 +1,5 @@
-gsap.registerPlugin(ScrollTrigger);
-let getRatio = el => window.innerHeight / (window.innerHeight + el.offsetHeight);
+//gsap.registerPlugin(ScrollTrigger);
+//let getRatio = el => window.innerHeight / (window.innerHeight + el.offsetHeight);
 
 gsap.utils.toArray(".parallax").forEach((section, i) => {
   section.bg = section.querySelector(".bg"); 
