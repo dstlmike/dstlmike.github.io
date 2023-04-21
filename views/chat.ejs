@@ -5,40 +5,34 @@
 <!--<script src="/main.js"></script> -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {
-  font-size: 1.5em;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.section {
-  position: relative;
-  width: 100%;
-  min-height: 75vh;
-  padding: 40px;
-  margin: auto;
-  background-color: #48c9b0;
-  color: #ffffff;
-}
-.section.bg-static {
-  background-color: #85c1e9;
-  background-image: url("https://www.dropbox.com/s/v4u0mpzfplgjxaq/img-blog-background-move-scrolling-bg.png?raw=1");
-  background-size: auto;
-background-repeat: no-repeat;
-  background-position: center;
-}
-.section .bg-move {
-  position: absolute;
-  
-  bottom: 0;
-  
-  width: 100%;
-  background-image: url("https://www.dropbox.com/s/isdqow2394y3t35/img-blog-background-move-scrolling-boat.png?raw=1");
-  background-size: auto;
-background-repeat: no-repeat;
-  background-position: center;
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+
+html {
+  height: 100%;
+  overflow: hidden;
 }
 
+body { 
+  margin:0;
+  padding:0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Nunito;
+}
 
+h1 {
+   font-size: 250%
+}
 
+p {
+  font-size: 140%;
+  line-height: 150%;
+  color: #333;
+
+/*
 body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -47,6 +41,8 @@ body {
   	height: 100%;
   	margin: 0;
   }
+*/
+
 @media screen and (min-width: 700px) {
 form-container {
   max-width: 1000px !important;
@@ -229,15 +225,35 @@ margin-right: 5%;
 </head>
 <body>
 
+<div id="title" class="slide header">
+  <h1>Pure CSS Parallax</h1>
+</div>
 
-<div class="section">
-  Scroll down to see the effect
+<div id="slide1" class="slide">
+  <div class="title">
+    <h1>Slide 1</h1>
+    <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+  </div>
 </div>
-<div class="section bg-static">
-  <div class="bg-move"></div>
+
+<div id="slide2" class="slide">
+  <div class="title">
+    <h1>Slide 2</h1>
+    <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+  </div>
+  <img src="https://picsum.photos/980/600">
+  <img src="https://picsum.photos/960/600"> 
 </div>
-<div class="section">
-  The boat image is moving only when scrolling. 
+
+<div id="slide3" class="slide">
+  <div class="title">
+    <h1>Slide 3</h1>
+    <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+  </div>
+</div>
+
+<div id="slide4" class="slide header">
+    <h1>The End</h1>
 </div>
 
 <h2>Popup Chat Window</h2>
