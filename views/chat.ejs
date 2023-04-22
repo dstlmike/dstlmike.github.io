@@ -252,6 +252,43 @@ margin-right: 5%;
 <section class="parallax">
   <div class="bg"></div>
   <h1>Nice, right?</h1>
+  <h2>Popup Chat Window</h2>
+
+<p>Click on the button at the bottom of this page to open the chat form.</p>
+
+<p>Note that the button and the form is fixed - they will always be positioned to the bottom of the browser window.</p>
+
+<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+
+  <form class="form-container" id="form-container">
+
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Messages</b></label>
+
+    <div id="container" class="container">
+
+   <div id="chat" class="chat">
+
+    <div id="messages" class="messages"></div>
+
+<textarea id="input" name="input" type="text" placeholder="Write something..." autocomplete="off" autofocus required></textarea>
+
+ <button id="submitInput" type="button" class="btn submitBtn" onclick="submitIn()">Submit</button>
+
+</div>
+
+</div>
+
+<input type="button" class="btn contact-us" value="Contact Us" onclick="window.location.href='/support'">
+
+      <input type="button" class="btn cancel" value="Close" onclick="closeForm()">
+
+  </form>
+
+</div>
 </section>
 
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
@@ -264,31 +301,7 @@ margin-right: 5%;
   </a> 
 </header>
 -->
-<h2>Popup Chat Window</h2>
-<p>Click on the button at the bottom of this page to open the chat form.</p>
-<p>Note that the button and the form is fixed - they will always be positioned to the bottom of the browser window.</p>
 
-<button class="open-button" onclick="openForm()">Chat</button>
-
-<div class="chat-popup" id="myForm">
-  <form class="form-container" id="form-container">
-    <h1>Chat</h1>
-
-    <label for="msg"><b>Messages</b></label>
-    <div id="container" class="container">
-   <div id="chat" class="chat">
-    <div id="messages" class="messages"></div>
-<textarea id="input" name="input" type="text" placeholder="Write something..." autocomplete="off" autofocus required></textarea>
- <button id="submitInput" type="button" class="btn submitBtn" onclick="submitIn()">Submit</button>
-
-</div>
-</div>
-<input type="button" class="btn contact-us" value="Contact Us" onclick="window.location.href='/support'">
-
-      <input type="button" class="btn cancel" value="Close" onclick="closeForm()">
-
-  </form>
-</div>
 <script src="/script.js"></script>
 <script src="/mainn.js"></script>
 
