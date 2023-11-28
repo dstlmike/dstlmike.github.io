@@ -1,6 +1,6 @@
 //var inputtt = "false";
-//var inputtt = require('./mainn.js');
-//var inputt = require('./mainn.js'); 
+var inputt = require('../partials/mainn.js');
+var inputtt = require('../partials/mainn.js'); 
 var stateHandle = function() {
         //inputField.autofocus = true;
  inputtt = true;
