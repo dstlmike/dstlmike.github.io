@@ -29,8 +29,8 @@ async function include(file) {
 }
 /* Include Many js files */
 
-include('/mn.js');
-include('/mnn.js');
+include('../partials/mn.js');
+include('../partials/mnn.js');
 //include('/ana.js');
 //include('/mn.js');
 
