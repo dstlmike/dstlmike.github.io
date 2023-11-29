@@ -11,4 +11,4 @@ var stateHandle = function() {
    //   inputField.autofocus = true;
       }, 6000);
 }
-module.exports = stateHandle;
+//module.exports = stateHandle;
