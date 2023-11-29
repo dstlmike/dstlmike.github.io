@@ -1,7 +1,7 @@
 //var inputtt = "false"; // require("./main.js");
-var inputField = require('./partials/mainn.js');
-var stateHandle = require('./partials/mnn.js');
-var outputt = require('./partials/mainn.js');
+//var inputField = require('./partials/mainn.js');
+//var stateHandle = require('./partials/mnn.js');
+//var outputt = require('./partials/mainn.js');
 
 var submitIn = function() {
 let input = inputField.value;
