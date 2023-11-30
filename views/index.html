@@ -1,0 +1,429 @@
+
+<html>
+<head>
+<!--<script src="/main.js"></script> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://codepen.io/GreenSock/pen/7ba936b34824fefdccfe2c6d9f0b740b.css" rel="stylesheet" />
+
+<style>
+ @media screen and (min-width: 400px) {
+body {
+ color: red;
+ font-size: 1em;
+ width: 100%;
+}
+ h1 {
+  font-size: 6em;
+   color: #000000;
+  text-align: center;
+  text-shadow: 1px 1px 3px red;
+  z-index: 2;
+  font-weight: 400;
+  
+  margin: 2.5%;
+
+}
+      h2 {
+ font-size: 6em;
+  color: yellow;
+  text-align: center;
+  text-shadow: 1px 1px 3px black;
+  z-index: 2;
+  font-weight: 400;
+        margin:2.5%;
+    
+  }
+      h3 {
+ color: yellow;
+  text-align: center;
+  text-shadow: 1px 1px 3px black;
+  z-index: -1;
+  font-size: 2em;
+  font-weight: 400;
+  
+  margin: 2.5%;
+
+ 
+}
+      p {
+  text-align: center;
+  text-shadow: 1px 1px 3px black;
+  z-index: 2;
+  font-weight: 400;
+  font-size: 4em;
+     margin:2.5%;
+        
+     
+      }
+  
+ }
+  
+.section-a {
+  position: relative;
+
+  width: 100%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+section {
+position: relative;
+  height: 60%;
+  width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.bg {
+  position: absolute;
+  align-items: center;
+justify-content: center;
+  top: 0;
+  
+  width: 100%;
+height: 100%;
+  z-index: -1;
+  background-size: 100% auto;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+ 
+    
+h1 {
+ color: blue;
+  text-align: center;
+  text-shadow: 1px 1px 3px purple;
+  z-index: 2;
+  font-size: 4em;
+  font-weight: 400;
+
+  margin: 2.5%;
+ 
+ 
+}
+
+
+h2 {
+  color: green;
+  text-align: center;
+  text-shadow: 1px 1px 3px black;
+  z-index: 2;
+  font-size: 4em;
+  font-weight: 400;
+  
+  margin: 2.5%;
+
+ 
+}
+
+  h3 {
+   color: green;
+  text-align: center;
+  text-shadow: 1px 1px 3px black;
+  z-index: -1;
+  font-size: 2em;
+  font-weight: 400;
+  
+  margin: 2.5%;
+
+ 
+}
+
+
+p {
+  text-align: center;
+  text-shadow: 1px 1px 3px black;
+  z-index: 2;
+  font-weight: 400;
+  font-size: 3em;
+ 
+  margin: 2.5%;
+   color: green;
+}
+ 
+  span {
+  	padding-right: 2px;
+  	padding-left: 2px;
+
+  }
+
+  .container {
+  	display: flex;
+    justify-content: center;
+  	align-items: center;
+  	width: 100%;
+  	height: 100%;
+  }
+
+  .chat {
+  	height: 300px;
+  	width: 60vw;
+  	display: flex;
+  	flex-direction: column;
+    justify-content: center;
+  	align-items: center;
+  }
+
+  ::-webkit-input-placeholder {
+  	color: .711
+  }
+
+  input {
+  	border: 2px solid .711;
+  	border-radius: 10px;
+    width: 90%;
+    resize: none;
+
+    
+  }
+
+  .messages {
+  	display: flex;
+  	flex-direction: column;
+  	overflow: scroll;
+  	height: 100%;
+  	width: 100%;
+  	background-color: white;
+  	margin: 10px;
+  	border-radius: 10px;
+  }
+
+
+  #bot {
+  	margin-right: auto;
+  }
+
+
+  #user {
+  	margin-right: auto;
+
+  }
+
+  .user {
+  	font-family: Consolas, 'Courier New', Menlo, source-code-pro, Monaco,
+  	monospace;
+font-weight: bolder;
+color: #00008B;
+  }
+
+
+  .bot {
+  	font-family: Consolas, 'Courier New', Menlo, source-code-pro, Monaco,
+  	monospace;
+font-weight: bolder;
+color: black;
+  }
+
+  .avatar {
+  	height: 25px;
+  }
+
+  .response {
+  	display: flex;
+  	align-items: center;
+  	
+  }
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+z-index: 1;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  
+  background: #f1f1f1;
+  resize: none;
+  width: 100%;
+overflow: scroll;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+margin-top: 15px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+  width: 44%;
+  margin-left: 5%;
+}
+
+.form-container .submitBtn {
+
+  background-color: green;
+
+}
+
+.form-container .contact-us{
+width: 44%;
+margin-right: 5%;
+  background-color: blue;
+
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+   
+</style>
+</head>
+<body>
+
+<!--<section-a>
+  <div class="bg"></div>
+ <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+
+
+<h2>Kids coding for beginners</h2>
+<p>Ever wonder if your kid has what it takes to be a computer programmer?</p>
+</section-a>-->
+
+  <div class="section-a">
+    <div class="bg"></div>
+  <h1>Kids coding for beginners</h1>
+<p>Ever wonder if your kid has what it takes to be a computer programmer?</p>
+  </div>
+  <!--  </section-a> -->
+<section class="parallax">
+  <div class="bg"></div>
+  <h1>Set up coding environment</h1>
+</section>
+<section-a>
+
+  <div class="bg"></div>
+<h2>First class free!</h2>
+<!--  <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+-->
+</section-a>
+<section class="parallax">
+  <div class="bg"></div>
+  <h1>Integrate comprehensive techniques</h1>
+</section>
+<section-a>
+  <div class="bg"></div>
+  <h2>Try it out, see if it's right for your kids. </h2>
+<!--  <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+-->
+</section-a>
+<section class="parallax">
+  <div class="bg"></div>
+  <h1>Deploy code online</h1>
+</section>
+<section-a>
+  <div class="bg"></div>
+  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+</section-a>
+<section class="parallax">
+  <div class="bg"></div>
+  <h1>Make web apps and games</h1>
+</section>
+
+<!--  <h2>Popup Chat Window</h2>
+
+<p>Click on the button at the bottom of this page to open the chat form.</p>
+
+<p>Note that the button and the form is fixed - they will always be positioned to the bottom of the browser window.</p>
+-->
+<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+
+  <form class="form-container" id="form-container">
+
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Messages</b></label>
+
+    <div id="container" class="container">
+
+   <div id="chat" class="chat">
+
+    <div id="messages" class="messages"></div>
+
+<textarea id="input" name="input" type="text" placeholder="Write something..." autocomplete="off" autofocus required></textarea>
+
+ <button id="submitInput" type="button" class="btn submitBtn" onclick="submitIn()">Submit</button>
+
+</div>
+
+</div>
+
+<input type="button" class="btn contact-us" value="Contact Us" onclick="window.location.href='/support'">
+
+      <input type="button" class="btn cancel" value="Close" onclick="closeForm()">
+
+  </form>
+
+</div>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+
+
+<!--<header>
+   <a href="https://greensock.com/scrolltrigger">
+     <img class="greensock-icon" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/scroll-trigger-logo-light.svg" width="200" height="64" />
+  </a> 
+</header>
+-->
+
+<script src="partials/script.js"></script>
+<script src="partials/mainn.js"></script>
+<!--<script src="/partials/mn.js"></script>
+
+<script src="/partials/mnn.js"></script>
+  -->
+</body>
+</html>
