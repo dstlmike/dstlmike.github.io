@@ -6,16 +6,17 @@ gsap.utils.toArray(".parallax").forEach((section, i) => {
 
   // Do the parallax effect on each section
   if (i) {
-    section.bg.style.backgroundImage = `url(https://picsum.photos/${innerWidth}/${innerHeight}?random=${i})`;
-
+    
     section.bg.style.backgroundPosition = `50% ${innerHeight / 1}px`;
 
     gsap.to(section.bg, {
-      backgroundImage = `url(https://picsum.photos/${innerWidth}/${innerHeight}?random=${i})`;
-
+      
       backgroundPosition: `50% ${-innerHeight / 1}px`,
       ease: "none",
-      
+      scrollTrigger: {
+        trigger: section,
+        scrub: true
+      }
     });
   } 
 });
