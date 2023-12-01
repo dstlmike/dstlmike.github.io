@@ -11,6 +11,8 @@ gsap.utils.toArray(".parallax").forEach((section, i) => {
     section.bg.style.backgroundPosition = `50% ${innerHeight / 1}px`;
 
     gsap.to(section.bg, {
+      backgroundImage = `url(https://picsum.photos/${innerWidth}/${innerHeight}?random=${i})`;
+
       backgroundPosition: `50% ${-innerHeight / 1}px`,
       ease: "none",
       
