@@ -11,10 +11,7 @@ gsap.utils.toArray(".parallax").forEach((section, i) => {
     gsap.to(section.bg, {
       backgroundPosition: `50% ${-innerHeight / 1}px`,
       ease: "none",
-      scrollTrigger: {
-        trigger: section,
-        scrub: true
-      }
+      
     });
   } 
 });
