@@ -1,5 +1,5 @@
 --- 
 title: Game2
-layout: template 
+layout: game2
 filename: game2
 --- 
