@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>The Impossible Platformer</title>
+<style>
+
+@media (orientation: landscape) { 
+ html { 
+  width: 45%;
+  background-color: yellow;
+margin-left: 27.5%;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+ }
+  h1 {
+color: green;
+   text-shadow: 1px 1px 3px black;
+  }
+}
+
+ html { 
+  text-align: center;
+  font-weight: 600;
+ }
+
+ 
+</style>
+</head>
+<body>
+<div>
+<h1>The Impossible Platformer</h1>
+<p>Game 2</p>
+</div>
+<div style="position:relative;height:0;padding-bottom:117.6%;overflow:hidden;">
+<iframe style="position:absolute;top:0;left:10%;width:80%;height:100%;" src="https://arcade.makecode.com/---run?id=S30377-54297-20935-73776" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe>
+</div>
+ 
+{% for page in site.pages %}
+    <a href={{ page.filename }}>{{ page.title }}</a>
+{% endfor %}
+ 
+</body>
+</html>
