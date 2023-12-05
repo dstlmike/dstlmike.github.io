@@ -79,9 +79,11 @@ color: green;
 		<li>
 			<a href="#">Dropdown</a>
 			<ul>
-				<li><a href="#">Option 1</a></li>
+				{% for page in site.pages %}
+				<li><a href={{ page.filename }}>{{ page.filename }}</a></li>
 				<li><a href="#">Option 2</a></li>
 				<li><a href="#">Option 3</a></li>
+				{% endfor %}
 			</ul>
 		</li>
 		<li><a href="/game2">Game 2</a></li>
