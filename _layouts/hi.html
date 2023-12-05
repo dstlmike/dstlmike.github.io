@@ -1,7 +1,101 @@
----
-title: The Impossible Platformer 3
-layout: hi
-description: Check out my new game 3!
-filename: hi
-game: '<div style="position:relative;height:0;padding-bottom:117.6%;overflow:hidden;"><iframe style="position:absolute;top:0;left:10%;width:80%;height:100%;" src="https://arcade.makecode.com/---run?id=_CtcMk2Dy19Hq" allowfullscreen="allowfullscreen" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe></div>'
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>{{ page.title }}</title>
+<style>
+
+@media (orientation: landscape) { 
+ html { 
+  width: 45%;
+  background-color: yellow;
+margin-left: 27.5%;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+ }
+  h1 {
+color: green;
+   text-shadow: 1px 1px 3px black;
+  }
+}
+
+ html { 
+  text-align: center;
+  font-weight: 600;
+ }
+	.game2 {
+		margin-bottom: 10%;
+	}
+	.navbar {
+		background-color: #333;
+		position: relative;
+		z-index: 999;
+	}
+
+	.navbar ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+    background: black;
+	}
+
+	.navbar li {
+		display: inline-block;
+	}
+
+	.navbar li a {
+		color: white;
+		display: block;
+		padding: 10px 20px;
+		text-decoration: none;
+	}
+
+	/* Style the dropdown menu */
+	.navbar ul ul {
+		position: absolute;
+		top: 100%;
+		display: none;
+	}
+
+	.navbar ul ul li {
+		display: block;
+	}
+
+	.navbar li:hover ul {
+		display: block;
+	}
+
+	/* Change the background color of dropdown links on hover */
+	.navbar ul ul li a:hover {
+		background-color: #555;
+ }
+ 
+</style>
+</head>
+<body>
+ <nav class="navbar">
+	<ul>
+		<li><a href="/index">Game 1</a></li>
+		<li>
+			<a href="#">Dropdown</a>
+			<ul>
+				<li><a href="#">Option 1</a></li>
+				<li><a href="#">Option 2</a></li>
+				<li><a href="#">Option 3</a></li>
+			</ul>
+		</li>
+		<li><a href="/game2">Game 2</a></li>
+	</ul>
+ </nav>
+<div>
+<h1>{{ page.title }}</h1>
+<p>{{ page.description }}</p>
+</div>
+{{ page.game }}
+ <div class="game2">
+{% for page in site.pages %}
+    <a href={{ page.filename }}>{{ page.title }}</a>
+{% endfor %}
+ </div>
+</body>
+</html>
