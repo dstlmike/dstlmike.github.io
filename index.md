@@ -9,5 +9,5 @@ game: '<div style="position:relative;height:0;padding-bottom:117.6%;overflow:hid
 ---
 
 {% include game2.md %}
-{% include hi %}
+{% include hi.html %}
 
