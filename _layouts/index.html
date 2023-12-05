@@ -80,7 +80,7 @@ color: green;
 			<a href="#">Dropdown</a>
 			<ul>
 				{% for page in site.pages %}
-				<li><a href={{ page.filename }}>{{ page.filename }}</a></li>
+				<li><a href="/" + {{ page.filename }}>{{ page.filename }}</a></li>
 				<li><a href="#">Option 2</a></li>
 				<li><a href="#">Option 3</a></li>
 				{% endfor %}
