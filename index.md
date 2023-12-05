@@ -7,6 +7,6 @@ filename: index
 
 
 ---
-{include} game2.md
+{include} game2
 ---
 
