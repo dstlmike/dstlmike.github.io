@@ -78,12 +78,15 @@ color: green;
 		<li><a href="/index">Game 1</a></li>
 		<li>
 			<a href="#">Dropdown</a>
-			<ul>
+			
 				{% for page in site.pages %}
-				<li><a href={{ page.filename }}>{{ page.filename }}</a></li>
-				{% endfor %}
+				<ul>
+					<li><a href={{ page.filename }}>{{ page.filename }}</a></li>
+				</ul>
+			
+			{% endfor %}
 				
-			</ul>
+			
 		</li>
 		<li><a href="/game2">Game 2</a></li>
 	</ul>
