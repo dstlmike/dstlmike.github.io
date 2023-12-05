@@ -81,9 +81,10 @@ color: green;
 			<ul>
 				{% for page in site.pages %}
 				<li><a href="/" + {{ page.filename }}>{{ page.filename }}</a></li>
+				{% endfor %}
 				<li><a href="#">Option 2</a></li>
 				<li><a href="#">Option 3</a></li>
-				{% endfor %}
+				
 			</ul>
 		</li>
 		<li><a href="/game2">Game 2</a></li>
