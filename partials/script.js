@@ -20,7 +20,7 @@ gsap.utils.toArray(".parallax").forEach((section, i) => {
       scrollTrigger: {
         trigger: section,
         scrub: true,
-        pin: true        
+       // pin: true        
       }
     });
   //} 
