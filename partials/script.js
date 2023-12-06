@@ -12,7 +12,7 @@ gsap.utils.toArray(".parallax").forEach((section, i) => {
 // if (i) {
     
  //   section.bg.style.backgroundPosition = `50% ${innerHeight / 1}px`;
-
+/*
     gsap.to(section.bg, {
       
    //   backgroundPosition: `50% ${-innerHeight / 1}px`,
@@ -24,4 +24,5 @@ gsap.utils.toArray(".parallax").forEach((section, i) => {
       }
     });
   //} 
+  */
 });
