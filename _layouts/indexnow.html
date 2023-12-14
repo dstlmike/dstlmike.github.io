@@ -1,0 +1,444 @@
+
+<html>
+<head>
+<!--<script src="/main.js"></script> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://codepen.io/GreenSock/pen/7ba936b34824fefdccfe2c6d9f0b740b.css" rel="stylesheet" />
+
+<style>
+@media (orientation: landscape) {
+ .section-a {
+  position: relative;
+
+
+  width: 100%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+ 
+ section {
+position: relative;
+  height: 100%;
+  width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+  
+}
+
+ .bg {
+  position: absolute;
+  align-items: center;
+justify-content: center;
+  top: 0;
+  left: 0;
+  
+  width: 100%;
+height: 100%;
+  z-index: -1;
+  background-size: 100% auto;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+h1 {
+ max-width: inherit;
+   margin-top: 0;
+margin-bottom: 0;
+ font-size: 5rem;
+ text-shadow: 1px 1px 3px black;
+ color: lightgreen;
+}
+
+ h2 {
+max-width: inherit;
+  margin-top: 0;
+margin-bottom: 0;
+font-size: 4rem;
+  text-shadow: 1px 1px 3px blue;
+ color: purple;
+
+ }
+
+
+h3, h4 {
+ max-width: inherit;
+   margin-top: 0;
+margin-bottom: 0;
+ font-size: 3rem;
+ text-shadow: 1px 1px 3px darkgreen;
+ color: blue;
+}
+ 
+ p {
+    max-width: inherit;
+ text-shadow: none;
+font-size: 2rem;
+  text-align: left;
+ margin-top: 2.5%;
+margin-bottom: 2.5%;
+  margin-left: 1%;
+margin-right: 1%;
+ color: black;
+  font-weight: bold;
+}
+
+
+body, html {
+ color: white;
+  text-align: center;
+  text-shadow: 1px 1px 3px black;
+  z-index: 2;
+  font-size: 1rem;
+  font-weight: 400;
+width: inherit;
+ align-items: center;
+ justify-content: center;
+margin-top: 0;
+margin-bottom: 0; 
+ 
+}
+
+
+}
+  @media (orientation: portrait) {
+.section-a {
+ position: relative;
+  
+  width: 100%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+section {
+position: relative;
+ height: 100%;
+  width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.bg {
+  position: absolute;
+  align-items: center;
+justify-content: center;
+  
+  width: 100%;
+height: 65%;
+  z-index: -1;
+ 
+  background-size: 100% 65%;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+   h1, h2, h3, h4, p {
+    max-width: inherit;
+  
+   
+   }
+ 
+   
+ html, body {
+ color: lightgreen;
+  text-align: center;
+  text-shadow: 1px 1px 3px black;
+  z-index: 2;
+  font-size: 1rem;
+  font-weight: 600;
+width: 100%;
+ align-items: center;
+ justify-content: center;
+  margin: 0;
+  -webkit-overflow-scrolling: touch; 
+  overflow-scrolling: touch; 
+  font-family: "Times New Roman", Times, sans-serif, Arial;
+ }
+  }
+
+
+
+  span {
+  	padding-right: 2px;
+  	padding-left: 2px;
+
+  }
+
+  .container {
+  	display: flex;
+    justify-content: center;
+  	align-items: center;
+  	width: 100%;
+  	height: 100%;
+  }
+
+  .chat {
+  	height: 300px;
+  	width: 60vw;
+  	display: flex;
+  	flex-direction: column;
+    justify-content: center;
+  	align-items: center;
+  }
+
+  ::-webkit-input-placeholder {
+  	color: .711
+  }
+
+  input {
+  	border: 2px solid .711;
+  	border-radius: 10px;
+    width: 90%;
+    resize: none;
+
+    
+  }
+
+  .messages {
+  	display: flex;
+  	flex-direction: column;
+  	overflow: scroll;
+  	height: 100%;
+  	width: 100%;
+  	background-color: white;
+  	margin: 10px;
+  	border-radius: 10px;
+  }
+
+
+  #bot {
+  	margin-right: auto;
+  }
+
+
+  #user {
+  	margin-right: auto;
+
+  }
+
+  .user {
+  	font-family: Consolas, 'Courier New', Menlo, source-code-pro, Monaco,
+  	monospace;
+font-weight: bolder;
+color: #00008B;
+  }
+
+
+  .bot {
+  	font-family: Consolas, 'Courier New', Menlo, source-code-pro, Monaco,
+  	monospace;
+font-weight: bolder;
+color: black;
+  }
+
+  .avatar {
+  	height: 25px;
+  }
+
+  .response {
+  	display: flex;
+  	align-items: center;
+  	
+  }
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+z-index: 1;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  
+  background: #f1f1f1;
+  resize: none;
+  width: 100%;
+overflow: scroll;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+margin-top: 15px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+  width: 44%;
+  margin-left: 5%;
+}
+
+.form-container .submitBtn {
+
+  background-color: green;
+
+}
+
+.form-container .contact-us{
+width: 44%;
+margin-right: 5%;
+  background-color: blue;
+
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+   
+</style>
+</head>
+<body>
+
+<!--<section-a>
+  <div class="bg"></div>
+ <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+
+
+<h2>Kids coding for beginners</h2>
+<p>Ever wonder if your kid has what it takes to be a computer programmer?</p>
+</section-a>-->
+
+  <div class="section-a">
+    <div class="bg"></div>
+   <h1>Kids coding online</h1>
+   <p>Ever wonder if your kid has what it takes to be a computer programmer?</p>
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+ </p>
+  </div>
+ 
+ 
+   <div style="position:relative;height:0;padding-bottom:117.6%;overflow:hidden;">
+ <iframe style="position:absolute;top:0;left:10%;width:80%;height:80%;" src="https://arcade.makecode.com/---run?id=S07742-20613-03700-06670" sandbox="allow-popups allow-forms allow-scripts allow-same-origin" frameborder="0"></iframe>
+   
+  
+   </div> 
+  <h4>Kids coding online</h4>
+ 
+ <div class="section-a">
+    <div class="bg"></div>
+   
+ </div>
+    
+  <!--  </section-a> -->
+
+<section class="parallax">
+   
+  <div class="bg"></div>
+ <!--
+  <h1>Set up coding environment</h1>-->
+</section>
+ 
+<div class="section-a">
+  <div class="bg"></div>
+<h2>First class free!</h2>
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+<!--  <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+-->
+</div>
+<section class="parallax">
+  <div class="bg"></div>
+ <!-- <h1>Integrate comprehensive techniques</h1>-->
+</section>
+<div class="section-a">
+  <div class="bg"></div>
+<h3>Check it!</h3>
+  <p>Try it out, see if it's right for your kids.</p>
+ 
+<!--  <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+-->
+</div>
+<section class="parallax">
+  <div class="bg"></div>
+ <!-- <h1>Deploy code online</h1>-->
+</section>
+<div class="section-a">
+  <div class="bg"></div>
+ <h3>Free your mind</h3>
+ <p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+ </p>
+</div>
+<section class="parallax">
+  <div class="bg"></div>
+  <h1>Make web apps and games</h1>
+</section>
+
+
+ 
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+
+
+<!--<header>
+   <a href="https://greensock.com/scrolltrigger">
+     <img class="greensock-icon" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/scroll-trigger-logo-light.svg" width="200" height="64" />
+  </a> 
+</header>
+-->
+
+<script src="partials/script.js"></script>
+<script src="partials/mainn.js"></script>
+<!--<script src="/partials/mn.js"></script>
+
+<script src="/partials/mnn.js"></script>
+  -->
+</body>
+</html>
